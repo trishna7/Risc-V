@@ -1,0 +1,22 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -70 0 -50 0 {}
+L 4 40 -10 60 -10 {}
+L 4 40 10 60 10 {}
+B 5 -72.5 -2.5 -67.5 2.5 {name=p_b sig_type=std_logic dir=in}
+B 5 57.5 -12.5 62.5 -7.5 {name=bit_b sig_type=std_logic dir=out}
+B 5 57.5 7.5 62.5 12.5 {name=bit sig_type=std_logic dir=out}
+P 4 5 -50 -30 -50 40 40 40 40 -30 -50 -30 {}
+T {@symname} -34.5 -26 0 0 0.2 0.2 {}
+T {@name} -25 18 0 0 0.2 0.2 {}
+T {p_b} -45 -4 0 0 0.2 0.2 {}
+T {bit_b} 35 -14 0 1 0.2 0.2 {}
+T {bit} 35 6 0 1 0.2 0.2 {}

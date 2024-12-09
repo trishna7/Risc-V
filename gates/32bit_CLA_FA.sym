@@ -1,0 +1,113 @@
+v {xschem version=3.4.5 file_version=1.2}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+T {@symname} -72 -6 0 0 0.3 0.3 {}
+T {@name} 135 -342 0 0 0.2 0.2 {}
+L 4 -130 -330 130 -330 {}
+L 4 -130 330 130 330 {}
+L 4 -130 -330 -130 330 {}
+L 4 130 -330 130 330 {}
+B 5 -152.5 -322.5 -147.5 -317.5 {name=Cin sig_type=std_logic dir=in}
+L 4 -150 -320 -130 -320 {}
+T {Cin} -125 -324 0 0 0.2 0.2 {}
+B 5 147.5 -322.5 152.5 -317.5 {name=Cout sig_type=std_logic dir=out}
+L 4 130 -320 150 -320 {}
+T {Cout} 125 -324 0 1 0.2 0.2 {}
+B 5 147.5 -302.5 152.5 -297.5 {name=S3 sig_type=std_logic dir=out}
+L 4 130 -300 150 -300 {}
+T {S3} 125 -304 0 1 0.2 0.2 {}
+B 5 147.5 -282.5 152.5 -277.5 {name=S2 sig_type=std_logic dir=out}
+L 4 130 -280 150 -280 {}
+T {S2} 125 -284 0 1 0.2 0.2 {}
+B 5 147.5 -262.5 152.5 -257.5 {name=S9 sig_type=std_logic dir=out}
+L 4 130 -260 150 -260 {}
+T {S9} 125 -264 0 1 0.2 0.2 {}
+B 5 147.5 -242.5 152.5 -237.5 {name=S4 sig_type=std_logic dir=out}
+L 4 130 -240 150 -240 {}
+T {S4} 125 -244 0 1 0.2 0.2 {}
+B 5 147.5 -222.5 152.5 -217.5 {name=S6 sig_type=std_logic dir=out}
+L 4 130 -220 150 -220 {}
+T {S6} 125 -224 0 1 0.2 0.2 {}
+B 5 147.5 -202.5 152.5 -197.5 {name=S14 sig_type=std_logic dir=out}
+L 4 130 -200 150 -200 {}
+T {S14} 125 -204 0 1 0.2 0.2 {}
+B 5 147.5 -182.5 152.5 -177.5 {name=S7 sig_type=std_logic dir=out}
+L 4 130 -180 150 -180 {}
+T {S7} 125 -184 0 1 0.2 0.2 {}
+B 5 147.5 -162.5 152.5 -157.5 {name=S8 sig_type=std_logic dir=out}
+L 4 130 -160 150 -160 {}
+T {S8} 125 -164 0 1 0.2 0.2 {}
+B 5 147.5 -142.5 152.5 -137.5 {name=S21 sig_type=std_logic dir=out}
+L 4 130 -140 150 -140 {}
+T {S21} 125 -144 0 1 0.2 0.2 {}
+B 5 147.5 -122.5 152.5 -117.5 {name=S10 sig_type=std_logic dir=out}
+L 4 130 -120 150 -120 {}
+T {S10} 125 -124 0 1 0.2 0.2 {}
+B 5 147.5 -102.5 152.5 -97.5 {name=S11 sig_type=std_logic dir=out}
+L 4 130 -100 150 -100 {}
+T {S11} 125 -104 0 1 0.2 0.2 {}
+B 5 147.5 -82.5 152.5 -77.5 {name=S12 sig_type=std_logic dir=out}
+L 4 130 -80 150 -80 {}
+T {S12} 125 -84 0 1 0.2 0.2 {}
+B 5 147.5 -62.5 152.5 -57.5 {name=S29 sig_type=std_logic dir=out}
+L 4 130 -60 150 -60 {}
+T {S29} 125 -64 0 1 0.2 0.2 {}
+B 5 147.5 -42.5 152.5 -37.5 {name=S13 sig_type=std_logic dir=out}
+L 4 130 -40 150 -40 {}
+T {S13} 125 -44 0 1 0.2 0.2 {}
+B 5 147.5 -22.5 152.5 -17.5 {name=S15 sig_type=std_logic dir=out}
+L 4 130 -20 150 -20 {}
+T {S15} 125 -24 0 1 0.2 0.2 {}
+B 5 147.5 -2.5 152.5 2.5 {name=S16 sig_type=std_logic dir=out}
+L 4 130 0 150 0 {}
+T {S16} 125 -4 0 1 0.2 0.2 {}
+B 5 147.5 17.5 152.5 22.5 {name=S17 sig_type=std_logic dir=out}
+L 4 130 20 150 20 {}
+T {S17} 125 16 0 1 0.2 0.2 {}
+B 5 147.5 37.5 152.5 42.5 {name=S18 sig_type=std_logic dir=out}
+L 4 130 40 150 40 {}
+T {S18} 125 36 0 1 0.2 0.2 {}
+B 5 147.5 57.5 152.5 62.5 {name=S19 sig_type=std_logic dir=out}
+L 4 130 60 150 60 {}
+T {S19} 125 56 0 1 0.2 0.2 {}
+B 5 147.5 77.5 152.5 82.5 {name=S20 sig_type=std_logic dir=out}
+L 4 130 80 150 80 {}
+T {S20} 125 76 0 1 0.2 0.2 {}
+B 5 147.5 97.5 152.5 102.5 {name=S5 sig_type=std_logic dir=out}
+L 4 130 100 150 100 {}
+T {S5} 125 96 0 1 0.2 0.2 {}
+B 5 147.5 117.5 152.5 122.5 {name=S22 sig_type=std_logic dir=out}
+L 4 130 120 150 120 {}
+T {S22} 125 116 0 1 0.2 0.2 {}
+B 5 147.5 137.5 152.5 142.5 {name=S23 sig_type=std_logic dir=out}
+L 4 130 140 150 140 {}
+T {S23} 125 136 0 1 0.2 0.2 {}
+B 5 147.5 157.5 152.5 162.5 {name=S24 sig_type=std_logic dir=out}
+L 4 130 160 150 160 {}
+T {S24} 125 156 0 1 0.2 0.2 {}
+B 5 147.5 177.5 152.5 182.5 {name=S25 sig_type=std_logic dir=out}
+L 4 130 180 150 180 {}
+T {S25} 125 176 0 1 0.2 0.2 {}
+B 5 147.5 197.5 152.5 202.5 {name=S26 sig_type=std_logic dir=out}
+L 4 130 200 150 200 {}
+T {S26} 125 196 0 1 0.2 0.2 {}
+B 5 147.5 217.5 152.5 222.5 {name=S27 sig_type=std_logic dir=out}
+L 4 130 220 150 220 {}
+T {S27} 125 216 0 1 0.2 0.2 {}
+B 5 147.5 237.5 152.5 242.5 {name=S28 sig_type=std_logic dir=out}
+L 4 130 240 150 240 {}
+T {S28} 125 236 0 1 0.2 0.2 {}
+B 5 147.5 257.5 152.5 262.5 {name=S1 sig_type=std_logic dir=out}
+L 4 130 260 150 260 {}
+T {S1} 125 256 0 1 0.2 0.2 {}
+B 5 147.5 277.5 152.5 282.5 {name=S30 sig_type=std_logic dir=out}
+L 4 130 280 150 280 {}
+T {S30} 125 276 0 1 0.2 0.2 {}
+B 5 147.5 297.5 152.5 302.5 {name=S31 sig_type=std_logic dir=out}
+L 4 130 300 150 300 {}
+T {S31} 125 296 0 1 0.2 0.2 {}
+B 5 147.5 317.5 152.5 322.5 {name=S0 sig_type=std_logic dir=out}
+L 4 130 320 150 320 {}
+T {S0} 125 316 0 1 0.2 0.2 {}

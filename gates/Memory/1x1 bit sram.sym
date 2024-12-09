@@ -1,0 +1,49 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -130 -60 130 -60 {}
+L 4 -130 60 130 60 {}
+L 4 -130 -60 -130 60 {}
+L 4 130 -60 130 60 {}
+L 4 -150 -50 -130 -50 {}
+L 4 130 -50 150 -50 {}
+L 4 130 -30 150 -30 {}
+L 4 -150 -30 -130 -30 {}
+L 4 -150 10 -130 10 {}
+L 4 -150 30 -130 30 {}
+L 4 130 30 150 30 {}
+L 4 130 50 150 50 {}
+L 4 -150 50 -130 50 {}
+L 7 130 -10 150 -10 {}
+L 7 130 10 150 10 {}
+B 5 -152.5 -52.5 -147.5 -47.5 {name=WL sig_type=std_logic dir=in}
+B 5 147.5 -52.5 152.5 -47.5 {name=qb sig_type=std_logic dir=out}
+B 5 147.5 -32.5 152.5 -27.5 {name=q sig_type=std_logic dir=out}
+B 5 147.5 -12.5 152.5 -7.5 {name=blb sig_type=std_logic dir=inout}
+B 5 147.5 7.5 152.5 12.5 {name=bl sig_type=std_logic dir=inout}
+B 5 -152.5 -32.5 -147.5 -27.5 {name=p_b sig_type=std_logic dir=in}
+B 5 -152.5 7.5 -147.5 12.5 {name=we sig_type=std_logic dir=in}
+B 5 -152.5 27.5 -147.5 32.5 {name=rd sig_type=std_logic dir=in}
+B 5 147.5 27.5 152.5 32.5 {name=outb sig_type=std_logic dir=out}
+B 5 147.5 47.5 152.5 52.5 {name=out sig_type=std_logic dir=out}
+B 5 -152.5 47.5 -147.5 52.5 {name=di sig_type=std_logic dir=in}
+T {@symname} -72 -6 0 0 0.3 0.3 {}
+T {@name} 135 -72 0 0 0.2 0.2 {}
+T {WL} -125 -54 0 0 0.2 0.2 {}
+T {qb} 125 -54 0 1 0.2 0.2 {}
+T {q} 125 -34 0 1 0.2 0.2 {}
+T {blb} 125 -14 0 1 0.2 0.2 {}
+T {bl} 125 6 0 1 0.2 0.2 {}
+T {p_b} -125 -34 0 0 0.2 0.2 {}
+T {we} -125 6 0 0 0.2 0.2 {}
+T {rd} -125 26 0 0 0.2 0.2 {}
+T {outb} 125 26 0 1 0.2 0.2 {}
+T {out} 125 46 0 1 0.2 0.2 {}
+T {di} -125 46 0 0 0.2 0.2 {}

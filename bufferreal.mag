@@ -1,0 +1,20 @@
+magic
+tech sky130A
+timestamp 1716466360
+<< locali >>
+rect -10 10 12 31
+rect 384 9 406 30
+<< metal1 >>
+rect -6 231 16 326
+rect -5 55 17 150
+use inverter  inverter_0
+timestamp 1715254107
+transform 1 0 130 0 1 10
+box -140 -20 70 345
+use inverter  inverter_1
+timestamp 1715254107
+transform 1 0 335 0 1 10
+box -140 -20 70 345
+<< labels >>
+rlabel locali -10 20 -10 20 7 A
+<< end >>

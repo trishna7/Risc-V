@@ -1,0 +1,396 @@
+* NGSPICE file created from Shiftreg_parax.ext - technology: sky130A
+
+*.subckt Shiftreg_parax
+X0 D_Flipflop_3.VN a_252_586# a_252_182# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X1 a_1374_586# a_1374_182# a_1154_1106# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.9 as=0.225 ps=1.45 w=1 l=0.15
+X2 D_Flipflop_3.VP D_Flipflop_2.Q a_3354_1106# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.45 as=0.5 ps=3 w=1 l=0.15
+X3 D_Flipflop_3.Qb1 D_Flipflop_3.Q a_3874_182# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.225 ps=1.45 w=1 l=0.15
+X4 a_1806_1108# a_1374_586# D_Flipflop_3.VP D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.15 pd=1.3 as=0.5 ps=3 w=1 l=0.15
+X5 a_1674_586# D_Flipflop_3.CLK D_Flipflop_3.VN D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.45 as=0.225 ps=1.45 w=1 l=0.15
+X6 a_252_182# D_Flipflop_3.CLK a_162_182# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.15 ps=1.3 w=1 l=0.15
+X7 D_Flipflop_3.VP D_Flipflop_1.Q a_2260_1106# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.45 as=0.5 ps=3 w=1 l=0.15
+X8 D_Flipflop_3.VP D_Flipflop_3.Q D_Flipflop_3.Qb1 D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X9 D_Flipflop_1.Q D_Flipflop_3.CLK a_1806_1108# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.15 ps=1.3 w=1 l=0.15
+X10 D_Flipflop_3.VN a_252_182# a_552_182# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.45 as=0.5 ps=3 w=1 l=0.15
+X11 a_32_1516# D_Flipflop_3.CLK D_Flipflop_3.VP D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.45 as=0.225 ps=1.45 w=1 l=0.15
+X12 a_162_182# D_Flipflop_0.Dn1 D_Flipflop_3.VN D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.15 pd=1.3 as=0.5 ps=3 w=1 l=0.15
+X13 D_Flipflop_3.VN a_2480_586# a_2480_182# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X14 D_Flipflop_2.Dn1 D_Flipflop_1.Q a_1674_182# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.225 ps=1.45 w=1 l=0.15
+X15 D_Flipflop_3.VN a_252_182# a_252_586# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X16 a_2480_586# a_2480_182# a_2260_1106# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.9 as=0.225 ps=1.45 w=1 l=0.15
+X17 D_Flipflop_3.VP D_Flipflop_1.Dn1 a_1154_1516# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.45 as=0.5 ps=3 w=1 l=0.15
+X18 D_Flipflop_3.Q D_Flipflop_3.Qb1 a_3874_586# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.225 ps=1.45 w=1 l=0.15
+X19 D_Flipflop_3.VP a_n346_546# D_Flipflop_0.Dn1 D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X20 a_3354_1106# D_Flipflop_3.CLK D_Flipflop_3.VP D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.45 as=0.225 ps=1.45 w=1 l=0.15
+X21 a_252_586# D_Flipflop_3.CLK a_162_586# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.15 ps=1.3 w=1 l=0.15
+X22 a_2480_182# D_Flipflop_3.CLK a_2390_182# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.15 ps=1.3 w=1 l=0.15
+X23 D_Flipflop_3.VP D_Flipflop_0.Q D_Flipflop_1.Dn1 D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X24 D_Flipflop_3.VN a_2480_182# a_2780_182# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.45 as=0.5 ps=3 w=1 l=0.15
+X25 D_Flipflop_3.VN a_252_586# a_552_586# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.45 as=0.5 ps=3 w=1 l=0.15
+X26 D_Flipflop_3.Qb1 D_Flipflop_3.CLK a_4006_1518# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.15 ps=1.3 w=1 l=0.15
+X27 a_2390_182# D_Flipflop_2.Dn1 D_Flipflop_3.VN D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.15 pd=1.3 as=0.5 ps=3 w=1 l=0.15
+X28 a_162_586# a_n346_546# D_Flipflop_3.VN D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.15 pd=1.3 as=0.5 ps=3 w=1 l=0.15
+X29 a_2260_1106# D_Flipflop_3.CLK D_Flipflop_3.VP D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.45 as=0.225 ps=1.45 w=1 l=0.15
+X30 D_Flipflop_3.VN a_2480_182# a_2480_586# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X31 D_Flipflop_1.Q D_Flipflop_2.Dn1 a_1674_586# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.225 ps=1.45 w=1 l=0.15
+X32 a_252_182# a_252_586# a_32_1516# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.9 as=0.225 ps=1.45 w=1 l=0.15
+X33 a_552_182# D_Flipflop_3.CLK D_Flipflop_3.VN D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.45 as=0.225 ps=1.45 w=1 l=0.15
+X34 D_Flipflop_3.VN a_n346_546# D_Flipflop_0.Dn1 D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.49 ps=2.98 w=1 l=0.15
+X35 a_1154_1516# D_Flipflop_3.CLK D_Flipflop_3.VP D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.45 as=0.225 ps=1.45 w=1 l=0.15
+X36 a_684_1518# a_252_182# D_Flipflop_3.VP D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.15 pd=1.3 as=0.5 ps=3 w=1 l=0.15
+X37 a_2480_586# D_Flipflop_3.CLK a_2390_586# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.15 ps=1.3 w=1 l=0.15
+X38 a_3574_586# a_3574_182# a_3354_1106# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.9 as=0.225 ps=1.45 w=1 l=0.15
+X39 D_Flipflop_3.VN a_2480_586# a_2780_586# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.45 as=0.5 ps=3 w=1 l=0.15
+X40 a_2390_586# D_Flipflop_1.Q D_Flipflop_3.VN D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.15 pd=1.3 as=0.5 ps=3 w=1 l=0.15
+X41 D_Flipflop_1.Dn1 D_Flipflop_3.CLK a_684_1518# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.15 ps=1.3 w=1 l=0.15
+X42 a_4006_1108# a_3574_586# D_Flipflop_3.VP D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.15 pd=1.3 as=0.5 ps=3 w=1 l=0.15
+X43 a_552_586# D_Flipflop_3.CLK D_Flipflop_3.VN D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.45 as=0.225 ps=1.45 w=1 l=0.15
+X44 D_Flipflop_3.VP D_Flipflop_1.Q D_Flipflop_2.Dn1 D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X45 a_2780_182# D_Flipflop_3.CLK D_Flipflop_3.VN D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.45 as=0.225 ps=1.45 w=1 l=0.15
+X46 D_Flipflop_3.VP D_Flipflop_3.Dn1 D_Flipflop_2.Q D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X47 a_2912_1108# a_2480_586# D_Flipflop_3.VP D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.15 pd=1.3 as=0.5 ps=3 w=1 l=0.15
+X48 a_1374_182# a_1374_586# a_1154_1516# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.9 as=0.225 ps=1.45 w=1 l=0.15
+X49 D_Flipflop_1.Dn1 D_Flipflop_0.Q a_552_182# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.225 ps=1.45 w=1 l=0.15
+X50 D_Flipflop_3.VP D_Flipflop_3.Dn1 a_3354_1516# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.45 as=0.5 ps=3 w=1 l=0.15
+X51 D_Flipflop_2.Q D_Flipflop_3.CLK a_2912_1108# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.15 ps=1.3 w=1 l=0.15
+X52 D_Flipflop_3.VP a_n346_546# a_32_1106# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.45 as=0.5 ps=3 w=1 l=0.15
+X53 a_1806_1518# a_1374_182# D_Flipflop_3.VP D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.15 pd=1.3 as=0.5 ps=3 w=1 l=0.15
+X54 D_Flipflop_3.VP D_Flipflop_2.Dn1 a_2260_1516# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.45 as=0.5 ps=3 w=1 l=0.15
+X55 a_2780_586# D_Flipflop_3.CLK D_Flipflop_3.VN D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.45 as=0.225 ps=1.45 w=1 l=0.15
+X56 D_Flipflop_3.VN a_3574_586# a_3574_182# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X57 D_Flipflop_2.Dn1 D_Flipflop_3.CLK a_1806_1518# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.15 ps=1.3 w=1 l=0.15
+X58 a_3874_182# D_Flipflop_3.CLK D_Flipflop_3.VN D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.45 as=0.225 ps=1.45 w=1 l=0.15
+X59 D_Flipflop_0.Q D_Flipflop_1.Dn1 a_552_586# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.225 ps=1.45 w=1 l=0.15
+X60 a_2480_182# a_2480_586# a_2260_1516# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.9 as=0.225 ps=1.45 w=1 l=0.15
+X61 a_3574_182# D_Flipflop_3.CLK a_3484_182# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.15 ps=1.3 w=1 l=0.15
+X62 D_Flipflop_3.Dn1 D_Flipflop_2.Q a_2780_182# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.225 ps=1.45 w=1 l=0.15
+X63 D_Flipflop_3.VP D_Flipflop_3.Qb1 D_Flipflop_3.Q D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X64 a_3354_1516# D_Flipflop_3.CLK D_Flipflop_3.VP D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.45 as=0.225 ps=1.45 w=1 l=0.15
+X65 D_Flipflop_3.VN a_1374_586# a_1374_182# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X66 a_32_1106# D_Flipflop_3.CLK D_Flipflop_3.VP D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.45 as=0.225 ps=1.45 w=1 l=0.15
+X67 D_Flipflop_3.VN a_3574_182# a_3874_182# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.45 as=0.5 ps=3 w=1 l=0.15
+X68 a_3484_182# D_Flipflop_3.Dn1 D_Flipflop_3.VN D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.15 pd=1.3 as=0.5 ps=3 w=1 l=0.15
+X69 D_Flipflop_3.VN a_3574_182# a_3574_586# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X70 D_Flipflop_3.VP D_Flipflop_0.Q a_1154_1106# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.45 as=0.5 ps=3 w=1 l=0.15
+X71 a_2260_1516# D_Flipflop_3.CLK D_Flipflop_3.VP D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.45 as=0.225 ps=1.45 w=1 l=0.15
+X72 a_1374_182# D_Flipflop_3.CLK a_1284_182# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.15 ps=1.3 w=1 l=0.15
+X73 a_3874_586# D_Flipflop_3.CLK D_Flipflop_3.VN D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.45 as=0.225 ps=1.45 w=1 l=0.15
+X74 D_Flipflop_3.VN a_1374_182# a_1674_182# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.45 as=0.5 ps=3 w=1 l=0.15
+X75 a_3574_586# D_Flipflop_3.CLK a_3484_586# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.15 ps=1.3 w=1 l=0.15
+X76 D_Flipflop_2.Q D_Flipflop_3.Dn1 a_2780_586# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.225 ps=1.45 w=1 l=0.15
+X77 a_1284_182# D_Flipflop_1.Dn1 D_Flipflop_3.VN D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.15 pd=1.3 as=0.5 ps=3 w=1 l=0.15
+X78 D_Flipflop_3.VN a_1374_182# a_1374_586# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X79 D_Flipflop_3.Q D_Flipflop_3.CLK a_4006_1108# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.15 ps=1.3 w=1 l=0.15
+X80 D_Flipflop_3.VP D_Flipflop_1.Dn1 D_Flipflop_0.Q D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X81 D_Flipflop_3.VN a_3574_586# a_3874_586# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.45 as=0.5 ps=3 w=1 l=0.15
+X82 a_3484_586# D_Flipflop_2.Q D_Flipflop_3.VN D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.15 pd=1.3 as=0.5 ps=3 w=1 l=0.15
+X83 a_3574_182# a_3574_586# a_3354_1516# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.9 as=0.225 ps=1.45 w=1 l=0.15
+X84 a_252_586# a_252_182# a_32_1106# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.9 as=0.225 ps=1.45 w=1 l=0.15
+X85 a_1374_586# D_Flipflop_3.CLK a_1284_586# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.15 ps=1.3 w=1 l=0.15
+X86 a_4006_1518# a_3574_182# D_Flipflop_3.VP D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.15 pd=1.3 as=0.5 ps=3 w=1 l=0.15
+X87 a_1154_1106# D_Flipflop_3.CLK D_Flipflop_3.VP D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.45 as=0.225 ps=1.45 w=1 l=0.15
+X88 a_684_1108# a_252_586# D_Flipflop_3.VP D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.15 pd=1.3 as=0.5 ps=3 w=1 l=0.15
+X89 D_Flipflop_3.VN a_1374_586# a_1674_586# D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.45 as=0.5 ps=3 w=1 l=0.15
+X90 a_1284_586# D_Flipflop_0.Q D_Flipflop_3.VN D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.15 pd=1.3 as=0.5 ps=3 w=1 l=0.15
+X91 a_2912_1518# a_2480_182# D_Flipflop_3.VP D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.15 pd=1.3 as=0.5 ps=3 w=1 l=0.15
+X92 D_Flipflop_3.VP D_Flipflop_2.Q D_Flipflop_3.Dn1 D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X93 D_Flipflop_0.Q D_Flipflop_3.CLK a_684_1108# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.15 ps=1.3 w=1 l=0.15
+X94 a_1674_182# D_Flipflop_3.CLK D_Flipflop_3.VN D_Flipflop_3.VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.45 as=0.225 ps=1.45 w=1 l=0.15
+X95 D_Flipflop_3.Dn1 D_Flipflop_3.CLK a_2912_1518# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.15 ps=1.3 w=1 l=0.15
+X96 D_Flipflop_3.VP D_Flipflop_0.Dn1 a_32_1516# D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.225 pd=1.45 as=0.5 ps=3 w=1 l=0.15
+X97 D_Flipflop_3.VP D_Flipflop_2.Dn1 D_Flipflop_1.Q D_Flipflop_3.VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+C0 D_Flipflop_3.CLK a_1674_182# 0.069454f
+C1 a_2260_1106# a_2480_586# 0.119467f
+C2 D_Flipflop_0.Q D_Flipflop_3.CLK 0.22303f
+C3 a_4006_1108# a_3874_586# 0.001766f
+C4 a_1284_586# a_1154_1106# 0.001824f
+C5 a_3874_182# a_3874_586# 0.00526f
+C6 D_Flipflop_3.VP a_1154_1106# 0.452571f
+C7 D_Flipflop_2.Q a_2780_586# 0.108165f
+C8 a_32_1516# D_Flipflop_0.Q 0.005326f
+C9 a_1284_586# D_Flipflop_3.VP 5.17e-20
+C10 D_Flipflop_1.Q D_Flipflop_2.Dn1 0.415337f
+C11 D_Flipflop_3.CLK a_552_586# 0.030607f
+C12 D_Flipflop_3.CLK a_1374_586# 0.287013f
+C13 a_3574_182# a_3874_586# 0.002583f
+C14 a_1374_182# a_1154_1106# 0.020432f
+C15 D_Flipflop_3.VP a_1374_182# 0.618214f
+C16 D_Flipflop_3.Dn1 D_Flipflop_3.CLK 0.173673f
+C17 D_Flipflop_3.VP D_Flipflop_3.Qb1 0.539755f
+C18 a_252_182# a_32_1106# 0.020432f
+C19 a_3354_1516# D_Flipflop_3.VP 0.471858f
+C20 a_2480_586# D_Flipflop_3.CLK 0.28702f
+C21 a_1674_586# D_Flipflop_1.Q 0.108165f
+C22 D_Flipflop_3.CLK a_3574_586# 0.287002f
+C23 a_2390_586# D_Flipflop_1.Q 1.34e-19
+C24 D_Flipflop_1.Q a_1674_182# 0.031455f
+C25 a_n346_546# a_32_1106# 0.048451f
+C26 D_Flipflop_0.Q a_684_1518# 0.013673f
+C27 a_1674_586# D_Flipflop_2.Dn1 0.012623f
+C28 a_1806_1518# a_1154_1516# 4.45e-20
+C29 D_Flipflop_0.Q D_Flipflop_1.Q 0.002267f
+C30 D_Flipflop_2.Q a_2912_1108# 0.012955f
+C31 D_Flipflop_2.Dn1 a_1674_182# 0.069951f
+C32 D_Flipflop_2.Q D_Flipflop_3.Dn1 0.415284f
+C33 a_2480_182# a_2780_182# 0.026822f
+C34 a_552_586# a_684_1518# 1.97e-19
+C35 D_Flipflop_1.Q a_1374_586# 0.027762f
+C36 a_2480_586# D_Flipflop_2.Q 0.027762f
+C37 D_Flipflop_3.VP a_1806_1108# 0.015318f
+C38 a_3574_586# a_4006_1108# 1.21e-19
+C39 a_3574_586# a_3874_182# 0.006884f
+C40 a_2480_182# D_Flipflop_3.VP 0.61821f
+C41 D_Flipflop_2.Q a_3574_586# 0.028009f
+C42 a_1674_586# a_1674_182# 0.00526f
+C43 D_Flipflop_2.Dn1 a_1374_586# 0.001091f
+C44 D_Flipflop_3.VP a_162_586# 5.17e-20
+C45 D_Flipflop_3.VP a_32_1106# 0.455316f
+C46 a_1674_182# a_2390_182# 2.32e-20
+C47 a_252_182# a_252_586# 0.430733f
+C48 a_2480_586# D_Flipflop_1.Q 0.028177f
+C49 a_2912_1108# a_2780_586# 0.001766f
+C50 a_3574_586# a_3574_182# 0.430733f
+C51 D_Flipflop_3.VP a_3484_586# 5.17e-20
+C52 a_1154_1106# a_1284_182# 1.72e-19
+C53 D_Flipflop_3.Dn1 a_2780_586# 0.012623f
+C54 a_684_1108# D_Flipflop_3.VP 0.015318f
+C55 a_2480_586# D_Flipflop_2.Dn1 0.016236f
+C56 a_1674_586# a_1374_586# 0.056134f
+C57 a_2480_586# a_2780_586# 0.056134f
+C58 a_n346_546# D_Flipflop_1.Dn1 6.01e-20
+C59 a_n346_546# a_252_586# 0.022255f
+C60 D_Flipflop_3.VP a_3354_1106# 0.452801f
+C61 a_1374_586# a_1674_182# 0.006884f
+C62 a_552_182# a_1284_182# 2.18e-20
+C63 D_Flipflop_0.Dn1 a_252_182# 3.76e-20
+C64 a_3574_586# a_3874_586# 0.056134f
+C65 D_Flipflop_0.Q a_552_586# 0.108165f
+C66 D_Flipflop_0.Q a_1374_586# 0.027727f
+C67 a_3574_586# a_3484_182# 0.014164f
+C68 a_2390_586# a_2480_586# 0.013456f
+C69 a_2480_586# a_1674_182# 0.004079f
+C70 a_2480_586# a_2390_182# 0.014164f
+C71 a_3354_1516# a_3354_1106# 0.006612f
+C72 a_n346_546# D_Flipflop_0.Dn1 0.146369f
+C73 a_2260_1516# D_Flipflop_3.VP 0.471596f
+C74 a_252_182# D_Flipflop_3.CLK 0.174517f
+C75 D_Flipflop_3.CLK D_Flipflop_3.Q 0.122408f
+C76 D_Flipflop_1.Dn1 a_1154_1106# 0.002451f
+C77 D_Flipflop_3.VP a_252_586# 0.575299f
+C78 D_Flipflop_1.Dn1 D_Flipflop_3.VP 0.793884f
+C79 a_1154_1106# a_1154_1516# 0.006612f
+C80 D_Flipflop_3.VP a_1154_1516# 0.471494f
+C81 a_1806_1518# D_Flipflop_1.Q 0.013673f
+C82 a_32_1516# a_252_182# 0.070087f
+C83 a_2480_586# a_2912_1108# 1.21e-19
+C84 a_2480_586# a_1374_586# 0.001132f
+C85 a_252_586# a_552_182# 0.006884f
+C86 a_32_1106# a_162_586# 0.001824f
+C87 D_Flipflop_1.Dn1 a_552_182# 0.069943f
+C88 a_2480_586# D_Flipflop_3.Dn1 0.001092f
+C89 a_n346_546# D_Flipflop_3.CLK 0.100902f
+C90 a_2260_1106# D_Flipflop_3.VP 0.452628f
+C91 a_4006_1518# a_3874_586# 1.97e-19
+C92 a_1374_182# a_1154_1516# 0.070087f
+C93 D_Flipflop_3.Dn1 a_3574_586# 0.01628f
+C94 a_n346_546# a_32_1516# 1.01e-19
+C95 D_Flipflop_3.Q a_4006_1108# 0.012955f
+C96 D_Flipflop_0.Dn1 D_Flipflop_3.VP 0.822691f
+C97 D_Flipflop_3.Q a_3874_182# 0.031455f
+C98 a_2480_586# a_3574_586# 0.001145f
+C99 D_Flipflop_2.Q D_Flipflop_3.Q 0.002327f
+C100 D_Flipflop_3.CLK a_2780_182# 0.069456f
+C101 a_1674_586# a_1806_1518# 1.97e-19
+C102 D_Flipflop_3.Q a_3574_182# 0.016549f
+C103 a_3354_1106# a_3484_586# 0.001824f
+C104 D_Flipflop_3.CLK a_1154_1106# 0.034534f
+C105 D_Flipflop_3.CLK D_Flipflop_3.VP 1.40583f
+C106 a_2912_1518# D_Flipflop_3.VP 0.007237f
+C107 a_32_1516# D_Flipflop_3.VP 0.469131f
+C108 a_2260_1516# a_2480_182# 0.070087f
+C109 D_Flipflop_3.CLK a_1374_182# 0.174517f
+C110 D_Flipflop_3.CLK a_552_182# 0.069451f
+C111 D_Flipflop_3.CLK D_Flipflop_3.Qb1 0.123214f
+C112 D_Flipflop_3.Q a_3874_586# 0.108165f
+C113 a_32_1106# a_162_182# 1.72e-19
+C114 a_32_1106# a_252_586# 0.119467f
+C115 a_252_586# a_162_586# 0.013456f
+C116 D_Flipflop_2.Q a_2780_182# 0.031455f
+C117 a_3354_1516# D_Flipflop_3.CLK 0.019153f
+C118 a_2260_1106# a_2480_182# 0.020432f
+C119 D_Flipflop_3.VP a_4006_1108# 0.015318f
+C120 a_684_1108# a_252_586# 1.21e-19
+C121 D_Flipflop_2.Q D_Flipflop_3.VP 0.812777f
+C122 D_Flipflop_0.Q a_252_182# 0.016586f
+C123 D_Flipflop_3.VP a_3574_182# 0.617843f
+C124 D_Flipflop_0.Dn1 a_162_586# 4.1e-20
+C125 D_Flipflop_0.Dn1 a_32_1106# 0.006318f
+C126 D_Flipflop_3.Qb1 a_3874_182# 0.069832f
+C127 D_Flipflop_3.VP a_684_1518# 0.007237f
+C128 D_Flipflop_1.Q D_Flipflop_3.VP 0.818049f
+C129 a_2780_182# a_2780_586# 0.00526f
+C130 a_252_182# a_552_586# 0.002583f
+C131 a_3354_1516# D_Flipflop_2.Q 0.006622f
+C132 a_n346_546# D_Flipflop_0.Q 7.53e-20
+C133 D_Flipflop_2.Dn1 D_Flipflop_3.VP 0.78451f
+C134 a_2780_182# a_3484_182# 2.44e-20
+C135 D_Flipflop_1.Q a_1374_182# 0.016587f
+C136 a_2480_182# D_Flipflop_3.CLK 0.174517f
+C137 a_3354_1516# a_3574_182# 0.070087f
+C138 D_Flipflop_3.VP a_2780_586# 0.006034f
+C139 D_Flipflop_3.VP a_3874_586# 0.005587f
+C140 D_Flipflop_3.CLK a_32_1106# 0.034534f
+C141 a_252_586# a_162_182# 0.014164f
+C142 a_n346_546# a_552_586# 5.41e-21
+C143 D_Flipflop_1.Dn1 a_252_586# 0.00109f
+C144 a_32_1516# a_32_1106# 0.006612f
+C145 a_1154_1516# a_252_586# 9.9e-22
+C146 D_Flipflop_3.Q a_3574_586# 0.027761f
+C147 D_Flipflop_1.Dn1 a_1154_1516# 0.027107f
+C148 a_1674_586# D_Flipflop_3.VP 0.006034f
+C149 D_Flipflop_3.Qb1 a_3874_586# 0.012623f
+C150 a_2390_586# D_Flipflop_3.VP 5.17e-20
+C151 a_2260_1106# a_2260_1516# 0.006612f
+C152 D_Flipflop_0.Q a_1154_1106# 0.054857f
+C153 a_1284_586# D_Flipflop_0.Q 1.24e-19
+C154 D_Flipflop_0.Q D_Flipflop_3.VP 0.820687f
+C155 D_Flipflop_3.CLK a_3354_1106# 0.034534f
+C156 a_1674_586# a_1374_182# 0.002583f
+C157 D_Flipflop_2.Q a_2480_182# 0.016587f
+C158 a_1374_182# a_1674_182# 0.026822f
+C159 D_Flipflop_0.Dn1 a_252_586# 0.019447f
+C160 D_Flipflop_3.Dn1 a_2780_182# 0.069958f
+C161 D_Flipflop_0.Q a_1374_182# 9.39e-19
+C162 D_Flipflop_0.Q a_552_182# 0.031455f
+C163 a_1154_1106# a_1374_586# 0.119467f
+C164 D_Flipflop_1.Q a_1806_1108# 0.012955f
+C165 a_1284_586# a_1374_586# 0.013456f
+C166 D_Flipflop_3.VP a_552_586# 0.006034f
+C167 D_Flipflop_3.VP a_2912_1108# 0.015318f
+C168 D_Flipflop_3.VP a_1374_586# 0.575264f
+C169 D_Flipflop_2.Q a_3484_586# 1.43e-19
+C170 a_2480_182# D_Flipflop_1.Q 9.59e-19
+C171 a_2480_586# a_2780_182# 0.006884f
+C172 D_Flipflop_3.Dn1 D_Flipflop_3.VP 0.773992f
+C173 a_3574_586# a_2780_182# 0.004188f
+C174 a_2260_1516# D_Flipflop_3.CLK 0.019147f
+C175 a_552_586# a_552_182# 0.00526f
+C176 a_1374_182# a_1374_586# 0.430733f
+C177 a_4006_1518# D_Flipflop_3.Q 0.013673f
+C178 a_1374_586# a_552_182# 0.003943f
+C179 a_2480_586# D_Flipflop_3.VP 0.575262f
+C180 D_Flipflop_1.Dn1 D_Flipflop_3.CLK 0.172851f
+C181 D_Flipflop_3.CLK a_252_586# 0.286902f
+C182 a_2912_1518# a_2260_1516# 4.45e-20
+C183 D_Flipflop_2.Q a_3354_1106# 0.055689f
+C184 a_2480_182# a_2780_586# 0.002583f
+C185 D_Flipflop_3.CLK a_1154_1516# 0.01914f
+C186 D_Flipflop_3.VP a_3574_586# 0.568193f
+C187 a_32_1516# a_252_586# 0.028069f
+C188 a_3354_1106# a_3574_182# 0.020432f
+C189 a_2260_1106# D_Flipflop_3.CLK 0.034534f
+C190 a_3354_1516# D_Flipflop_3.Dn1 0.02713f
+C191 a_1674_586# a_1806_1108# 0.001766f
+C192 D_Flipflop_3.Qb1 a_3574_586# 0.001053f
+C193 a_3354_1516# a_2480_586# 1.06e-21
+C194 D_Flipflop_0.Dn1 D_Flipflop_3.CLK 0.045893f
+C195 a_3354_1516# a_3574_586# 0.028069f
+C196 D_Flipflop_2.Q a_2260_1516# 0.005326f
+C197 a_32_1516# D_Flipflop_0.Dn1 0.026932f
+C198 a_3354_1106# a_3484_182# 1.72e-19
+C199 a_1374_586# a_1806_1108# 1.21e-19
+C200 a_2260_1516# D_Flipflop_1.Q 0.006402f
+C201 a_684_1108# D_Flipflop_0.Q 0.012955f
+C202 a_4006_1518# D_Flipflop_3.VP 0.007237f
+C203 D_Flipflop_1.Q a_1154_1516# 0.005326f
+C204 a_2260_1516# D_Flipflop_2.Dn1 0.027215f
+C205 a_1806_1518# D_Flipflop_3.VP 0.007237f
+C206 a_32_1516# D_Flipflop_3.CLK 0.019039f
+C207 a_2480_586# a_2480_182# 0.430733f
+C208 a_n346_546# a_252_182# 9.25e-19
+C209 a_2260_1106# D_Flipflop_1.Q 0.055471f
+C210 a_684_1108# a_552_586# 0.001766f
+C211 a_1374_586# a_1284_182# 0.014164f
+C212 a_2260_1106# D_Flipflop_2.Dn1 0.002496f
+C213 a_3354_1516# a_4006_1518# 4.45e-20
+C214 D_Flipflop_3.CLK a_3874_182# 0.069404f
+C215 D_Flipflop_3.Dn1 a_3354_1106# 0.002527f
+C216 D_Flipflop_2.Q D_Flipflop_3.CLK 0.223051f
+C217 a_3574_586# a_3484_586# 0.013456f
+C218 D_Flipflop_2.Q a_2912_1518# 0.013673f
+C219 D_Flipflop_0.Q a_252_586# 0.027762f
+C220 D_Flipflop_1.Dn1 D_Flipflop_0.Q 0.414223f
+C221 D_Flipflop_3.CLK a_3574_182# 0.174517f
+C222 D_Flipflop_0.Q a_1154_1516# 0.006101f
+C223 a_2390_586# a_2260_1106# 0.001824f
+C224 D_Flipflop_1.Q D_Flipflop_3.CLK 0.223122f
+C225 a_252_182# D_Flipflop_3.VP 0.618257f
+C226 D_Flipflop_3.VP D_Flipflop_3.Q 0.698695f
+C227 a_3354_1106# a_3574_586# 0.119467f
+C228 a_2260_1106# a_2390_182# 1.72e-19
+C229 a_32_1516# a_684_1518# 4.45e-20
+C230 a_2260_1516# a_1374_586# 1.03e-21
+C231 D_Flipflop_2.Dn1 D_Flipflop_3.CLK 0.173375f
+C232 D_Flipflop_1.Dn1 a_552_586# 0.012623f
+C233 a_552_586# a_252_586# 0.056134f
+C234 a_1374_586# a_252_586# 0.001114f
+C235 D_Flipflop_1.Dn1 a_1374_586# 0.016183f
+C236 a_252_182# a_552_182# 0.026822f
+C237 a_1374_586# a_1154_1516# 0.028069f
+C238 D_Flipflop_3.Qb1 D_Flipflop_3.Q 0.371686f
+C239 D_Flipflop_3.CLK a_2780_586# 0.030607f
+C240 a_n346_546# D_Flipflop_3.VP 0.282836f
+C241 D_Flipflop_3.CLK a_3874_586# 0.030607f
+C242 a_2912_1518# a_2780_586# 1.97e-19
+C243 a_2480_586# a_2260_1516# 0.028069f
+C244 a_3354_1516# D_Flipflop_3.Q 0.005326f
+C245 a_3574_182# a_3874_182# 0.026822f
+C246 D_Flipflop_2.Q a_3574_182# 9.75e-19
+C247 a_1674_586# D_Flipflop_3.CLK 0.030607f
+C248 D_Flipflop_2.Q D_Flipflop_1.Q 0.002305f
+C249 a_3874_182# D_Flipflop_3.VN 0.516968f
+C250 a_3484_182# D_Flipflop_3.VN 0.006089f
+C251 a_2780_182# D_Flipflop_3.VN 0.511625f
+C252 a_2390_182# D_Flipflop_3.VN 0.006089f
+C253 a_1674_182# D_Flipflop_3.VN 0.511759f
+C254 a_1284_182# D_Flipflop_3.VN 0.006089f
+C255 a_552_182# D_Flipflop_3.VN 0.51194f
+C256 a_162_182# D_Flipflop_3.VN 0.006089f
+C257 a_3874_586# D_Flipflop_3.VN 0.471744f
+C258 a_3484_586# D_Flipflop_3.VN 0.014683f
+C259 a_2780_586# D_Flipflop_3.VN 0.471297f
+C260 a_2390_586# D_Flipflop_3.VN 0.014683f
+C261 a_1674_586# D_Flipflop_3.VN 0.471297f
+C262 a_1284_586# D_Flipflop_3.VN 0.014683f
+C263 a_552_586# D_Flipflop_3.VN 0.471297f
+C264 a_162_586# D_Flipflop_3.VN 0.014683f
+C265 a_3354_1106# D_Flipflop_3.VN 0.029426f
+C266 a_2260_1106# D_Flipflop_3.VN 0.029348f
+C267 D_Flipflop_3.Qb1 D_Flipflop_3.VN 0.662579f
+C268 a_1154_1106# D_Flipflop_3.VN 0.029483f
+C269 a_3354_1516# D_Flipflop_3.VN 0.05777f
+C270 a_3574_182# D_Flipflop_3.VN 0.938904f
+C271 a_3574_586# D_Flipflop_3.VN 1.1254f
+C272 D_Flipflop_3.Dn1 D_Flipflop_3.VN 0.868032f
+C273 a_32_1106# D_Flipflop_3.VN 0.029849f
+C274 a_2260_1516# D_Flipflop_3.VN 0.05777f
+C275 a_2480_182# D_Flipflop_3.VN 0.938506f
+C276 a_2480_586# D_Flipflop_3.VN 1.11676f
+C277 D_Flipflop_2.Dn1 D_Flipflop_3.VN 0.877628f
+C278 a_n346_546# D_Flipflop_3.VN 0.818235f
+C279 a_1154_1516# D_Flipflop_3.VN 0.05777f
+C280 a_1374_182# D_Flipflop_3.VN 0.938506f
+C281 a_1374_586# D_Flipflop_3.VN 1.11743f
+C282 D_Flipflop_1.Dn1 D_Flipflop_3.VN 0.891025f
+C283 a_32_1516# D_Flipflop_3.VN 0.072875f
+C284 a_252_182# D_Flipflop_3.VN 0.938573f
+C285 a_252_586# D_Flipflop_3.VN 1.12793f
+C286 D_Flipflop_3.CLK D_Flipflop_3.VN 6.43801f
+C287 D_Flipflop_0.Dn1 D_Flipflop_3.VN 1.18666f
+C288 D_Flipflop_3.Q D_Flipflop_3.VN 0.645895f
+C289 D_Flipflop_2.Q D_Flipflop_3.VN 0.913901f
+C290 D_Flipflop_1.Q D_Flipflop_3.VN 0.929812f
+C291 D_Flipflop_0.Q D_Flipflop_3.VN 0.938788f
+C292 D_Flipflop_3.VP D_Flipflop_3.VN 12.9595f
+.ends
+

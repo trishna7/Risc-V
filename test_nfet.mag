@@ -1,0 +1,16 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1718272037
+<< error_p >>
+rect 129 429 187 435
+rect 129 395 141 429
+rect 129 389 187 395
+rect 129 119 187 125
+rect 129 85 141 119
+rect 129 79 187 85
+use sky130_fd_pr__nfet_01v8_648S5X  sky130_fd_pr__nfet_01v8_648S5X_0 /home/apn
+timestamp 1718263934
+transform 1 0 158 0 1 257
+box -211 -310 211 310
+<< end >>

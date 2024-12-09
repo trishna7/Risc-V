@@ -1,0 +1,67 @@
+* NGSPICE file created from fedevel_inverter_parax.ext - technology: sky130A
+
+.subckt fedevel_inverter_parax vcc Y A vss
+X0 Y.t0 A.t0 vss.t1 vss.t0 sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X1 Y.t1 A.t1 vcc.t1 vcc.t0 sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.35
+R0 A.n0 A.t0 192.184
+R1 A.n1 A.t1 138.412
+R2 A A.n0 3.1255
+R3 A A.n3 3.1255
+R4 A.n3 A.n2 0.46925
+R5 A.n3 A 0.2505
+R6 A.n1 A.n0 0.0806282
+R7 A.n2 A 0.0298478
+R8 A.n2 A.n1 0.0216957
+R9 vss.n5 vss.n2 2306.06
+R10 vss.n7 vss.n2 2306.06
+R11 vss.n5 vss.n3 2306.06
+R12 vss.n7 vss.n3 2306.06
+R13 vss.n6 vss.n5 1185.15
+R14 vss.n7 vss.n6 1185.15
+R15 vss.n2 vss.n1 292.5
+R16 vss.t0 vss.n2 292.5
+R17 vss.n3 vss.n0 292.5
+R18 vss.t0 vss.n3 292.5
+R19 vss.n8 vss.n1 149.835
+R20 vss.n4 vss.n1 149.835
+R21 vss.n4 vss.n0 145.601
+R22 vss.n9 vss.n8 143.002
+R23 vss.n8 vss.n7 117.001
+R24 vss.n5 vss.n4 117.001
+R25 vss.n10 vss.t1 93.6365
+R26 vss.n6 vss.t0 9.05374
+R27 vss.n10 vss.n9 5.54075
+R28 vss.n9 vss.n0 1.9205
+R29 vss.n11 vss 0.216017
+R30 vss vss.n11 0.0331577
+R31 vss.n11 vss.n10 0.0252748
+R32 Y Y.t1 229.004
+R33 Y Y.t0 84.2735
+R34 vcc.n8 vcc.n7 1507.06
+R35 vcc.n5 vcc.n3 1507.06
+R36 vcc.n3 vcc.n2 239.144
+R37 vcc.n7 vcc.n6 239.144
+R38 vcc.n11 vcc.t1 237.718
+R39 vcc.n4 vcc.n1 160.754
+R40 vcc.n4 vcc.n0 160.754
+R41 vcc.n9 vcc.n1 152.112
+R42 vcc.n10 vcc.n0 151.649
+R43 vcc.n5 vcc.n4 61.6672
+R44 vcc.n9 vcc.n8 61.6672
+R45 vcc.n8 vcc.n2 49.8428
+R46 vcc.n6 vcc.n5 49.8428
+R47 vcc.n7 vcc.n1 30.8338
+R48 vcc.n3 vcc.n0 30.8338
+R49 vcc.n6 vcc.t0 9.78642
+R50 vcc.t0 vcc.n2 9.78642
+R51 vcc.n11 vcc.n10 3.38259
+R52 vcc vcc.n11 0.900838
+R53 vcc.n10 vcc.n9 0.291409
+C0 Y A 0.063315f
+C1 vcc A 0.818229f
+C2 Y vcc 0.281179f
+C3 Y vss 1.00759f
+C4 A vss 1.6085f
+C5 vcc vss 1.81865f
+.ends
+

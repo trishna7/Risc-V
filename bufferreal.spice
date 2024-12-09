@@ -1,0 +1,12 @@
+* SPICE3 file created from bufferreal.ext - technology: sky130A
+
+.subckt inverter A Y VP VN
+X0 Y A VN VN sky130_fd_pr__nfet_01v8 ad=0.575 pd=3.3 as=0.575 ps=3.3 w=1.15 l=0.15
+X1 Y A VP VP sky130_fd_pr__pfet_01v8 ad=0.575 pd=3.3 as=0.575 ps=3.3 w=1.15 l=0.15
+.ends
+
+.subckt bufferreal
+Xinverter_0 A inverter_1/A inverter_1/VP VSUBS inverter
+Xinverter_1 inverter_1/A inverter_1/Y inverter_1/VP VSUBS inverter
+.ends
+

@@ -1,0 +1,240 @@
+Completed: ngspice -b -r /home/apn/.xschem/simulations/NANN2sim.raw /home/apn/.xschem/simulations/NANN2sim.spice
+stderr:
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+
+Warning: Nesting of subcircuits with parameters is only marginally supported!
+
+data:
+
+No compatibility mode selected!
+
+
+Circuit: ** sch_path: /home/apn/test_xschem_sky130/nann2sim.sch
+
+binary raw file "/home/apn/.xschem/simulations/NANN2sim.raw"
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Total analysis time (seconds) = 0
+
+Total elapsed time (seconds) = 0.867 
+
+Total DRAM available = 15839.625 MB.
+DRAM currently available = 13946.535 MB.
+Maximum ngspice program size =  237.422 MB.
+Current ngspice program size =  229.281 MB.
+
+Shared ngspice pages =   10.062 MB.
+Text (code) pages =    5.316 MB.
+Stack = 0 bytes.
+Library pages =  219.477 MB.
+
