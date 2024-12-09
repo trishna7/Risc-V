@@ -1,0 +1,15 @@
+** sch_path: /home/apn/test_xschem_sky130/NANN2sim.sch
+.subckt NANN2sim
+
+A A GND pwl=0n 0 10n 1.8
+B B GND pwl=0n 0 10n 1.8
+x2 Y A B VCC VSS VCC VSS AND2
+**** begin user architecture code
+.lib /usr/local/share/pdk/sky130B/libs.tech/combined/sky130.lib.spice tt
+
+blabla
+
+**** end user architecture code
+.ends
+.GLOBAL GND
+.end

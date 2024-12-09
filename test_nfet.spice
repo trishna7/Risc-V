@@ -1,0 +1,3 @@
+* SPICE3 file created from test_nfet.ext - technology: sky130A
+
+X0 sky130_fd_pr__nfet_01v8_648S5X_0/a_15_n100# sky130_fd_pr__nfet_01v8_648S5X_0/a_n33_n188# sky130_fd_pr__nfet_01v8_648S5X_0/a_n73_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15

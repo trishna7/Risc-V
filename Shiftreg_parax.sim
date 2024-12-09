@@ -1,0 +1,170 @@
+| units: 500000 tech: sky130A format: MIT
+x a_252_586# a_252_182# D_Flipflop_3.VN D_Flipflop_3.VN s=10000,300 d=20000,600 l=30 w=200 x=352 y=182 sky130_fd_pr__nfet_01v8
+x a_1374_182# a_1154_1106# a_1374_586# D_Flipflop_3.VP s=9000,290 d=18000,580 l=30 w=200 x=1494 y=1106 sky130_fd_pr__pfet_01v8
+x D_Flipflop_2.Q a_3354_1106# D_Flipflop_3.VP D_Flipflop_3.VP s=20000,600 d=9000,290 l=30 w=200 x=3454 y=1106 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.Q a_3874_182# D_Flipflop_3.Qb1 D_Flipflop_3.VN s=9000,290 d=18000,580 l=30 w=200 x=4214 y=182 sky130_fd_pr__nfet_01v8
+x a_1374_586# D_Flipflop_3.VP a_1806_1108# D_Flipflop_3.VP s=20000,600 d=6000,260 l=30 w=200 x=1776 y=1108 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK D_Flipflop_3.VN a_1674_586# D_Flipflop_3.VN s=9000,290 d=9000,290 l=30 w=200 x=1894 y=586 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.CLK a_162_182# a_252_182# D_Flipflop_3.VN s=6000,260 d=10000,300 l=30 w=200 x=222 y=182 sky130_fd_pr__nfet_01v8
+x D_Flipflop_1.Q a_2260_1106# D_Flipflop_3.VP D_Flipflop_3.VP s=20000,600 d=9000,290 l=30 w=200 x=2360 y=1106 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.Q D_Flipflop_3.Qb1 D_Flipflop_3.VP D_Flipflop_3.VP s=10000,300 d=20000,600 l=30 w=200 x=4196 y=1518 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK a_1806_1108# D_Flipflop_1.Q D_Flipflop_3.VP s=6000,260 d=10000,300 l=30 w=200 x=1866 y=1108 sky130_fd_pr__pfet_01v8
+x a_252_182# a_552_182# D_Flipflop_3.VN D_Flipflop_3.VN s=20000,600 d=9000,290 l=30 w=200 x=652 y=182 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.CLK D_Flipflop_3.VP a_32_1516# D_Flipflop_3.VP s=9000,290 d=9000,290 l=30 w=200 x=252 y=1516 sky130_fd_pr__pfet_01v8
+x D_Flipflop_0.Dn1 D_Flipflop_3.VN a_162_182# D_Flipflop_3.VN s=20000,600 d=6000,260 l=30 w=200 x=132 y=182 sky130_fd_pr__nfet_01v8
+x a_2480_586# a_2480_182# D_Flipflop_3.VN D_Flipflop_3.VN s=10000,300 d=20000,600 l=30 w=200 x=2580 y=182 sky130_fd_pr__nfet_01v8
+x D_Flipflop_1.Q a_1674_182# D_Flipflop_2.Dn1 D_Flipflop_3.VN s=9000,290 d=18000,580 l=30 w=200 x=2014 y=182 sky130_fd_pr__nfet_01v8
+x a_252_182# a_252_586# D_Flipflop_3.VN D_Flipflop_3.VN s=10000,300 d=20000,600 l=30 w=200 x=352 y=586 sky130_fd_pr__nfet_01v8
+x a_2480_182# a_2260_1106# a_2480_586# D_Flipflop_3.VP s=9000,290 d=18000,580 l=30 w=200 x=2600 y=1106 sky130_fd_pr__pfet_01v8
+x D_Flipflop_1.Dn1 a_1154_1516# D_Flipflop_3.VP D_Flipflop_3.VP s=20000,600 d=9000,290 l=30 w=200 x=1254 y=1516 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.Qb1 a_3874_586# D_Flipflop_3.Q D_Flipflop_3.VN s=9000,290 d=18000,580 l=30 w=200 x=4214 y=586 sky130_fd_pr__nfet_01v8
+x a_n346_546# D_Flipflop_0.Dn1 D_Flipflop_3.VP D_Flipflop_3.VP s=20000,600 d=20000,600 l=30 w=200 x=-345 y=1104 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK D_Flipflop_3.VP a_3354_1106# D_Flipflop_3.VP s=9000,290 d=9000,290 l=30 w=200 x=3574 y=1106 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK a_162_586# a_252_586# D_Flipflop_3.VN s=6000,260 d=10000,300 l=30 w=200 x=222 y=586 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.CLK a_2390_182# a_2480_182# D_Flipflop_3.VN s=6000,260 d=10000,300 l=30 w=200 x=2450 y=182 sky130_fd_pr__nfet_01v8
+x D_Flipflop_0.Q D_Flipflop_1.Dn1 D_Flipflop_3.VP D_Flipflop_3.VP s=10000,300 d=20000,600 l=30 w=200 x=874 y=1518 sky130_fd_pr__pfet_01v8
+x a_2480_182# a_2780_182# D_Flipflop_3.VN D_Flipflop_3.VN s=20000,600 d=9000,290 l=30 w=200 x=2880 y=182 sky130_fd_pr__nfet_01v8
+x a_252_586# a_552_586# D_Flipflop_3.VN D_Flipflop_3.VN s=20000,600 d=9000,290 l=30 w=200 x=652 y=586 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.CLK a_4006_1518# D_Flipflop_3.Qb1 D_Flipflop_3.VP s=6000,260 d=10000,300 l=30 w=200 x=4066 y=1518 sky130_fd_pr__pfet_01v8
+x D_Flipflop_2.Dn1 D_Flipflop_3.VN a_2390_182# D_Flipflop_3.VN s=20000,600 d=6000,260 l=30 w=200 x=2360 y=182 sky130_fd_pr__nfet_01v8
+x a_n346_546# D_Flipflop_3.VN a_162_586# D_Flipflop_3.VN s=20000,600 d=6000,260 l=30 w=200 x=132 y=586 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.CLK D_Flipflop_3.VP a_2260_1106# D_Flipflop_3.VP s=9000,290 d=9000,290 l=30 w=200 x=2480 y=1106 sky130_fd_pr__pfet_01v8
+x a_2480_182# a_2480_586# D_Flipflop_3.VN D_Flipflop_3.VN s=10000,300 d=20000,600 l=30 w=200 x=2580 y=586 sky130_fd_pr__nfet_01v8
+x D_Flipflop_2.Dn1 a_1674_586# D_Flipflop_1.Q D_Flipflop_3.VN s=9000,290 d=18000,580 l=30 w=200 x=2014 y=586 sky130_fd_pr__nfet_01v8
+x a_252_586# a_32_1516# a_252_182# D_Flipflop_3.VP s=9000,290 d=18000,580 l=30 w=200 x=372 y=1516 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK D_Flipflop_3.VN a_552_182# D_Flipflop_3.VN s=9000,290 d=9000,290 l=30 w=200 x=772 y=182 sky130_fd_pr__nfet_01v8
+x a_n346_546# D_Flipflop_0.Dn1 D_Flipflop_3.VN D_Flipflop_3.VN s=19600,596 d=20000,600 l=30 w=200 x=-345 y=576 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.CLK D_Flipflop_3.VP a_1154_1516# D_Flipflop_3.VP s=9000,290 d=9000,290 l=30 w=200 x=1374 y=1516 sky130_fd_pr__pfet_01v8
+x a_252_182# D_Flipflop_3.VP a_684_1518# D_Flipflop_3.VP s=20000,600 d=6000,260 l=30 w=200 x=654 y=1518 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK a_2390_586# a_2480_586# D_Flipflop_3.VN s=6000,260 d=10000,300 l=30 w=200 x=2450 y=586 sky130_fd_pr__nfet_01v8
+x a_3574_182# a_3354_1106# a_3574_586# D_Flipflop_3.VP s=9000,290 d=18000,580 l=30 w=200 x=3694 y=1106 sky130_fd_pr__pfet_01v8
+x a_2480_586# a_2780_586# D_Flipflop_3.VN D_Flipflop_3.VN s=20000,600 d=9000,290 l=30 w=200 x=2880 y=586 sky130_fd_pr__nfet_01v8
+x D_Flipflop_1.Q D_Flipflop_3.VN a_2390_586# D_Flipflop_3.VN s=20000,600 d=6000,260 l=30 w=200 x=2360 y=586 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.CLK a_684_1518# D_Flipflop_1.Dn1 D_Flipflop_3.VP s=6000,260 d=10000,300 l=30 w=200 x=744 y=1518 sky130_fd_pr__pfet_01v8
+x a_3574_586# D_Flipflop_3.VP a_4006_1108# D_Flipflop_3.VP s=20000,600 d=6000,260 l=30 w=200 x=3976 y=1108 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK D_Flipflop_3.VN a_552_586# D_Flipflop_3.VN s=9000,290 d=9000,290 l=30 w=200 x=772 y=586 sky130_fd_pr__nfet_01v8
+x D_Flipflop_1.Q D_Flipflop_2.Dn1 D_Flipflop_3.VP D_Flipflop_3.VP s=10000,300 d=20000,600 l=30 w=200 x=1996 y=1518 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK D_Flipflop_3.VN a_2780_182# D_Flipflop_3.VN s=9000,290 d=9000,290 l=30 w=200 x=3000 y=182 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.Dn1 D_Flipflop_2.Q D_Flipflop_3.VP D_Flipflop_3.VP s=10000,300 d=20000,600 l=30 w=200 x=3102 y=1108 sky130_fd_pr__pfet_01v8
+x a_2480_586# D_Flipflop_3.VP a_2912_1108# D_Flipflop_3.VP s=20000,600 d=6000,260 l=30 w=200 x=2882 y=1108 sky130_fd_pr__pfet_01v8
+x a_1374_586# a_1154_1516# a_1374_182# D_Flipflop_3.VP s=9000,290 d=18000,580 l=30 w=200 x=1494 y=1516 sky130_fd_pr__pfet_01v8
+x D_Flipflop_0.Q a_552_182# D_Flipflop_1.Dn1 D_Flipflop_3.VN s=9000,290 d=18000,580 l=30 w=200 x=892 y=182 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.Dn1 a_3354_1516# D_Flipflop_3.VP D_Flipflop_3.VP s=20000,600 d=9000,290 l=30 w=200 x=3454 y=1516 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK a_2912_1108# D_Flipflop_2.Q D_Flipflop_3.VP s=6000,260 d=10000,300 l=30 w=200 x=2972 y=1108 sky130_fd_pr__pfet_01v8
+x a_n346_546# a_32_1106# D_Flipflop_3.VP D_Flipflop_3.VP s=20000,600 d=9000,290 l=30 w=200 x=132 y=1106 sky130_fd_pr__pfet_01v8
+x a_1374_182# D_Flipflop_3.VP a_1806_1518# D_Flipflop_3.VP s=20000,600 d=6000,260 l=30 w=200 x=1776 y=1518 sky130_fd_pr__pfet_01v8
+x D_Flipflop_2.Dn1 a_2260_1516# D_Flipflop_3.VP D_Flipflop_3.VP s=20000,600 d=9000,290 l=30 w=200 x=2360 y=1516 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK D_Flipflop_3.VN a_2780_586# D_Flipflop_3.VN s=9000,290 d=9000,290 l=30 w=200 x=3000 y=586 sky130_fd_pr__nfet_01v8
+x a_3574_586# a_3574_182# D_Flipflop_3.VN D_Flipflop_3.VN s=10000,300 d=20000,600 l=30 w=200 x=3674 y=182 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.CLK a_1806_1518# D_Flipflop_2.Dn1 D_Flipflop_3.VP s=6000,260 d=10000,300 l=30 w=200 x=1866 y=1518 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK D_Flipflop_3.VN a_3874_182# D_Flipflop_3.VN s=9000,290 d=9000,290 l=30 w=200 x=4094 y=182 sky130_fd_pr__nfet_01v8
+x D_Flipflop_1.Dn1 a_552_586# D_Flipflop_0.Q D_Flipflop_3.VN s=9000,290 d=18000,580 l=30 w=200 x=892 y=586 sky130_fd_pr__nfet_01v8
+x a_2480_586# a_2260_1516# a_2480_182# D_Flipflop_3.VP s=9000,290 d=18000,580 l=30 w=200 x=2600 y=1516 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK a_3484_182# a_3574_182# D_Flipflop_3.VN s=6000,260 d=10000,300 l=30 w=200 x=3544 y=182 sky130_fd_pr__nfet_01v8
+x D_Flipflop_2.Q a_2780_182# D_Flipflop_3.Dn1 D_Flipflop_3.VN s=9000,290 d=18000,580 l=30 w=200 x=3120 y=182 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.Qb1 D_Flipflop_3.Q D_Flipflop_3.VP D_Flipflop_3.VP s=10000,300 d=20000,600 l=30 w=200 x=4196 y=1108 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK D_Flipflop_3.VP a_3354_1516# D_Flipflop_3.VP s=9000,290 d=9000,290 l=30 w=200 x=3574 y=1516 sky130_fd_pr__pfet_01v8
+x a_1374_586# a_1374_182# D_Flipflop_3.VN D_Flipflop_3.VN s=10000,300 d=20000,600 l=30 w=200 x=1474 y=182 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.CLK D_Flipflop_3.VP a_32_1106# D_Flipflop_3.VP s=9000,290 d=9000,290 l=30 w=200 x=252 y=1106 sky130_fd_pr__pfet_01v8
+x a_3574_182# a_3874_182# D_Flipflop_3.VN D_Flipflop_3.VN s=20000,600 d=9000,290 l=30 w=200 x=3974 y=182 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.Dn1 D_Flipflop_3.VN a_3484_182# D_Flipflop_3.VN s=20000,600 d=6000,260 l=30 w=200 x=3454 y=182 sky130_fd_pr__nfet_01v8
+x a_3574_182# a_3574_586# D_Flipflop_3.VN D_Flipflop_3.VN s=10000,300 d=20000,600 l=30 w=200 x=3674 y=586 sky130_fd_pr__nfet_01v8
+x D_Flipflop_0.Q a_1154_1106# D_Flipflop_3.VP D_Flipflop_3.VP s=20000,600 d=9000,290 l=30 w=200 x=1254 y=1106 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK D_Flipflop_3.VP a_2260_1516# D_Flipflop_3.VP s=9000,290 d=9000,290 l=30 w=200 x=2480 y=1516 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK a_1284_182# a_1374_182# D_Flipflop_3.VN s=6000,260 d=10000,300 l=30 w=200 x=1344 y=182 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.CLK D_Flipflop_3.VN a_3874_586# D_Flipflop_3.VN s=9000,290 d=9000,290 l=30 w=200 x=4094 y=586 sky130_fd_pr__nfet_01v8
+x a_1374_182# a_1674_182# D_Flipflop_3.VN D_Flipflop_3.VN s=20000,600 d=9000,290 l=30 w=200 x=1774 y=182 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.CLK a_3484_586# a_3574_586# D_Flipflop_3.VN s=6000,260 d=10000,300 l=30 w=200 x=3544 y=586 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.Dn1 a_2780_586# D_Flipflop_2.Q D_Flipflop_3.VN s=9000,290 d=18000,580 l=30 w=200 x=3120 y=586 sky130_fd_pr__nfet_01v8
+x D_Flipflop_1.Dn1 D_Flipflop_3.VN a_1284_182# D_Flipflop_3.VN s=20000,600 d=6000,260 l=30 w=200 x=1254 y=182 sky130_fd_pr__nfet_01v8
+x a_1374_182# a_1374_586# D_Flipflop_3.VN D_Flipflop_3.VN s=10000,300 d=20000,600 l=30 w=200 x=1474 y=586 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.CLK a_4006_1108# D_Flipflop_3.Q D_Flipflop_3.VP s=6000,260 d=10000,300 l=30 w=200 x=4066 y=1108 sky130_fd_pr__pfet_01v8
+x D_Flipflop_1.Dn1 D_Flipflop_0.Q D_Flipflop_3.VP D_Flipflop_3.VP s=10000,300 d=20000,600 l=30 w=200 x=874 y=1108 sky130_fd_pr__pfet_01v8
+x a_3574_586# a_3874_586# D_Flipflop_3.VN D_Flipflop_3.VN s=20000,600 d=9000,290 l=30 w=200 x=3974 y=586 sky130_fd_pr__nfet_01v8
+x D_Flipflop_2.Q D_Flipflop_3.VN a_3484_586# D_Flipflop_3.VN s=20000,600 d=6000,260 l=30 w=200 x=3454 y=586 sky130_fd_pr__nfet_01v8
+x a_3574_586# a_3354_1516# a_3574_182# D_Flipflop_3.VP s=9000,290 d=18000,580 l=30 w=200 x=3694 y=1516 sky130_fd_pr__pfet_01v8
+x a_252_182# a_32_1106# a_252_586# D_Flipflop_3.VP s=9000,290 d=18000,580 l=30 w=200 x=372 y=1106 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK a_1284_586# a_1374_586# D_Flipflop_3.VN s=6000,260 d=10000,300 l=30 w=200 x=1344 y=586 sky130_fd_pr__nfet_01v8
+x a_3574_182# D_Flipflop_3.VP a_4006_1518# D_Flipflop_3.VP s=20000,600 d=6000,260 l=30 w=200 x=3976 y=1518 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK D_Flipflop_3.VP a_1154_1106# D_Flipflop_3.VP s=9000,290 d=9000,290 l=30 w=200 x=1374 y=1106 sky130_fd_pr__pfet_01v8
+x a_252_586# D_Flipflop_3.VP a_684_1108# D_Flipflop_3.VP s=20000,600 d=6000,260 l=30 w=200 x=654 y=1108 sky130_fd_pr__pfet_01v8
+x a_1374_586# a_1674_586# D_Flipflop_3.VN D_Flipflop_3.VN s=20000,600 d=9000,290 l=30 w=200 x=1774 y=586 sky130_fd_pr__nfet_01v8
+x D_Flipflop_0.Q D_Flipflop_3.VN a_1284_586# D_Flipflop_3.VN s=20000,600 d=6000,260 l=30 w=200 x=1254 y=586 sky130_fd_pr__nfet_01v8
+x a_2480_182# D_Flipflop_3.VP a_2912_1518# D_Flipflop_3.VP s=20000,600 d=6000,260 l=30 w=200 x=2882 y=1518 sky130_fd_pr__pfet_01v8
+x D_Flipflop_2.Q D_Flipflop_3.Dn1 D_Flipflop_3.VP D_Flipflop_3.VP s=10000,300 d=20000,600 l=30 w=200 x=3102 y=1518 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK a_684_1108# D_Flipflop_0.Q D_Flipflop_3.VP s=6000,260 d=10000,300 l=30 w=200 x=744 y=1108 sky130_fd_pr__pfet_01v8
+x D_Flipflop_3.CLK D_Flipflop_3.VN a_1674_182# D_Flipflop_3.VN s=9000,290 d=9000,290 l=30 w=200 x=1894 y=182 sky130_fd_pr__nfet_01v8
+x D_Flipflop_3.CLK a_2912_1518# D_Flipflop_3.Dn1 D_Flipflop_3.VP s=6000,260 d=10000,300 l=30 w=200 x=2972 y=1518 sky130_fd_pr__pfet_01v8
+x D_Flipflop_0.Dn1 a_32_1516# D_Flipflop_3.VP D_Flipflop_3.VP s=20000,600 d=9000,290 l=30 w=200 x=132 y=1516 sky130_fd_pr__pfet_01v8
+x D_Flipflop_2.Dn1 D_Flipflop_1.Q D_Flipflop_3.VP D_Flipflop_3.VP s=10000,300 d=20000,600 l=30 w=200 x=1996 y=1108 sky130_fd_pr__pfet_01v8
+R a_3874_182# 1025
+R a_3484_182# 400
+R a_2780_182# 1025
+R a_2390_182# 400
+R a_1674_182# 1025
+R a_1284_182# 400
+R a_552_182# 1025
+R a_162_182# 400
+R a_3874_586# 1019
+R a_3484_586# 400
+R a_2780_586# 1019
+R a_2390_586# 400
+R a_1674_586# 1019
+R a_1284_586# 400
+R a_552_586# 1019
+R a_162_586# 400
+R a_4006_1108# 657
+R a_3354_1106# 1549
+R a_2912_1108# 657
+R a_2260_1106# 1549
+R D_Flipflop_3.Qb1 2911
+R a_4006_1518# 657
+R a_1806_1108# 657
+R a_1154_1106# 1549
+R a_3354_1516# 1556
+R a_3574_182# 4233
+R a_3574_586# 3669
+R D_Flipflop_3.Dn1 4319
+= D_Flipflop_3.Dn1 D_Flipflop_2.Qb1
+= D_Flipflop_3.Dn1 D_Flipflop_3.Dn2
+R a_2912_1518# 657
+R a_684_1108# 657
+R a_32_1106# 1549
+R a_2260_1516# 1556
+R a_2480_182# 4233
+R a_2480_586# 3669
+R D_Flipflop_2.Dn1 4348
+= D_Flipflop_2.Dn1 D_Flipflop_1.Qb1
+= D_Flipflop_2.Dn1 D_Flipflop_2.Dn2
+R a_1806_1518# 657
+R a_n346_546# 2653
+R a_1154_1516# 1556
+R a_1374_182# 4233
+R a_1374_586# 3669
+R D_Flipflop_1.Dn1 4407
+= D_Flipflop_1.Dn1 D_Flipflop_0.Qb1
+= D_Flipflop_1.Dn1 D_Flipflop_1.Dn2
+R a_684_1518# 657
+R a_32_1516# 1556
+R a_252_182# 4233
+R a_252_586# 3669
+C D_Flipflop_3.CLK0 6.4
+R D_Flipflop_3.CLK 23896
+= D_Flipflop_3.CLK D_Flipflop_0.CLK
+= D_Flipflop_3.CLK D_Flipflop_1.CLK
+= D_Flipflop_3.CLK D_Flipflop_2.CLK
+R D_Flipflop_0.Dn1 2794
+= D_Flipflop_0.Dn1 D_Flipflop_0.Dn2
+R D_Flipflop_3.Q 2330
+R D_Flipflop_2.Q 3661
+R D_Flipflop_1.Q 3629
+R D_Flipflop_0.Q 3644
+C D_Flipflop_3.VP0 13.0
+R D_Flipflop_3.VP 32596
+= D_Flipflop_3.VP D_Flipflop_0.VP
+= D_Flipflop_3.VP D_Flipflop_1.VP
+= D_Flipflop_3.VP D_Flipflop_2.VP
+R D_Flipflop_3.VN 19891
+= D_Flipflop_3.VN D_Flipflop_0.VN
+= D_Flipflop_3.VN D_Flipflop_1.VN
+= D_Flipflop_3.VN D_Flipflop_2.VN

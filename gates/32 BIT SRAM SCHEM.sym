@@ -1,0 +1,599 @@
+v {xschem version=3.4.5 file_version=1.2}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+T {@symname} -94.5 -6 0 0 0.3 0.3 {}
+T {@name} 135 -1932 0 0 0.2 0.2 {}
+L 4 -130 -1920 130 -1920 {}
+L 4 -130 1920 130 1920 {}
+L 4 -130 -1920 -130 1920 {}
+L 4 130 -1920 130 1920 {}
+B 5 -152.5 -1912.5 -147.5 -1907.5 {name=WL sig_type=std_logic dir=in}
+L 4 -150 -1910 -130 -1910 {}
+T {WL} -125 -1914 0 0 0.2 0.2 {}
+B 5 147.5 -1912.5 152.5 -1907.5 {name=qb0 sig_type=std_logic dir=out}
+L 4 130 -1910 150 -1910 {}
+T {qb0} 125 -1914 0 1 0.2 0.2 {}
+B 5 147.5 -1892.5 152.5 -1887.5 {name=q0 sig_type=std_logic dir=out}
+L 4 130 -1890 150 -1890 {}
+T {q0} 125 -1894 0 1 0.2 0.2 {}
+B 5 147.5 -1872.5 152.5 -1867.5 {name=qb1 sig_type=std_logic dir=out}
+L 4 130 -1870 150 -1870 {}
+T {qb1} 125 -1874 0 1 0.2 0.2 {}
+B 5 147.5 -1852.5 152.5 -1847.5 {name=qb3 sig_type=std_logic dir=out}
+L 4 130 -1850 150 -1850 {}
+T {qb3} 125 -1854 0 1 0.2 0.2 {}
+B 5 147.5 -1832.5 152.5 -1827.5 {name=q1 sig_type=std_logic dir=out}
+L 4 130 -1830 150 -1830 {}
+T {q1} 125 -1834 0 1 0.2 0.2 {}
+B 5 147.5 -1812.5 152.5 -1807.5 {name=qb2 sig_type=std_logic dir=out}
+L 4 130 -1810 150 -1810 {}
+T {qb2} 125 -1814 0 1 0.2 0.2 {}
+B 5 147.5 -1792.5 152.5 -1787.5 {name=q3 sig_type=std_logic dir=out}
+L 4 130 -1790 150 -1790 {}
+T {q3} 125 -1794 0 1 0.2 0.2 {}
+B 5 147.5 -1772.5 152.5 -1767.5 {name=q2 sig_type=std_logic dir=out}
+L 4 130 -1770 150 -1770 {}
+T {q2} 125 -1774 0 1 0.2 0.2 {}
+B 5 147.5 -1752.5 152.5 -1747.5 {name=qb4 sig_type=std_logic dir=out}
+L 4 130 -1750 150 -1750 {}
+T {qb4} 125 -1754 0 1 0.2 0.2 {}
+B 5 147.5 -1732.5 152.5 -1727.5 {name=qb5 sig_type=std_logic dir=out}
+L 4 130 -1730 150 -1730 {}
+T {qb5} 125 -1734 0 1 0.2 0.2 {}
+B 5 147.5 -1712.5 152.5 -1707.5 {name=b0 sig_type=std_logic dir=out}
+L 4 130 -1710 150 -1710 {}
+T {b0} 125 -1714 0 1 0.2 0.2 {}
+B 5 147.5 -1692.5 152.5 -1687.5 {name=q4 sig_type=std_logic dir=out}
+L 4 130 -1690 150 -1690 {}
+T {q4} 125 -1694 0 1 0.2 0.2 {}
+B 5 147.5 -1672.5 152.5 -1667.5 {name=blb0 sig_type=std_logic dir=out}
+L 4 130 -1670 150 -1670 {}
+T {blb0} 125 -1674 0 1 0.2 0.2 {}
+B 5 147.5 -1652.5 152.5 -1647.5 {name=q5 sig_type=std_logic dir=out}
+L 4 130 -1650 150 -1650 {}
+T {q5} 125 -1654 0 1 0.2 0.2 {}
+B 5 147.5 -1632.5 152.5 -1627.5 {name=blb1 sig_type=std_logic dir=out}
+L 4 130 -1630 150 -1630 {}
+T {blb1} 125 -1634 0 1 0.2 0.2 {}
+B 5 147.5 -1612.5 152.5 -1607.5 {name=b1 sig_type=std_logic dir=out}
+L 4 130 -1610 150 -1610 {}
+T {b1} 125 -1614 0 1 0.2 0.2 {}
+B 5 147.5 -1592.5 152.5 -1587.5 {name=blb3 sig_type=std_logic dir=out}
+L 4 130 -1590 150 -1590 {}
+T {blb3} 125 -1594 0 1 0.2 0.2 {}
+B 5 147.5 -1572.5 152.5 -1567.5 {name=blb2 sig_type=std_logic dir=out}
+L 4 130 -1570 150 -1570 {}
+T {blb2} 125 -1574 0 1 0.2 0.2 {}
+B 5 147.5 -1552.5 152.5 -1547.5 {name=b3 sig_type=std_logic dir=out}
+L 4 130 -1550 150 -1550 {}
+T {b3} 125 -1554 0 1 0.2 0.2 {}
+B 5 147.5 -1532.5 152.5 -1527.5 {name=b2 sig_type=std_logic dir=out}
+L 4 130 -1530 150 -1530 {}
+T {b2} 125 -1534 0 1 0.2 0.2 {}
+B 5 147.5 -1512.5 152.5 -1507.5 {name=b4 sig_type=std_logic dir=out}
+L 4 130 -1510 150 -1510 {}
+T {b4} 125 -1514 0 1 0.2 0.2 {}
+B 5 147.5 -1492.5 152.5 -1487.5 {name=blb4 sig_type=std_logic dir=out}
+L 4 130 -1490 150 -1490 {}
+T {blb4} 125 -1494 0 1 0.2 0.2 {}
+B 5 147.5 -1472.5 152.5 -1467.5 {name=blb5 sig_type=std_logic dir=out}
+L 4 130 -1470 150 -1470 {}
+T {blb5} 125 -1474 0 1 0.2 0.2 {}
+B 5 147.5 -1452.5 152.5 -1447.5 {name=b5 sig_type=std_logic dir=out}
+L 4 130 -1450 150 -1450 {}
+T {b5} 125 -1454 0 1 0.2 0.2 {}
+B 5 -152.5 -1892.5 -147.5 -1887.5 {name=p_b sig_type=std_logic dir=in}
+L 4 -150 -1890 -130 -1890 {}
+T {p_b} -125 -1894 0 0 0.2 0.2 {}
+B 5 -152.5 -1872.5 -147.5 -1867.5 {name=we sig_type=std_logic dir=in}
+L 4 -150 -1870 -130 -1870 {}
+T {we} -125 -1874 0 0 0.2 0.2 {}
+B 5 147.5 -1432.5 152.5 -1427.5 {name=ob0 sig_type=std_logic dir=out}
+L 4 130 -1430 150 -1430 {}
+T {ob0} 125 -1434 0 1 0.2 0.2 {}
+B 5 147.5 -1412.5 152.5 -1407.5 {name=ob1 sig_type=std_logic dir=out}
+L 4 130 -1410 150 -1410 {}
+T {ob1} 125 -1414 0 1 0.2 0.2 {}
+B 5 147.5 -1392.5 152.5 -1387.5 {name=ob2 sig_type=std_logic dir=out}
+L 4 130 -1390 150 -1390 {}
+T {ob2} 125 -1394 0 1 0.2 0.2 {}
+B 5 147.5 -1372.5 152.5 -1367.5 {name=o0 sig_type=std_logic dir=out}
+L 4 130 -1370 150 -1370 {}
+T {o0} 125 -1374 0 1 0.2 0.2 {}
+B 5 147.5 -1352.5 152.5 -1347.5 {name=ob3 sig_type=std_logic dir=out}
+L 4 130 -1350 150 -1350 {}
+T {ob3} 125 -1354 0 1 0.2 0.2 {}
+B 5 147.5 -1332.5 152.5 -1327.5 {name=o1 sig_type=std_logic dir=out}
+L 4 130 -1330 150 -1330 {}
+T {o1} 125 -1334 0 1 0.2 0.2 {}
+B 5 147.5 -1312.5 152.5 -1307.5 {name=ob4 sig_type=std_logic dir=out}
+L 4 130 -1310 150 -1310 {}
+T {ob4} 125 -1314 0 1 0.2 0.2 {}
+B 5 147.5 -1292.5 152.5 -1287.5 {name=o2 sig_type=std_logic dir=out}
+L 4 130 -1290 150 -1290 {}
+T {o2} 125 -1294 0 1 0.2 0.2 {}
+B 5 147.5 -1272.5 152.5 -1267.5 {name=o3 sig_type=std_logic dir=out}
+L 4 130 -1270 150 -1270 {}
+T {o3} 125 -1274 0 1 0.2 0.2 {}
+B 5 -152.5 -1852.5 -147.5 -1847.5 {name=rd sig_type=std_logic dir=in}
+L 4 -150 -1850 -130 -1850 {}
+T {rd} -125 -1854 0 0 0.2 0.2 {}
+B 5 147.5 -1252.5 152.5 -1247.5 {name=ob5 sig_type=std_logic dir=out}
+L 4 130 -1250 150 -1250 {}
+T {ob5} 125 -1254 0 1 0.2 0.2 {}
+B 5 147.5 -1232.5 152.5 -1227.5 {name=o4 sig_type=std_logic dir=out}
+L 4 130 -1230 150 -1230 {}
+T {o4} 125 -1234 0 1 0.2 0.2 {}
+B 5 147.5 -1212.5 152.5 -1207.5 {name=o5 sig_type=std_logic dir=out}
+L 4 130 -1210 150 -1210 {}
+T {o5} 125 -1214 0 1 0.2 0.2 {}
+B 5 147.5 -1192.5 152.5 -1187.5 {name=qb6 sig_type=std_logic dir=out}
+L 4 130 -1190 150 -1190 {}
+T {qb6} 125 -1194 0 1 0.2 0.2 {}
+B 5 147.5 -1172.5 152.5 -1167.5 {name=q6 sig_type=std_logic dir=out}
+L 4 130 -1170 150 -1170 {}
+T {q6} 125 -1174 0 1 0.2 0.2 {}
+B 5 147.5 -1152.5 152.5 -1147.5 {name=qb7 sig_type=std_logic dir=out}
+L 4 130 -1150 150 -1150 {}
+T {qb7} 125 -1154 0 1 0.2 0.2 {}
+B 5 147.5 -1132.5 152.5 -1127.5 {name=qb8 sig_type=std_logic dir=out}
+L 4 130 -1130 150 -1130 {}
+T {qb8} 125 -1134 0 1 0.2 0.2 {}
+B 5 147.5 -1112.5 152.5 -1107.5 {name=q7 sig_type=std_logic dir=out}
+L 4 130 -1110 150 -1110 {}
+T {q7} 125 -1114 0 1 0.2 0.2 {}
+B 5 147.5 -1092.5 152.5 -1087.5 {name=qb9 sig_type=std_logic dir=out}
+L 4 130 -1090 150 -1090 {}
+T {qb9} 125 -1094 0 1 0.2 0.2 {}
+B 5 147.5 -1072.5 152.5 -1067.5 {name=q8 sig_type=std_logic dir=out}
+L 4 130 -1070 150 -1070 {}
+T {q8} 125 -1074 0 1 0.2 0.2 {}
+B 5 147.5 -1052.5 152.5 -1047.5 {name=q9 sig_type=std_logic dir=out}
+L 4 130 -1050 150 -1050 {}
+T {q9} 125 -1054 0 1 0.2 0.2 {}
+B 5 147.5 -1032.5 152.5 -1027.5 {name=qb10 sig_type=std_logic dir=out}
+L 4 130 -1030 150 -1030 {}
+T {qb10} 125 -1034 0 1 0.2 0.2 {}
+B 5 147.5 -1012.5 152.5 -1007.5 {name=b6 sig_type=std_logic dir=out}
+L 4 130 -1010 150 -1010 {}
+T {b6} 125 -1014 0 1 0.2 0.2 {}
+B 5 147.5 -992.5 152.5 -987.5 {name=blb6 sig_type=std_logic dir=out}
+L 4 130 -990 150 -990 {}
+T {blb6} 125 -994 0 1 0.2 0.2 {}
+B 5 147.5 -972.5 152.5 -967.5 {name=qb11 sig_type=std_logic dir=out}
+L 4 130 -970 150 -970 {}
+T {qb11} 125 -974 0 1 0.2 0.2 {}
+B 5 147.5 -952.5 152.5 -947.5 {name=q10 sig_type=std_logic dir=out}
+L 4 130 -950 150 -950 {}
+T {q10} 125 -954 0 1 0.2 0.2 {}
+B 5 147.5 -932.5 152.5 -927.5 {name=q11 sig_type=std_logic dir=out}
+L 4 130 -930 150 -930 {}
+T {q11} 125 -934 0 1 0.2 0.2 {}
+B 5 147.5 -912.5 152.5 -907.5 {name=blb7 sig_type=std_logic dir=out}
+L 4 130 -910 150 -910 {}
+T {blb7} 125 -914 0 1 0.2 0.2 {}
+B 5 147.5 -892.5 152.5 -887.5 {name=b7 sig_type=std_logic dir=out}
+L 4 130 -890 150 -890 {}
+T {b7} 125 -894 0 1 0.2 0.2 {}
+B 5 147.5 -872.5 152.5 -867.5 {name=b9 sig_type=std_logic dir=out}
+L 4 130 -870 150 -870 {}
+T {b9} 125 -874 0 1 0.2 0.2 {}
+B 5 147.5 -852.5 152.5 -847.5 {name=blb9 sig_type=std_logic dir=out}
+L 4 130 -850 150 -850 {}
+T {blb9} 125 -854 0 1 0.2 0.2 {}
+B 5 147.5 -832.5 152.5 -827.5 {name=b8 sig_type=std_logic dir=out}
+L 4 130 -830 150 -830 {}
+T {b8} 125 -834 0 1 0.2 0.2 {}
+B 5 147.5 -812.5 152.5 -807.5 {name=blb8 sig_type=std_logic dir=out}
+L 4 130 -810 150 -810 {}
+T {blb8} 125 -814 0 1 0.2 0.2 {}
+B 5 147.5 -792.5 152.5 -787.5 {name=b10 sig_type=std_logic dir=out}
+L 4 130 -790 150 -790 {}
+T {b10} 125 -794 0 1 0.2 0.2 {}
+B 5 147.5 -772.5 152.5 -767.5 {name=blb10 sig_type=std_logic dir=out}
+L 4 130 -770 150 -770 {}
+T {blb10} 125 -774 0 1 0.2 0.2 {}
+B 5 147.5 -752.5 152.5 -747.5 {name=b11 sig_type=std_logic dir=out}
+L 4 130 -750 150 -750 {}
+T {b11} 125 -754 0 1 0.2 0.2 {}
+B 5 147.5 -732.5 152.5 -727.5 {name=blb11 sig_type=std_logic dir=out}
+L 4 130 -730 150 -730 {}
+T {blb11} 125 -734 0 1 0.2 0.2 {}
+B 5 147.5 -712.5 152.5 -707.5 {name=ob6 sig_type=std_logic dir=out}
+L 4 130 -710 150 -710 {}
+T {ob6} 125 -714 0 1 0.2 0.2 {}
+B 5 147.5 -692.5 152.5 -687.5 {name=ob7 sig_type=std_logic dir=out}
+L 4 130 -690 150 -690 {}
+T {ob7} 125 -694 0 1 0.2 0.2 {}
+B 5 147.5 -672.5 152.5 -667.5 {name=ob9 sig_type=std_logic dir=out}
+L 4 130 -670 150 -670 {}
+T {ob9} 125 -674 0 1 0.2 0.2 {}
+B 5 147.5 -652.5 152.5 -647.5 {name=ob8 sig_type=std_logic dir=out}
+L 4 130 -650 150 -650 {}
+T {ob8} 125 -654 0 1 0.2 0.2 {}
+B 5 147.5 -632.5 152.5 -627.5 {name=o6 sig_type=std_logic dir=out}
+L 4 130 -630 150 -630 {}
+T {o6} 125 -634 0 1 0.2 0.2 {}
+B 5 147.5 -612.5 152.5 -607.5 {name=o7 sig_type=std_logic dir=out}
+L 4 130 -610 150 -610 {}
+T {o7} 125 -614 0 1 0.2 0.2 {}
+B 5 147.5 -592.5 152.5 -587.5 {name=ob10 sig_type=std_logic dir=out}
+L 4 130 -590 150 -590 {}
+T {ob10} 125 -594 0 1 0.2 0.2 {}
+B 5 147.5 -572.5 152.5 -567.5 {name=o9 sig_type=std_logic dir=out}
+L 4 130 -570 150 -570 {}
+T {o9} 125 -574 0 1 0.2 0.2 {}
+B 5 147.5 -552.5 152.5 -547.5 {name=ob11 sig_type=std_logic dir=out}
+L 4 130 -550 150 -550 {}
+T {ob11} 125 -554 0 1 0.2 0.2 {}
+B 5 147.5 -532.5 152.5 -527.5 {name=o8 sig_type=std_logic dir=out}
+L 4 130 -530 150 -530 {}
+T {o8} 125 -534 0 1 0.2 0.2 {}
+B 5 147.5 -512.5 152.5 -507.5 {name=o10 sig_type=std_logic dir=out}
+L 4 130 -510 150 -510 {}
+T {o10} 125 -514 0 1 0.2 0.2 {}
+B 5 147.5 -492.5 152.5 -487.5 {name=o11 sig_type=std_logic dir=out}
+L 4 130 -490 150 -490 {}
+T {o11} 125 -494 0 1 0.2 0.2 {}
+B 5 147.5 -472.5 152.5 -467.5 {name=qb12 sig_type=std_logic dir=out}
+L 4 130 -470 150 -470 {}
+T {qb12} 125 -474 0 1 0.2 0.2 {}
+B 5 147.5 -452.5 152.5 -447.5 {name=q12 sig_type=std_logic dir=out}
+L 4 130 -450 150 -450 {}
+T {q12} 125 -454 0 1 0.2 0.2 {}
+B 5 147.5 -432.5 152.5 -427.5 {name=qb13 sig_type=std_logic dir=out}
+L 4 130 -430 150 -430 {}
+T {qb13} 125 -434 0 1 0.2 0.2 {}
+B 5 147.5 -412.5 152.5 -407.5 {name=qb15 sig_type=std_logic dir=out}
+L 4 130 -410 150 -410 {}
+T {qb15} 125 -414 0 1 0.2 0.2 {}
+B 5 147.5 -392.5 152.5 -387.5 {name=qb14 sig_type=std_logic dir=out}
+L 4 130 -390 150 -390 {}
+T {qb14} 125 -394 0 1 0.2 0.2 {}
+B 5 147.5 -372.5 152.5 -367.5 {name=q13 sig_type=std_logic dir=out}
+L 4 130 -370 150 -370 {}
+T {q13} 125 -374 0 1 0.2 0.2 {}
+B 5 147.5 -352.5 152.5 -347.5 {name=q15 sig_type=std_logic dir=out}
+L 4 130 -350 150 -350 {}
+T {q15} 125 -354 0 1 0.2 0.2 {}
+B 5 147.5 -332.5 152.5 -327.5 {name=q14 sig_type=std_logic dir=out}
+L 4 130 -330 150 -330 {}
+T {q14} 125 -334 0 1 0.2 0.2 {}
+B 5 147.5 -312.5 152.5 -307.5 {name=qb16 sig_type=std_logic dir=out}
+L 4 130 -310 150 -310 {}
+T {qb16} 125 -314 0 1 0.2 0.2 {}
+B 5 147.5 -292.5 152.5 -287.5 {name=qb17 sig_type=std_logic dir=out}
+L 4 130 -290 150 -290 {}
+T {qb17} 125 -294 0 1 0.2 0.2 {}
+B 5 147.5 -272.5 152.5 -267.5 {name=q16 sig_type=std_logic dir=out}
+L 4 130 -270 150 -270 {}
+T {q16} 125 -274 0 1 0.2 0.2 {}
+B 5 147.5 -252.5 152.5 -247.5 {name=b12 sig_type=std_logic dir=out}
+L 4 130 -250 150 -250 {}
+T {b12} 125 -254 0 1 0.2 0.2 {}
+B 5 147.5 -232.5 152.5 -227.5 {name=blb12 sig_type=std_logic dir=out}
+L 4 130 -230 150 -230 {}
+T {blb12} 125 -234 0 1 0.2 0.2 {}
+B 5 147.5 -212.5 152.5 -207.5 {name=q17 sig_type=std_logic dir=out}
+L 4 130 -210 150 -210 {}
+T {q17} 125 -214 0 1 0.2 0.2 {}
+B 5 147.5 -192.5 152.5 -187.5 {name=blb13 sig_type=std_logic dir=out}
+L 4 130 -190 150 -190 {}
+T {blb13} 125 -194 0 1 0.2 0.2 {}
+B 5 147.5 -172.5 152.5 -167.5 {name=b13 sig_type=std_logic dir=out}
+L 4 130 -170 150 -170 {}
+T {b13} 125 -174 0 1 0.2 0.2 {}
+B 5 147.5 -152.5 152.5 -147.5 {name=b15 sig_type=std_logic dir=out}
+L 4 130 -150 150 -150 {}
+T {b15} 125 -154 0 1 0.2 0.2 {}
+B 5 147.5 -132.5 152.5 -127.5 {name=blb15 sig_type=std_logic dir=out}
+L 4 130 -130 150 -130 {}
+T {blb15} 125 -134 0 1 0.2 0.2 {}
+B 5 147.5 -112.5 152.5 -107.5 {name=b14 sig_type=std_logic dir=out}
+L 4 130 -110 150 -110 {}
+T {b14} 125 -114 0 1 0.2 0.2 {}
+B 5 147.5 -92.5 152.5 -87.5 {name=blb14 sig_type=std_logic dir=out}
+L 4 130 -90 150 -90 {}
+T {blb14} 125 -94 0 1 0.2 0.2 {}
+B 5 147.5 -72.5 152.5 -67.5 {name=b16 sig_type=std_logic dir=out}
+L 4 130 -70 150 -70 {}
+T {b16} 125 -74 0 1 0.2 0.2 {}
+B 5 147.5 -52.5 152.5 -47.5 {name=blb16 sig_type=std_logic dir=out}
+L 4 130 -50 150 -50 {}
+T {blb16} 125 -54 0 1 0.2 0.2 {}
+B 5 147.5 -32.5 152.5 -27.5 {name=b17 sig_type=std_logic dir=out}
+L 4 130 -30 150 -30 {}
+T {b17} 125 -34 0 1 0.2 0.2 {}
+B 5 147.5 -12.5 152.5 -7.5 {name=blb17 sig_type=std_logic dir=out}
+L 4 130 -10 150 -10 {}
+T {blb17} 125 -14 0 1 0.2 0.2 {}
+B 5 147.5 7.5 152.5 12.5 {name=ob12 sig_type=std_logic dir=out}
+L 4 130 10 150 10 {}
+T {ob12} 125 6 0 1 0.2 0.2 {}
+B 5 147.5 27.5 152.5 32.5 {name=ob13 sig_type=std_logic dir=out}
+L 4 130 30 150 30 {}
+T {ob13} 125 26 0 1 0.2 0.2 {}
+B 5 147.5 47.5 152.5 52.5 {name=ob15 sig_type=std_logic dir=out}
+L 4 130 50 150 50 {}
+T {ob15} 125 46 0 1 0.2 0.2 {}
+B 5 147.5 67.5 152.5 72.5 {name=ob14 sig_type=std_logic dir=out}
+L 4 130 70 150 70 {}
+T {ob14} 125 66 0 1 0.2 0.2 {}
+B 5 147.5 87.5 152.5 92.5 {name=o12 sig_type=std_logic dir=out}
+L 4 130 90 150 90 {}
+T {o12} 125 86 0 1 0.2 0.2 {}
+B 5 147.5 107.5 152.5 112.5 {name=ob16 sig_type=std_logic dir=out}
+L 4 130 110 150 110 {}
+T {ob16} 125 106 0 1 0.2 0.2 {}
+B 5 147.5 127.5 152.5 132.5 {name=o13 sig_type=std_logic dir=out}
+L 4 130 130 150 130 {}
+T {o13} 125 126 0 1 0.2 0.2 {}
+B 5 147.5 147.5 152.5 152.5 {name=ob17 sig_type=std_logic dir=out}
+L 4 130 150 150 150 {}
+T {ob17} 125 146 0 1 0.2 0.2 {}
+B 5 147.5 167.5 152.5 172.5 {name=o14 sig_type=std_logic dir=out}
+L 4 130 170 150 170 {}
+T {o14} 125 166 0 1 0.2 0.2 {}
+B 5 147.5 187.5 152.5 192.5 {name=o15 sig_type=std_logic dir=out}
+L 4 130 190 150 190 {}
+T {o15} 125 186 0 1 0.2 0.2 {}
+B 5 147.5 207.5 152.5 212.5 {name=o16 sig_type=std_logic dir=out}
+L 4 130 210 150 210 {}
+T {o16} 125 206 0 1 0.2 0.2 {}
+B 5 147.5 227.5 152.5 232.5 {name=o17 sig_type=std_logic dir=out}
+L 4 130 230 150 230 {}
+T {o17} 125 226 0 1 0.2 0.2 {}
+B 5 147.5 247.5 152.5 252.5 {name=qb18 sig_type=std_logic dir=out}
+L 4 130 250 150 250 {}
+T {qb18} 125 246 0 1 0.2 0.2 {}
+B 5 147.5 267.5 152.5 272.5 {name=q18 sig_type=std_logic dir=out}
+L 4 130 270 150 270 {}
+T {q18} 125 266 0 1 0.2 0.2 {}
+B 5 147.5 287.5 152.5 292.5 {name=qb19 sig_type=std_logic dir=out}
+L 4 130 290 150 290 {}
+T {qb19} 125 286 0 1 0.2 0.2 {}
+B 5 147.5 307.5 152.5 312.5 {name=q19 sig_type=std_logic dir=out}
+L 4 130 310 150 310 {}
+T {q19} 125 306 0 1 0.2 0.2 {}
+B 5 147.5 327.5 152.5 332.5 {name=qb21 sig_type=std_logic dir=out}
+L 4 130 330 150 330 {}
+T {qb21} 125 326 0 1 0.2 0.2 {}
+B 5 147.5 347.5 152.5 352.5 {name=qb20 sig_type=std_logic dir=out}
+L 4 130 350 150 350 {}
+T {qb20} 125 346 0 1 0.2 0.2 {}
+B 5 147.5 367.5 152.5 372.5 {name=q21 sig_type=std_logic dir=out}
+L 4 130 370 150 370 {}
+T {q21} 125 366 0 1 0.2 0.2 {}
+B 5 147.5 387.5 152.5 392.5 {name=q20 sig_type=std_logic dir=out}
+L 4 130 390 150 390 {}
+T {q20} 125 386 0 1 0.2 0.2 {}
+B 5 147.5 407.5 152.5 412.5 {name=qb22 sig_type=std_logic dir=out}
+L 4 130 410 150 410 {}
+T {qb22} 125 406 0 1 0.2 0.2 {}
+B 5 147.5 427.5 152.5 432.5 {name=b18 sig_type=std_logic dir=out}
+L 4 130 430 150 430 {}
+T {b18} 125 426 0 1 0.2 0.2 {}
+B 5 147.5 447.5 152.5 452.5 {name=blb18 sig_type=std_logic dir=out}
+L 4 130 450 150 450 {}
+T {blb18} 125 446 0 1 0.2 0.2 {}
+B 5 147.5 467.5 152.5 472.5 {name=qb23 sig_type=std_logic dir=out}
+L 4 130 470 150 470 {}
+T {qb23} 125 466 0 1 0.2 0.2 {}
+B 5 147.5 487.5 152.5 492.5 {name=q23 sig_type=std_logic dir=out}
+L 4 130 490 150 490 {}
+T {q23} 125 486 0 1 0.2 0.2 {}
+B 5 147.5 507.5 152.5 512.5 {name=q22 sig_type=std_logic dir=out}
+L 4 130 510 150 510 {}
+T {q22} 125 506 0 1 0.2 0.2 {}
+B 5 147.5 527.5 152.5 532.5 {name=b19 sig_type=std_logic dir=out}
+L 4 130 530 150 530 {}
+T {b19} 125 526 0 1 0.2 0.2 {}
+B 5 147.5 547.5 152.5 552.5 {name=blb19 sig_type=std_logic dir=out}
+L 4 130 550 150 550 {}
+T {blb19} 125 546 0 1 0.2 0.2 {}
+B 5 147.5 567.5 152.5 572.5 {name=blb20 sig_type=std_logic dir=out}
+L 4 130 570 150 570 {}
+T {blb20} 125 566 0 1 0.2 0.2 {}
+B 5 147.5 587.5 152.5 592.5 {name=b20 sig_type=std_logic dir=out}
+L 4 130 590 150 590 {}
+T {b20} 125 586 0 1 0.2 0.2 {}
+B 5 147.5 607.5 152.5 612.5 {name=b21 sig_type=std_logic dir=out}
+L 4 130 610 150 610 {}
+T {b21} 125 606 0 1 0.2 0.2 {}
+B 5 147.5 627.5 152.5 632.5 {name=blb21 sig_type=std_logic dir=out}
+L 4 130 630 150 630 {}
+T {blb21} 125 626 0 1 0.2 0.2 {}
+B 5 147.5 647.5 152.5 652.5 {name=b22 sig_type=std_logic dir=out}
+L 4 130 650 150 650 {}
+T {b22} 125 646 0 1 0.2 0.2 {}
+B 5 147.5 667.5 152.5 672.5 {name=blb22 sig_type=std_logic dir=out}
+L 4 130 670 150 670 {}
+T {blb22} 125 666 0 1 0.2 0.2 {}
+B 5 147.5 687.5 152.5 692.5 {name=blb23 sig_type=std_logic dir=out}
+L 4 130 690 150 690 {}
+T {blb23} 125 686 0 1 0.2 0.2 {}
+B 5 147.5 707.5 152.5 712.5 {name=b23 sig_type=std_logic dir=out}
+L 4 130 710 150 710 {}
+T {b23} 125 706 0 1 0.2 0.2 {}
+B 5 147.5 727.5 152.5 732.5 {name=ob18 sig_type=std_logic dir=out}
+L 4 130 730 150 730 {}
+T {ob18} 125 726 0 1 0.2 0.2 {}
+B 5 147.5 747.5 152.5 752.5 {name=ob19 sig_type=std_logic dir=out}
+L 4 130 750 150 750 {}
+T {ob19} 125 746 0 1 0.2 0.2 {}
+B 5 147.5 767.5 152.5 772.5 {name=ob20 sig_type=std_logic dir=out}
+L 4 130 770 150 770 {}
+T {ob20} 125 766 0 1 0.2 0.2 {}
+B 5 147.5 787.5 152.5 792.5 {name=o18 sig_type=std_logic dir=out}
+L 4 130 790 150 790 {}
+T {o18} 125 786 0 1 0.2 0.2 {}
+B 5 147.5 807.5 152.5 812.5 {name=ob21 sig_type=std_logic dir=out}
+L 4 130 810 150 810 {}
+T {ob21} 125 806 0 1 0.2 0.2 {}
+B 5 147.5 827.5 152.5 832.5 {name=o19 sig_type=std_logic dir=out}
+L 4 130 830 150 830 {}
+T {o19} 125 826 0 1 0.2 0.2 {}
+B 5 147.5 847.5 152.5 852.5 {name=ob22 sig_type=std_logic dir=out}
+L 4 130 850 150 850 {}
+T {ob22} 125 846 0 1 0.2 0.2 {}
+B 5 147.5 867.5 152.5 872.5 {name=ob23 sig_type=std_logic dir=out}
+L 4 130 870 150 870 {}
+T {ob23} 125 866 0 1 0.2 0.2 {}
+B 5 147.5 887.5 152.5 892.5 {name=o20 sig_type=std_logic dir=out}
+L 4 130 890 150 890 {}
+T {o20} 125 886 0 1 0.2 0.2 {}
+B 5 147.5 907.5 152.5 912.5 {name=o21 sig_type=std_logic dir=out}
+L 4 130 910 150 910 {}
+T {o21} 125 906 0 1 0.2 0.2 {}
+B 5 147.5 927.5 152.5 932.5 {name=o22 sig_type=std_logic dir=out}
+L 4 130 930 150 930 {}
+T {o22} 125 926 0 1 0.2 0.2 {}
+B 5 147.5 947.5 152.5 952.5 {name=o23 sig_type=std_logic dir=out}
+L 4 130 950 150 950 {}
+T {o23} 125 946 0 1 0.2 0.2 {}
+B 5 147.5 967.5 152.5 972.5 {name=qb24 sig_type=std_logic dir=out}
+L 4 130 970 150 970 {}
+T {qb24} 125 966 0 1 0.2 0.2 {}
+B 5 147.5 987.5 152.5 992.5 {name=q24 sig_type=std_logic dir=out}
+L 4 130 990 150 990 {}
+T {q24} 125 986 0 1 0.2 0.2 {}
+B 5 147.5 1007.5 152.5 1012.5 {name=qb25 sig_type=std_logic dir=out}
+L 4 130 1010 150 1010 {}
+T {qb25} 125 1006 0 1 0.2 0.2 {}
+B 5 147.5 1027.5 152.5 1032.5 {name=qb27 sig_type=std_logic dir=out}
+L 4 130 1030 150 1030 {}
+T {qb27} 125 1026 0 1 0.2 0.2 {}
+B 5 147.5 1047.5 152.5 1052.5 {name=qb26 sig_type=std_logic dir=out}
+L 4 130 1050 150 1050 {}
+T {qb26} 125 1046 0 1 0.2 0.2 {}
+B 5 147.5 1067.5 152.5 1072.5 {name=q25 sig_type=std_logic dir=out}
+L 4 130 1070 150 1070 {}
+T {q25} 125 1066 0 1 0.2 0.2 {}
+B 5 147.5 1087.5 152.5 1092.5 {name=q27 sig_type=std_logic dir=out}
+L 4 130 1090 150 1090 {}
+T {q27} 125 1086 0 1 0.2 0.2 {}
+B 5 147.5 1107.5 152.5 1112.5 {name=q26 sig_type=std_logic dir=out}
+L 4 130 1110 150 1110 {}
+T {q26} 125 1106 0 1 0.2 0.2 {}
+B 5 147.5 1127.5 152.5 1132.5 {name=qb28 sig_type=std_logic dir=out}
+L 4 130 1130 150 1130 {}
+T {qb28} 125 1126 0 1 0.2 0.2 {}
+B 5 147.5 1147.5 152.5 1152.5 {name=qb29 sig_type=std_logic dir=out}
+L 4 130 1150 150 1150 {}
+T {qb29} 125 1146 0 1 0.2 0.2 {}
+B 5 147.5 1167.5 152.5 1172.5 {name=q28 sig_type=std_logic dir=out}
+L 4 130 1170 150 1170 {}
+T {q28} 125 1166 0 1 0.2 0.2 {}
+B 5 147.5 1187.5 152.5 1192.5 {name=blb24 sig_type=std_logic dir=out}
+L 4 130 1190 150 1190 {}
+T {blb24} 125 1186 0 1 0.2 0.2 {}
+B 5 147.5 1207.5 152.5 1212.5 {name=b24 sig_type=std_logic dir=out}
+L 4 130 1210 150 1210 {}
+T {b24} 125 1206 0 1 0.2 0.2 {}
+B 5 147.5 1227.5 152.5 1232.5 {name=q29 sig_type=std_logic dir=out}
+L 4 130 1230 150 1230 {}
+T {q29} 125 1226 0 1 0.2 0.2 {}
+B 5 147.5 1247.5 152.5 1252.5 {name=b25 sig_type=std_logic dir=out}
+L 4 130 1250 150 1250 {}
+T {b25} 125 1246 0 1 0.2 0.2 {}
+B 5 147.5 1267.5 152.5 1272.5 {name=blb25 sig_type=std_logic dir=out}
+L 4 130 1270 150 1270 {}
+T {blb25} 125 1266 0 1 0.2 0.2 {}
+B 5 147.5 1287.5 152.5 1292.5 {name=b27 sig_type=std_logic dir=out}
+L 4 130 1290 150 1290 {}
+T {b27} 125 1286 0 1 0.2 0.2 {}
+B 5 147.5 1307.5 152.5 1312.5 {name=blb27 sig_type=std_logic dir=out}
+L 4 130 1310 150 1310 {}
+T {blb27} 125 1306 0 1 0.2 0.2 {}
+B 5 147.5 1327.5 152.5 1332.5 {name=b26 sig_type=std_logic dir=out}
+L 4 130 1330 150 1330 {}
+T {b26} 125 1326 0 1 0.2 0.2 {}
+B 5 147.5 1347.5 152.5 1352.5 {name=blb26 sig_type=std_logic dir=out}
+L 4 130 1350 150 1350 {}
+T {blb26} 125 1346 0 1 0.2 0.2 {}
+B 5 147.5 1367.5 152.5 1372.5 {name=b28 sig_type=std_logic dir=out}
+L 4 130 1370 150 1370 {}
+T {b28} 125 1366 0 1 0.2 0.2 {}
+B 5 147.5 1387.5 152.5 1392.5 {name=blb28 sig_type=std_logic dir=out}
+L 4 130 1390 150 1390 {}
+T {blb28} 125 1386 0 1 0.2 0.2 {}
+B 5 147.5 1407.5 152.5 1412.5 {name=b29 sig_type=std_logic dir=out}
+L 4 130 1410 150 1410 {}
+T {b29} 125 1406 0 1 0.2 0.2 {}
+B 5 147.5 1427.5 152.5 1432.5 {name=blb29 sig_type=std_logic dir=out}
+L 4 130 1430 150 1430 {}
+T {blb29} 125 1426 0 1 0.2 0.2 {}
+B 5 147.5 1447.5 152.5 1452.5 {name=ob24 sig_type=std_logic dir=out}
+L 4 130 1450 150 1450 {}
+T {ob24} 125 1446 0 1 0.2 0.2 {}
+B 5 147.5 1467.5 152.5 1472.5 {name=ob25 sig_type=std_logic dir=out}
+L 4 130 1470 150 1470 {}
+T {ob25} 125 1466 0 1 0.2 0.2 {}
+B 5 147.5 1487.5 152.5 1492.5 {name=ob27 sig_type=std_logic dir=out}
+L 4 130 1490 150 1490 {}
+T {ob27} 125 1486 0 1 0.2 0.2 {}
+B 5 147.5 1507.5 152.5 1512.5 {name=o24 sig_type=std_logic dir=out}
+L 4 130 1510 150 1510 {}
+T {o24} 125 1506 0 1 0.2 0.2 {}
+B 5 147.5 1527.5 152.5 1532.5 {name=ob26 sig_type=std_logic dir=out}
+L 4 130 1530 150 1530 {}
+T {ob26} 125 1526 0 1 0.2 0.2 {}
+B 5 147.5 1547.5 152.5 1552.5 {name=ob28 sig_type=std_logic dir=out}
+L 4 130 1550 150 1550 {}
+T {ob28} 125 1546 0 1 0.2 0.2 {}
+B 5 147.5 1567.5 152.5 1572.5 {name=o25 sig_type=std_logic dir=out}
+L 4 130 1570 150 1570 {}
+T {o25} 125 1566 0 1 0.2 0.2 {}
+B 5 147.5 1587.5 152.5 1592.5 {name=o26 sig_type=std_logic dir=out}
+L 4 130 1590 150 1590 {}
+T {o26} 125 1586 0 1 0.2 0.2 {}
+B 5 147.5 1607.5 152.5 1612.5 {name=o27 sig_type=std_logic dir=out}
+L 4 130 1610 150 1610 {}
+T {o27} 125 1606 0 1 0.2 0.2 {}
+B 5 147.5 1627.5 152.5 1632.5 {name=ob29 sig_type=std_logic dir=out}
+L 4 130 1630 150 1630 {}
+T {ob29} 125 1626 0 1 0.2 0.2 {}
+B 5 147.5 1647.5 152.5 1652.5 {name=o28 sig_type=std_logic dir=out}
+L 4 130 1650 150 1650 {}
+T {o28} 125 1646 0 1 0.2 0.2 {}
+B 5 147.5 1667.5 152.5 1672.5 {name=o29 sig_type=std_logic dir=out}
+L 4 130 1670 150 1670 {}
+T {o29} 125 1666 0 1 0.2 0.2 {}
+B 5 147.5 1687.5 152.5 1692.5 {name=qb30 sig_type=std_logic dir=out}
+L 4 130 1690 150 1690 {}
+T {qb30} 125 1686 0 1 0.2 0.2 {}
+B 5 147.5 1707.5 152.5 1712.5 {name=q30 sig_type=std_logic dir=out}
+L 4 130 1710 150 1710 {}
+T {q30} 125 1706 0 1 0.2 0.2 {}
+B 5 147.5 1727.5 152.5 1732.5 {name=qb31 sig_type=std_logic dir=out}
+L 4 130 1730 150 1730 {}
+T {qb31} 125 1726 0 1 0.2 0.2 {}
+B 5 147.5 1747.5 152.5 1752.5 {name=q31 sig_type=std_logic dir=out}
+L 4 130 1750 150 1750 {}
+T {q31} 125 1746 0 1 0.2 0.2 {}
+B 5 147.5 1767.5 152.5 1772.5 {name=b30 sig_type=std_logic dir=out}
+L 4 130 1770 150 1770 {}
+T {b30} 125 1766 0 1 0.2 0.2 {}
+B 5 147.5 1787.5 152.5 1792.5 {name=blb30 sig_type=std_logic dir=out}
+L 4 130 1790 150 1790 {}
+T {blb30} 125 1786 0 1 0.2 0.2 {}
+B 5 147.5 1807.5 152.5 1812.5 {name=b31 sig_type=std_logic dir=out}
+L 4 130 1810 150 1810 {}
+T {b31} 125 1806 0 1 0.2 0.2 {}
+B 5 147.5 1827.5 152.5 1832.5 {name=blb31 sig_type=std_logic dir=out}
+L 4 130 1830 150 1830 {}
+T {blb31} 125 1826 0 1 0.2 0.2 {}
+B 5 147.5 1847.5 152.5 1852.5 {name=ob30 sig_type=std_logic dir=out}
+L 4 130 1850 150 1850 {}
+T {ob30} 125 1846 0 1 0.2 0.2 {}
+B 5 147.5 1867.5 152.5 1872.5 {name=ob31 sig_type=std_logic dir=out}
+L 4 130 1870 150 1870 {}
+T {ob31} 125 1866 0 1 0.2 0.2 {}
+B 5 147.5 1887.5 152.5 1892.5 {name=o30 sig_type=std_logic dir=out}
+L 4 130 1890 150 1890 {}
+T {o30} 125 1886 0 1 0.2 0.2 {}
+B 5 147.5 1907.5 152.5 1912.5 {name=o31 sig_type=std_logic dir=out}
+L 4 130 1910 150 1910 {}
+T {o31} 125 1906 0 1 0.2 0.2 {}

@@ -1,0 +1,52 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -40 -100 -40 -80 {}
+L 4 80 -100 80 -80 {}
+L 4 0 -100 0 -80 {}
+L 4 -60 -100 -60 -80 {}
+L 4 -20 -100 -20 -80 {}
+L 4 60 -100 60 -80 {}
+L 4 40 -100 40 -80 {}
+L 4 -120 -30 -100 -30 {}
+L 4 100 -100 100 -80 {}
+L 4 130 -50 150 -50 {}
+L 4 130 -30 150 -30 {}
+L 4 130 -10 150 -10 {}
+L 4 130 10 150 10 {}
+B 5 -42.5 -102.5 -37.5 -97.5 {name=P1 sig_type=std_logic dir=in}
+B 5 77.5 -102.5 82.5 -97.5 {name=G1 sig_type=std_logic dir=in}
+B 5 -2.5 -102.5 2.5 -97.5 {name=P3 sig_type=std_logic dir=in}
+B 5 -62.5 -102.5 -57.5 -97.5 {name=P0 sig_type=std_logic dir=in}
+B 5 -22.5 -102.5 -17.5 -97.5 {name=P2 sig_type=std_logic dir=in}
+B 5 57.5 -102.5 62.5 -97.5 {name=G2 sig_type=std_logic dir=in}
+B 5 37.5 -102.5 42.5 -97.5 {name=G3 sig_type=std_logic dir=in}
+B 5 -122.5 -32.5 -117.5 -27.5 {name=Cin sig_type=std_logic dir=in}
+B 5 97.5 -102.5 102.5 -97.5 {name=G0 sig_type=std_logic dir=in}
+B 5 147.5 -52.5 152.5 -47.5 {name=C1 sig_type=std_logic dir=out}
+B 5 147.5 -32.5 152.5 -27.5 {name=C2 sig_type=std_logic dir=out}
+B 5 147.5 -12.5 152.5 -7.5 {name=C3 sig_type=std_logic dir=out}
+B 5 147.5 7.5 152.5 12.5 {name=C4 sig_type=std_logic dir=out}
+P 4 5 -100 -80 130 -80 130 40 -100 40 -100 -80 {}
+T {@symname} -82.5 4 0 0 0.3 0.3 {}
+T {@name} -15 -22 0 0 0.2 0.2 {}
+T {P1} -36 -75 1 0 0.2 0.2 {}
+T {G1} 84 -75 1 0 0.2 0.2 {}
+T {P3} 4 -75 1 0 0.2 0.2 {}
+T {P0} -56 -75 1 0 0.2 0.2 {}
+T {P2} -16 -75 1 0 0.2 0.2 {}
+T {G2} 64 -75 1 0 0.2 0.2 {}
+T {G3} 44 -75 1 0 0.2 0.2 {}
+T {Cin} -95 -34 0 0 0.2 0.2 {}
+T {G0} 104 -75 1 0 0.2 0.2 {}
+T {C1} 125 -54 0 1 0.2 0.2 {}
+T {C2} 125 -34 0 1 0.2 0.2 {}
+T {C3} 125 -14 0 1 0.2 0.2 {}
+T {C4} 125 6 0 1 0.2 0.2 {}

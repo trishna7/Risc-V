@@ -1,0 +1,20 @@
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po and Circuit 2 cell sky130_fd_pr__res_xhigh_po are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__res_xhigh_po and sky130_fd_pr__res_xhigh_po are equivalent.
+
+Subcircuit summary:
+Circuit 1: resistor20k.spice               |Circuit 2: resistor20k_xschem.spice        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_xhigh_po (1)             |sky130_fd_pr__res_xhigh_po (1)             
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes resistor20k.spice and resistor20k_xschem.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

@@ -1,0 +1,25 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -70 -10 -50 -10 {}
+L 4 30 -10 50 -10 {}
+L 4 30 10 50 10 {}
+L 4 -70 10 -50 10 {}
+B 5 -72.5 -12.5 -67.5 -7.5 {name=we sig_type=std_logic dir=in}
+B 5 47.5 -12.5 52.5 -7.5 {name=blb sig_type=std_logic dir=out}
+B 5 47.5 7.5 52.5 12.5 {name=bl sig_type=std_logic dir=out}
+B 5 -72.5 7.5 -67.5 12.5 {name=di sig_type=std_logic dir=in}
+P 4 5 -50 -30 -50 40 30 40 30 -30 -50 -30 {}
+T {@symname} -37.5 -26 0 0 0.2 0.2 {}
+T {@name} -35 18 0 0 0.2 0.2 {}
+T {we} -45 -14 0 0 0.2 0.2 {}
+T {blb} 25 -14 0 1 0.2 0.2 {}
+T {bl} 25 6 0 1 0.2 0.2 {}
+T {di} -45 6 0 0 0.2 0.2 {}
