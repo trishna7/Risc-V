@@ -1,0 +1,30 @@
+* SPICE3 file created from OR2.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_XGS3BL a_n73_n100# a_15_n100# w_n211_n319# a_n33_n197#
++ VSUBS
+X0 a_15_n100# a_n33_n197# a_n73_n100# w_n211_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_648S5X a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
+X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt NOR2 B A Y VDD GND
+XXM7 VDD m1_n360_716# VDD B GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM8 GND A Y GND sky130_fd_pr__nfet_01v8_648S5X
+XXM9 Y m1_n360_716# VDD A GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM10 Y B GND GND sky130_fd_pr__nfet_01v8_648S5X
+*C0 VDD 0 2.702835f
+.ends
+
+.subckt INV vdd vss out in
+X0 out in vdd vdd sky130_fd_pr__pfet_01v8 ad=1.155 pd=5.3 as=1.155 ps=5.3 w=2.1 l=0.15
+X1 out in vss vss sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
+.ends
+
+**.subckt OR2
+XNOR2_0 B A NOR2_0/Y VDD GND NOR2
+XINV_0 VDD GND Y NOR2_0/Y INV
+*C0 VDD 0 5.002898f
+**.ends
+

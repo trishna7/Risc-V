@@ -1,0 +1,58 @@
+* NGSPICE file created from XOR2_parax.ext - technology: sky130A
+
+.subckt XOR2_parax B A Y
+X0 INV_0.out B GND GND sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
+X1 a_n2362_n4269# A VDD VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X2 INV_1.out A GND GND sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
+X3 a_n2364_n5714# B GND GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X4 a_n1782_n5714# INV_0.out GND GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X5 a_n2362_n4269# INV_1.out Y VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X6 a_n2364_n5714# A Y GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X7 a_n2362_n4269# INV_0.out Y VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X8 a_n1782_n5714# INV_1.out Y GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X9 INV_0.out B VDD VDD sky130_fd_pr__pfet_01v8 ad=1.155 pd=5.3 as=1.155 ps=5.3 w=2.1 l=0.15
+X10 INV_1.out A VDD VDD sky130_fd_pr__pfet_01v8 ad=1.155 pd=5.3 as=1.155 ps=5.3 w=2.1 l=0.15
+X11 a_n2362_n4269# B VDD VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+C0 INV_0.out INV_1.out 0.030188f
+C1 Y INV_1.out 0.412652f
+C2 a_n1782_n5714# a_n2364_n5714# 0.020773f
+C3 B A 0.085319f
+C4 A VDD 1.12395f
+C5 INV_0.out a_n1782_n5714# 0.14848f
+C6 Y a_n1782_n5714# 0.170363f
+C7 INV_1.out a_n1782_n5714# 0.065863f
+C8 B a_n2364_n5714# 0.220403f
+C9 a_n2362_n4269# B 0.305466f
+C10 a_n2362_n4269# VDD 1.22513f
+C11 B INV_0.out 0.818105f
+C12 INV_0.out VDD 0.682569f
+C13 Y B 0.112398f
+C14 Y VDD 0.421821f
+C15 A a_n2364_n5714# 0.057991f
+C16 a_n2362_n4269# A 0.092167f
+C17 B INV_1.out 0.143514f
+C18 INV_1.out VDD 0.767774f
+C19 INV_0.out A 6.66e-19
+C20 Y A 0.189512f
+C21 B a_n1782_n5714# 0.074185f
+C22 A INV_1.out 0.536407f
+C23 A a_n1782_n5714# 7.48e-21
+C24 INV_0.out a_n2364_n5714# 0.011045f
+C25 a_n2362_n4269# INV_0.out 0.133898f
+C26 Y a_n2364_n5714# 0.192336f
+C27 Y a_n2362_n4269# 0.390227f
+C28 INV_1.out a_n2364_n5714# 0.007829f
+C29 a_n2362_n4269# INV_1.out 0.084239f
+C30 B VDD 0.967984f
+C31 Y INV_0.out 0.219614f
+C32 a_n1782_n5714# GND 0.626626f
+C33 a_n2364_n5714# GND 0.592601f
+C34 INV_0.out GND 2.03486f
+C35 Y GND 1.13448f
+C36 B GND 2.25352f
+C37 a_n2362_n4269# GND 0.060046f
+C38 INV_1.out GND 0.940269f
+C39 A GND 1.44521f
+C40 VDD GND 9.19841f
+.ends
+

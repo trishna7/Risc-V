@@ -1,0 +1,51 @@
+* NGSPICE file created from NAND2_Gate.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_648S5X a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
+X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+C0 a_n73_n100# a_n33_n188# 0.025448f
+C1 a_15_n100# a_n33_n188# 0.025448f
+C2 a_n73_n100# a_15_n100# 0.162113f
+C3 a_15_n100# a_n175_n274# 0.131704f
+C4 a_n73_n100# a_n175_n274# 0.131704f
+C5 a_n33_n188# a_n175_n274# 0.34289f
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_XGS3BL a_n73_n100# a_15_n100# w_n211_n319# a_n33_n197#
++ VSUBS
+X0 a_15_n100# a_n33_n197# a_n73_n100# w_n211_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+C0 w_n211_n319# a_15_n100# 0.081686f
+C1 a_n33_n197# a_15_n100# 0.023643f
+C2 a_15_n100# a_n73_n100# 0.162113f
+C3 w_n211_n319# a_n33_n197# 0.238832f
+C4 w_n211_n319# a_n73_n100# 0.081686f
+C5 a_n33_n197# a_n73_n100# 0.023643f
+C6 a_15_n100# VSUBS 0.049757f
+C7 a_n73_n100# VSUBS 0.049757f
+C8 a_n33_n197# VSUBS 0.116888f
+C9 w_n211_n319# VSUBS 1.2304f
+.ends
+
+.subckt NAND2_Gate
+XXM1 m1_n1116_n2700# A Y GND sky130_fd_pr__nfet_01v8_648S5X
+XXM2 GND B m1_n1116_n2700# GND sky130_fd_pr__nfet_01v8_648S5X
+XXM3 Y VDD VDD A GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM4 VDD Y VDD B GND sky130_fd_pr__pfet_01v8_XGS3BL
+C0 m1_n1116_n2700# VDD 2.47e-19
+C1 m1_n1116_n2700# Y 0.076667f
+C2 m1_n1116_n2700# B 0.205861f
+C3 m1_n1116_n2700# A 0.278977f
+C4 VDD Y 0.327898f
+C5 VDD B 0.223165f
+C6 Y B 0.427372f
+C7 VDD A 0.468969f
+C8 Y A 0.222049f
+C9 B A 0.063243f
+C10 VDD GND 2.625414f
+C11 Y GND 0.76879f
+C12 B GND 1.460229f
+C13 A GND 1.054318f
+C14 m1_n1116_n2700# GND 0.527192f
+.ends
+

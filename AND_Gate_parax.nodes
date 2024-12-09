@@ -1,0 +1,7 @@
+Y 3222 656 ndif
+a_714_816# 714 816 ndif
+B 754 108 p
+NAND2_Gate_0.Y 512 1549 pdif
+A 552 1452 p
+VDD 374 1330 nw
+NAND2_Gate_0.GND 612 22 ppd

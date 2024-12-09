@@ -1,0 +1,27 @@
+* SPICE3 file created from AND3_GATE.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_648S5X a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
+X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_XGS3BL a_n73_n100# a_15_n100# w_n211_n319# a_n33_n197#
++ VSUBS
+X0 a_15_n100# a_n33_n197# a_n73_n100# w_n211_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt INV vdd vss out in
+X0 out in vdd vdd sky130_fd_pr__pfet_01v8 ad=1.155 pd=5.3 as=1.155 ps=5.3 w=2.1 l=0.15
+X1 out in vss vss sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
+.ends
+
+** .subckt AND3_GATE
+Xsky130_fd_pr__nfet_01v8_648S5X_0 GND C m1_n1068_n3336# GND sky130_fd_pr__nfet_01v8_648S5X
+Xsky130_fd_pr__nfet_01v8_648S5X_1 m1_n1068_n3336# B m1_n1116_n2700# GND sky130_fd_pr__nfet_01v8_648S5X
+XXM1 m1_n1116_n2700# A INV_0/in GND sky130_fd_pr__nfet_01v8_648S5X
+XXM3 INV_0/in VDD VDD A GND sky130_fd_pr__pfet_01v8_XGS3BL
+Xsky130_fd_pr__pfet_01v8_XGS3BL_0 VDD INV_0/in VDD B GND sky130_fd_pr__pfet_01v8_XGS3BL
+Xsky130_fd_pr__pfet_01v8_XGS3BL_1 VDD INV_0/in VDD C GND sky130_fd_pr__pfet_01v8_XGS3BL
+XINV_0 VDD GND Y INV_0/in INV
+* C0 VDD GND 6.654117f
+** .ends
+

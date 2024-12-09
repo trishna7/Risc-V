@@ -1,0 +1,23 @@
+| units: 500000 tech: sky130A format: MIT
+x A NOR2_0.Y a_912_1643# VDD s=11600,516 d=11600,516 l=30 w=200 x=884 y=941 sky130_fd_pr__pfet_01v8
+x B NOR2_0.Y GND GND s=11600,516 d=11600,516 l=30 w=200 x=1314 y=218 sky130_fd_pr__nfet_01v8
+x NOR2_0.Y GND Y GND s=18000,580 d=18000,580 l=30 w=200 x=2286 y=630 sky130_fd_pr__nfet_01v8
+x B VDD a_912_1643# VDD s=11600,516 d=11600,516 l=30 w=200 x=882 y=1643 sky130_fd_pr__pfet_01v8
+x A GND NOR2_0.Y GND s=11600,516 d=11600,516 l=30 w=200 x=538 y=220 sky130_fd_pr__nfet_01v8
+x NOR2_0.Y VDD Y VDD s=46200,1060 d=46200,1060 l=30 w=420 x=2286 y=1020 sky130_fd_pr__pfet_01v8
+R Y 1216
+= Y INV_0.out
+R A 1510
+= A NOR2_0.A
+R NOR2_0.Y 3580
+= NOR2_0.Y INV_0.in
+R a_912_1643# 2035
+R B 1511
+= B NOR2_0.B
+C VDD0 5.0
+R VDD 21728
+= VDD INV_0.vdd
+= VDD NOR2_0.VDD
+R GND 22068
+= GND INV_0.vss
+= GND NOR2_0.GND

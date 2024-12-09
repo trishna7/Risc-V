@@ -1,0 +1,74 @@
+* SPICE3 file created from FA.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_XGS3BL a_n73_n100# a_15_n100# w_n211_n319# a_n33_n197#
++ VSUBS
+X0 a_15_n100# a_n33_n197# a_n73_n100# w_n211_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_648S5X a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
+X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt NOR2 B A Y VDD GND
+XXM7 VDD m1_n360_716# VDD B GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM8 GND A Y GND sky130_fd_pr__nfet_01v8_648S5X
+XXM9 Y m1_n360_716# VDD A GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM10 Y B GND GND sky130_fd_pr__nfet_01v8_648S5X
+*C0 VDD 0 2.702835f
+.ends
+
+.subckt INV vdd vss out in
+X0 out in vdd vdd sky130_fd_pr__pfet_01v8 ad=1.155 pd=5.3 as=1.155 ps=5.3 w=2.1 l=0.15
+X1 out in vss vss sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
+.ends
+
+.subckt OR2 Y VDD B A GND
+XNOR2_0 B A NOR2_0/Y VDD GND NOR2
+XINV_0 VDD GND Y NOR2_0/Y INV
+*C0 VDD 0 5.002898f
+.ends
+
+.subckt NAND2_Gate B A Y VDD GND
+XXM1 m1_n1116_n2700# A Y GND sky130_fd_pr__nfet_01v8_648S5X
+XXM2 GND B m1_n1116_n2700# GND sky130_fd_pr__nfet_01v8_648S5X
+XXM3 Y VDD VDD A GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM4 VDD Y VDD B GND sky130_fd_pr__pfet_01v8_XGS3BL
+*C0 VDD GND 2.605583f
+.ends
+
+.subckt AND_Gate Y VDD A B GND
+XNAND2_Gate_0 B A INV_0/in VDD GND NAND2_Gate
+XINV_0 VDD GND Y INV_0/in INV
+*C0 VDD GND 4.665473f
+.ends
+
+.subckt XOR2 Y B VDD A GND
+XINV_1 VDD GND INV_1/out A INV
+XXM1 Y A m1_n2334_n5576# GND sky130_fd_pr__nfet_01v8_648S5X
+XXM2 Y INV_1/out m1_n1774_n5072# GND sky130_fd_pr__nfet_01v8_648S5X
+XXM3 VDD m1_n2344_n3582# VDD A GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM4 VDD m1_n2344_n3582# VDD B GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM5 Y m1_n2344_n3582# VDD INV_1/out GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM6 Y m1_n2344_n3582# VDD INV_0/out GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM7 GND B m1_n2334_n5576# GND sky130_fd_pr__nfet_01v8_648S5X
+XXM8 GND INV_0/out m1_n1774_n5072# GND sky130_fd_pr__nfet_01v8_648S5X
+XINV_0 VDD GND INV_0/out B INV
+*C0 INV_0/out GND 2.081766f
+*C1 B GND 2.228968f
+*C2 VDD GND 9.076381f
+.ends
+
+**.subckt FA
+XOR2_0 Co OR2_0/VDD OR2_0/B G GND OR2
+XAND_Gate_0 OR2_0/B OR2_0/VDD A B GND AND_Gate
+XAND_Gate_1 G OR2_0/VDD Ci P GND AND_Gate
+XXOR2_0 P B OR2_0/VDD A GND XOR2
+XXOR2_1 S Ci OR2_0/VDD P GND XOR2
+*C0 Ci GND 2.885309f
+*C1 B GND 2.971846f
+*C2 A GND 3.020796f
+*C3 P GND 4.722841f
+*C4 OR2_0/VDD GND 34.817383f
+*C5 OR2_0/B GND 2.572884f
+**.ends
+

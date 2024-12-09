@@ -1,0 +1,53 @@
+* NGSPICE file created from AND3_GATE_parax.ext - technology: sky130A
+
+.subckt AND3_GATE_parax
+X0 INV_0.in B VDD VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.397059 ps=2.556863 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+X1 INV_0.in A a_n1010_n2772# GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+X2 INV_0.in C VDD VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.397059 ps=2.556863 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+X3 Y INV_0.in VDD VDD sky130_fd_pr__pfet_01v8 ad=1.155 pd=5.3 as=0.833824 ps=5.369412 w=2.1 l=0.15
+**devattr s=46200,1060 d=46200,1060
+X4 a_n1010_n2772# B a_n1010_n3392# GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+X5 Y INV_0.in GND GND sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.37 ps=2.74 w=1 l=0.15
+**devattr s=18000,580 d=18000,580
+X6 VDD A INV_0.in VDD sky130_fd_pr__pfet_01v8 ad=0.397059 pd=2.556863 as=0.29 ps=2.58 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+X7 a_n1010_n3392# C GND GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.37 ps=2.74 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+C0 a_n1010_n3392# A 0.011193f
+C1 C a_n1010_n2772# 5.72e-19
+C2 VDD C 0.631196f
+C3 a_n1010_n2772# B 0.231309f
+C4 INV_0.in C 0.371111f
+C5 VDD B 0.843451f
+C6 a_n1010_n3392# a_n1010_n2772# 0.225436f
+C7 INV_0.in B 0.584728f
+C8 VDD a_n1010_n3392# 4.78e-21
+C9 a_n1010_n3392# INV_0.in 4.46e-19
+C10 VDD Y 0.33838f
+C11 INV_0.in Y 0.124169f
+C12 C B 0.172076f
+C13 a_n1010_n3392# C 0.194742f
+C14 A a_n1010_n2772# 0.304421f
+C15 VDD A 0.716644f
+C16 a_n1010_n3392# B 0.044141f
+C17 C Y 0.001563f
+C18 A INV_0.in 0.260564f
+C19 VDD a_n1010_n2772# 2.1e-19
+C20 INV_0.in a_n1010_n2772# 0.235218f
+C21 VDD INV_0.in 1.51979f
+C22 A C 2.47e-19
+C23 A B 0.067275f
+C24 a_n1010_n3392# GND 0.830535f
+C25 Y GND 0.571772f
+C26 a_n1010_n2772# GND 0.478335f
+C27 C GND 1.87614f
+C28 B GND 1.09193f
+C29 INV_0.in GND 1.75328f
+C30 A GND 1.1072f
+C31 VDD GND 6.65413f
+.ends
+

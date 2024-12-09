@@ -1,0 +1,32 @@
+* SPICE3 file created from XOR2.ext - technology: sky130A
+
+.subckt INV vdd vss out in
+X0 out in vdd vdd sky130_fd_pr__pfet_01v8 ad=1.155 pd=5.3 as=1.155 ps=5.3 w=2.1 l=0.15
+X1 out in vss vss sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_648S5X a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
+X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_XGS3BL a_n73_n100# a_15_n100# w_n211_n319# a_n33_n197#
++ VSUBS
+X0 a_15_n100# a_n33_n197# a_n73_n100# w_n211_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+**.subckt XOR2
+XINV_1 VDD GND INV_1/out A INV
+XXM1 Y A m1_n2334_n5576# GND sky130_fd_pr__nfet_01v8_648S5X
+XXM2 Y INV_1/out m1_n1774_n5072# GND sky130_fd_pr__nfet_01v8_648S5X
+XXM3 VDD m1_n2344_n3582# VDD A GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM4 VDD m1_n2344_n3582# VDD B GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM5 Y m1_n2344_n3582# VDD INV_1/out GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM6 Y m1_n2344_n3582# VDD INV_0/out GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM7 GND B m1_n2334_n5576# GND sky130_fd_pr__nfet_01v8_648S5X
+XXM8 GND INV_0/out m1_n1774_n5072# GND sky130_fd_pr__nfet_01v8_648S5X
+XINV_0 VDD GND INV_0/out B INV
+*C0 INV_0/out GND 2.081766f
+*C1 B GND 2.228968f
+*C2 VDD GND 9.076381f
+**.ends
+

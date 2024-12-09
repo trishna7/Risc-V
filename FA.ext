@@ -1,0 +1,509 @@
+timestamp 1733466708
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use XOR2 XOR2_1 1 0 3604 0 1 11254
+use XOR2 XOR2_0 1 0 -156 0 1 11278
+use OR2 OR2_0 1 0 2038 0 1 3624
+use AND_Gate AND_Gate_1 1 0 -440 0 1 3120
+use AND_Gate AND_Gate_0 1 0 -3322 0 1 3124
+node "m1_1804_3586#" 0 193.642 1804 3586 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39528 948 0 0 0 0 0 0 0 0 0 0
+node "m1_n1072_3334#" 1 476.125 -1072 3334 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 126880 2188 0 0 0 0 0 0 0 0 0 0
+node "Co" 0 157.192 4836 4462 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28616 684 0 0 0 0 0 0 0 0 0 0
+node "G" 1 250.827 1954 4022 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44528 1188 0 0 0 0 0 0 0 0 0 0
+node "m1_n2340_4916#" 2 392.681 -2340 4916 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2808 212 87912 2524 0 0 0 0 0 0 0 0
+node "m1_n2764_4912#" 3 659.671 -2764 4912 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3240 228 143520 3748 0 0 0 0 0 0 0 0
+node "m1_n968_3986#" 6 1659.1 -968 3986 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 454672 9536 0 0 0 0 0 0 0 0 0 0
+node "m1_884_5324#" 3 1067.28 884 5324 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23212 888 16016 724 155184 4044 0 0 0 0 0 0
+node "m1_128_4912#" 2 335.478 128 4912 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6236 452 86532 2144 0 0 0 0 0 0 0 0
+node "Ci" 0 289.99 -182 5670 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96512 1296 0 0 0 0 0 0 0 0 0 0
+node "B" 0 215.768 -3872 5764 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50760 916 0 0 0 0 0 0 0 0 0 0
+node "S" 2 617.732 2412 6642 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40864 1068 60096 1996 0 0 0 0 0 0 0 0
+node "m1_n724_6812#" 1 252.648 -724 6812 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56252 1344 0 0 0 0 0 0 0 0 0 0
+node "GND" 0 186.989 -4018 6730 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50760 916 0 0 0 0 0 0 0 0 0 0
+node "P" 6 2077.18 -1334 6652 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63508 1688 564916 10040 0 0 0 0 0 0 0 0
+node "A" 0 176.584 -4024 7140 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50760 916 0 0 0 0 0 0 0 0 0 0
+node "m1_2280_5620#" 2 1539.13 2280 5620 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8544 520 50096 1264 439200 5240 0 0 0 0 0 0
+node "m1_n786_7902#" 1 369.602 -786 7902 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 88816 1700 0 0 0 0 0 0 0 0 0 0
+node "m1_n4074_7836#" 0 205.362 -4074 7836 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50760 916 0 0 0 0 0 0 0 0 0 0
+node "li_2784_4918#" 19 503.146 2784 4918 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1360 148 68256 2940 0 0 0 0 0 0 0 0 0 0
+node "w_n1682_4560#" 3066 2699.14 -1682 4560 nw 0 0 0 0 899712 4464 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_n968_3986#" "w_n1682_4560#" 286.45
+cap "G" "li_2784_4918#" 8.92166
+cap "A" "m1_n4074_7836#" 12.7563
+cap "m1_n724_6812#" "P" 231.079
+cap "A" "GND" 42.1474
+cap "w_n1682_4560#" "P" 123.983
+cap "G" "m1_1804_3586#" 10.2434
+cap "m1_128_4912#" "m1_884_5324#" 8.72935
+cap "m1_n2764_4912#" "P" 1.42306
+cap "m1_n968_3986#" "m1_884_5324#" 162.511
+cap "B" "GND" 2.47721
+cap "li_2784_4918#" "m1_884_5324#" 4.58674
+cap "m1_n2340_4916#" "w_n1682_4560#" 8.31459
+cap "m1_n1072_3334#" "m1_n968_3986#" 14.6992
+cap "S" "m1_n968_3986#" 2.3926
+cap "m1_n2340_4916#" "m1_n2764_4912#" 152.344
+cap "m1_128_4912#" "Ci" 62.3784
+cap "m1_128_4912#" "m1_n968_3986#" 121.833
+cap "Ci" "m1_n968_3986#" 22.2882
+cap "S" "m1_2280_5620#" 34.1844
+cap "m1_128_4912#" "li_2784_4918#" 1.80222
+cap "m1_884_5324#" "P" 11.8707
+cap "w_n1682_4560#" "m1_n2764_4912#" 0.162797
+cap "m1_1804_3586#" "m1_884_5324#" 5.78026
+cap "li_2784_4918#" "m1_n968_3986#" 172.493
+cap "m1_n968_3986#" "m1_2280_5620#" 18.1195
+cap "li_2784_4918#" "m1_2280_5620#" 1.24357
+cap "m1_n1072_3334#" "P" 42.3445
+cap "m1_128_4912#" "P" 132.989
+cap "Ci" "P" 142.097
+cap "m1_n2340_4916#" "B" 0.122242
+cap "m1_n968_3986#" "P" 160.936
+cap "G" "m1_884_5324#" 3.36731
+cap "w_n1682_4560#" "m1_884_5324#" 12.8919
+cap "li_2784_4918#" "m1_1804_3586#" 9.64669
+cap "m1_n724_6812#" "Ci" 1.81443
+cap "m1_n786_7902#" "P" 11.7046
+cap "m1_n724_6812#" "m1_n968_3986#" 14.905
+cap "m1_n1072_3334#" "w_n1682_4560#" 7.14628
+cap "B" "m1_n2764_4912#" 1.08723
+cap "m1_n968_3986#" "m1_n2340_4916#" 2.38779
+cap "m1_n724_6812#" "m1_n786_7902#" 18.6641
+cap "m1_128_4912#" "w_n1682_4560#" 8.19384
+cap "AND_Gate_0/NAND2_Gate_0/B" "AND_Gate_0/INV_0/vss" 0.221574
+cap "AND_Gate_0/INV_0/in" "AND_Gate_1/NAND2_Gate_0/B" 1.3554
+cap "AND_Gate_0/INV_0/in" "AND_Gate_0/NAND2_Gate_0/B" -2.84217e-14
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_0/INV_0/vss" 0.123014
+cap "AND_Gate_0/INV_0/in" "AND_Gate_0/INV_0/vss" 0.431749
+cap "AND_Gate_0/NAND2_Gate_0/XM1/a_n73_n100#" "AND_Gate_0/NAND2_Gate_0/B" -2.84217e-14
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_0/INV_0/out" 0.111248
+cap "AND_Gate_0/INV_0/out" "AND_Gate_0/NAND2_Gate_0/B" 7.16811
+cap "AND_Gate_0/NAND2_Gate_0/XM1/a_n73_n100#" "AND_Gate_0/INV_0/vss" 0.199157
+cap "AND_Gate_0/INV_0/out" "AND_Gate_0/INV_0/vss" 0.946356
+cap "AND_Gate_0/INV_0/in" "AND_Gate_0/INV_0/out" 0.605514
+cap "AND_Gate_0/INV_0/in" "AND_Gate_0/INV_0/vdd" 0.831407
+cap "AND_Gate_0/INV_0/vdd" "AND_Gate_0/INV_0/vss" 1.42109e-14
+cap "AND_Gate_0/INV_0/in" "AND_Gate_1/NAND2_Gate_0/A" 0.53989
+cap "AND_Gate_0/NAND2_Gate_0/A" "AND_Gate_0/NAND2_Gate_0/B" 0.424944
+cap "XOR2_0/XM8/a_n33_n188#" "AND_Gate_0/INV_0/in" 0.148911
+cap "AND_Gate_1/NAND2_Gate_0/XM1/a_n73_n100#" "AND_Gate_0/INV_0/vss" 0.00382334
+cap "AND_Gate_0/INV_0/in" "AND_Gate_1/NAND2_Gate_0/XM1/a_n73_n100#" 0.0241177
+cap "AND_Gate_0/INV_0/out" "AND_Gate_0/INV_0/vdd" 0.198934
+cap "AND_Gate_0/NAND2_Gate_0/A" "AND_Gate_0/INV_0/vss" 0.0360065
+cap "AND_Gate_1/NAND2_Gate_0/A" "AND_Gate_0/INV_0/out" 0.494886
+cap "XOR2_0/XM8/a_15_n100#" "AND_Gate_0/INV_0/in" 0.0319592
+cap "AND_Gate_0/NAND2_Gate_0/A" "AND_Gate_0/INV_0/out" 0.0251152
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_1/INV_0/in" 18.6243
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_0/INV_0/out" -0.0281491
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_1/NAND2_Gate_0/A" 276.611
+cap "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" "AND_Gate_0/INV_0/out" 7.16811
+cap "AND_Gate_1/INV_0/in" "AND_Gate_0/INV_0/out" 0.0716794
+cap "AND_Gate_1/INV_0/in" "AND_Gate_1/NAND2_Gate_0/A" -0.544263
+cap "AND_Gate_0/INV_0/out" "AND_Gate_1/NAND2_Gate_0/A" 66.6485
+cap "AND_Gate_0/INV_0/vdd" "AND_Gate_0/INV_0/vss" -5.62195
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_1/NAND2_Gate_0/XM1/a_n73_n100#" 27.916
+cap "AND_Gate_1/NAND2_Gate_0/XM1/a_n73_n100#" "AND_Gate_0/INV_0/out" 0.0553556
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_0/INV_0/vss" 1.14945
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_0/INV_0/in" 2.71064
+cap "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" "AND_Gate_0/INV_0/vss" 0.167619
+cap "AND_Gate_0/INV_0/out" "AND_Gate_0/INV_0/vss" 10.2226
+cap "AND_Gate_1/NAND2_Gate_0/A" "AND_Gate_0/INV_0/vss" 17.2812
+cap "AND_Gate_0/INV_0/in" "AND_Gate_0/INV_0/out" 1.72568
+cap "AND_Gate_0/INV_0/in" "AND_Gate_1/NAND2_Gate_0/A" 0.0705853
+cap "AND_Gate_1/NAND2_Gate_0/XM1/a_n73_n100#" "AND_Gate_0/INV_0/vss" 0.00225032
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_0/INV_0/vdd" 6.86888
+cap "AND_Gate_0/INV_0/vdd" "AND_Gate_0/INV_0/out" 34.4992
+cap "AND_Gate_0/INV_0/vdd" "AND_Gate_1/NAND2_Gate_0/A" 15.7208
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_0/INV_0/vdd" 0.0238518
+cap "AND_Gate_1/INV_0/in" "AND_Gate_0/INV_0/out" 0.361923
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_1/INV_0/in" 10.9577
+cap "AND_Gate_1/NAND2_Gate_0/A" "AND_Gate_0/INV_0/out" 0.176423
+cap "OR2_0/NOR2_0/XM8/a_15_n100#" "AND_Gate_0/INV_0/vss" 0.22712
+cap "AND_Gate_0/INV_0/vdd" "AND_Gate_0/INV_0/vss" 30.7559
+cap "AND_Gate_1/NAND2_Gate_0/A" "AND_Gate_1/NAND2_Gate_0/B" 0.463864
+cap "AND_Gate_1/INV_0/out" "AND_Gate_1/NAND2_Gate_0/B" 6.97151
+cap "AND_Gate_1/INV_0/in" "AND_Gate_0/INV_0/vss" 81.2868
+cap "AND_Gate_1/NAND2_Gate_0/XM1/a_n73_n100#" "AND_Gate_1/NAND2_Gate_0/B" 26.5043
+cap "AND_Gate_1/NAND2_Gate_0/A" "AND_Gate_0/INV_0/vss" 7.21692
+cap "AND_Gate_1/INV_0/out" "AND_Gate_0/INV_0/vss" 17.0568
+cap "AND_Gate_1/NAND2_Gate_0/XM1/a_n73_n100#" "AND_Gate_0/INV_0/vss" 12.3845
+cap "AND_Gate_0/INV_0/vdd" "AND_Gate_1/INV_0/in" 5.68434e-14
+cap "OR2_0/NOR2_0/XM8/a_15_n100#" "AND_Gate_1/INV_0/in" 0.12111
+cap "AND_Gate_1/NAND2_Gate_0/A" "AND_Gate_0/INV_0/vdd" 0.136844
+cap "AND_Gate_0/INV_0/vss" "AND_Gate_0/INV_0/out" 4.16187
+cap "AND_Gate_1/NAND2_Gate_0/A" "AND_Gate_1/INV_0/in" -0.982661
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_0/INV_0/vss" 48.3047
+cap "AND_Gate_1/INV_0/out" "AND_Gate_1/INV_0/in" 0.963754
+cap "AND_Gate_1/NAND2_Gate_0/A" "AND_Gate_1/INV_0/out" 0.00865187
+cap "AND_Gate_1/NAND2_Gate_0/A" "AND_Gate_1/NAND2_Gate_0/XM1/a_n73_n100#" -0.221052
+cap "AND_Gate_0/INV_0/vdd" "AND_Gate_0/INV_0/out" 0.0018457
+cap "AND_Gate_1/NAND2_Gate_0/XM2/a_n33_n188#" "AND_Gate_1/INV_0/out" 6.97151
+cap "AND_Gate_1/INV_0/vss" "AND_Gate_1/INV_0/out" 41.1699
+cap "AND_Gate_1/INV_0/out" "OR2_0/NOR2_0/B" 0.0762608
+cap "AND_Gate_1/INV_0/vdd" "AND_Gate_1/INV_0/vss" -3.53415
+cap "AND_Gate_1/INV_0/vdd" "AND_Gate_1/INV_0/out" 32.2998
+cap "AND_Gate_1/INV_0/vss" "AND_Gate_1/INV_0/in" 0.466256
+cap "AND_Gate_1/INV_0/out" "AND_Gate_1/INV_0/in" 1.9203
+cap "OR2_0/INV_0/in" "AND_Gate_1/INV_0/out" 1.40577
+cap "AND_Gate_1/INV_0/vss" "AND_Gate_1/NAND2_Gate_0/XM2/a_n33_n188#" 1.74021
+cap "OR2_0/INV_0/in" "OR2_0/INV_0/out" 0.0307941
+cap "OR2_0/INV_0/in" "AND_Gate_1/INV_0/out" 0.0902631
+cap "OR2_0/NOR2_0/B" "OR2_0/INV_0/out" 0.25731
+cap "OR2_0/NOR2_0/B" "AND_Gate_1/INV_0/out" 0.00416502
+cap "OR2_0/INV_0/in" "AND_Gate_1/INV_0/vdd" 0.721872
+cap "OR2_0/NOR2_0/XM7/a_n33_n197#" "OR2_0/INV_0/out" 0.25731
+cap "OR2_0/INV_0/in" "OR2_0/INV_0/out" 0.169372
+cap "AND_Gate_0/NAND2_Gate_0/GND" "AND_Gate_0/NAND2_Gate_0/VDD" 6.22321
+cap "AND_Gate_0/INV_0/in" "AND_Gate_0/NAND2_Gate_0/VDD" -1.13397
+cap "AND_Gate_0/NAND2_Gate_0/A" "AND_Gate_0/NAND2_Gate_0/VDD" 133.427
+cap "AND_Gate_0/NAND2_Gate_0/GND" "AND_Gate_0/INV_0/in" 0.0961093
+cap "AND_Gate_0/NAND2_Gate_0/GND" "AND_Gate_0/NAND2_Gate_0/A" 78.4612
+cap "AND_Gate_0/NAND2_Gate_0/A" "AND_Gate_0/INV_0/in" 14.6319
+cap "XOR2_0/XM7/a_15_n100#" "AND_Gate_0/NAND2_Gate_0/B" 0.134708
+cap "AND_Gate_0/NAND2_Gate_0/A" "XOR2_0/XM7/a_15_n100#" 4.64454
+cap "AND_Gate_0/NAND2_Gate_0/B" "AND_Gate_0/NAND2_Gate_0/VDD" 46.7527
+cap "AND_Gate_0/NAND2_Gate_0/GND" "AND_Gate_0/NAND2_Gate_0/B" 0.0312021
+cap "AND_Gate_0/INV_0/in" "AND_Gate_0/NAND2_Gate_0/B" 0.1177
+cap "AND_Gate_0/NAND2_Gate_0/A" "AND_Gate_0/NAND2_Gate_0/B" 89.5377
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_0/INV_0/in" 0.0487652
+cap "AND_Gate_1/NAND2_Gate_0/B" "XOR2_0/INV_0/out" 2.0221
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_0/INV_0/vdd" 0.266395
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_0/INV_0/vss" 0.161306
+cap "XOR2_0/XM7/a_15_n100#" "XOR2_0/INV_0/out" -0.350414
+cap "XOR2_0/XM7/a_15_n100#" "AND_Gate_0/INV_0/vdd" 0.863231
+cap "XOR2_0/XM8/a_15_n100#" "AND_Gate_0/INV_0/vdd" 7.29077
+cap "AND_Gate_0/INV_0/out" "AND_Gate_0/INV_0/in" 0.884807
+cap "AND_Gate_0/INV_0/in" "AND_Gate_1/NAND2_Gate_0/A" 0.621984
+cap "AND_Gate_0/INV_0/vdd" "AND_Gate_1/NAND2_Gate_0/A" 0.12709
+cap "AND_Gate_0/INV_0/out" "AND_Gate_0/INV_0/vdd" 16.2347
+cap "XOR2_0/XM8/a_15_n100#" "AND_Gate_0/INV_0/vss" 2.84217e-14
+cap "XOR2_0/XM7/a_15_n100#" "AND_Gate_0/NAND2_Gate_0/B" 46.4623
+cap "AND_Gate_0/INV_0/vss" "AND_Gate_1/NAND2_Gate_0/A" 0.000966685
+cap "XOR2_0/XM7/a_15_n100#" "AND_Gate_0/NAND2_Gate_0/A" 0.265798
+cap "AND_Gate_1/NAND2_Gate_0/XM3/a_n73_n100#" "AND_Gate_0/INV_0/in" 0.0124049
+cap "XOR2_0/INV_0/out" "AND_Gate_0/INV_0/in" 0.0387909
+cap "AND_Gate_0/NAND2_Gate_0/B" "XOR2_0/XM8/a_15_n100#" 1.96285
+cap "AND_Gate_0/NAND2_Gate_0/B" "AND_Gate_0/INV_0/out" 2.44576
+cap "AND_Gate_0/INV_0/in" "AND_Gate_0/INV_0/vdd" 6.32543
+cap "AND_Gate_0/INV_0/vss" "AND_Gate_0/INV_0/in" 0.0754202
+cap "XOR2_0/INV_0/out" "AND_Gate_0/INV_0/vdd" 15.9009
+cap "AND_Gate_0/INV_0/vss" "AND_Gate_0/INV_0/vdd" 95.8656
+cap "XOR2_0/INV_0/out" "AND_Gate_0/INV_0/vss" -0.44906
+cap "AND_Gate_0/NAND2_Gate_0/B" "AND_Gate_0/INV_0/in" 13.3859
+cap "AND_Gate_0/NAND2_Gate_0/B" "XOR2_0/INV_0/out" 10.8707
+cap "AND_Gate_0/NAND2_Gate_0/B" "AND_Gate_0/INV_0/vdd" 162.658
+cap "XOR2_0/INV_0/out" "AND_Gate_0/NAND2_Gate_0/A" 0.0032536
+cap "AND_Gate_0/NAND2_Gate_0/A" "AND_Gate_0/INV_0/vdd" 18.7913
+cap "AND_Gate_0/NAND2_Gate_0/B" "AND_Gate_0/INV_0/vss" 69.7119
+cap "AND_Gate_0/NAND2_Gate_0/A" "AND_Gate_0/INV_0/vss" 10.4781
+cap "AND_Gate_0/NAND2_Gate_0/B" "AND_Gate_0/NAND2_Gate_0/A" -1.70662
+cap "AND_Gate_1/NAND2_Gate_0/B" "XOR2_0/XM8/a_15_n100#" 0.132345
+cap "AND_Gate_0/INV_0/out" "AND_Gate_0/INV_0/in" 0.670077
+cap "AND_Gate_0/INV_0/out" "AND_Gate_1/NAND2_Gate_0/B" -16.1272
+cap "AND_Gate_0/INV_0/in" "AND_Gate_1/NAND2_Gate_0/B" 0.186389
+cap "AND_Gate_1/NAND2_Gate_0/A" "XOR2_1/INV_1/vdd" 0.0817491
+cap "AND_Gate_1/NAND2_Gate_0/A" "AND_Gate_0/INV_0/vdd" 159.286
+cap "AND_Gate_1/INV_0/in" "AND_Gate_0/INV_0/vdd" 10.9279
+cap "AND_Gate_1/INV_0/in" "AND_Gate_1/NAND2_Gate_0/A" 3.09899
+cap "AND_Gate_0/INV_0/vss" "AND_Gate_0/INV_0/vdd" 0.0417425
+cap "AND_Gate_0/INV_0/vss" "AND_Gate_1/NAND2_Gate_0/A" 1.46534
+cap "XOR2_0/INV_0/out" "AND_Gate_1/NAND2_Gate_0/A" 0.122697
+cap "AND_Gate_0/INV_0/out" "AND_Gate_0/INV_0/vdd" 219.465
+cap "AND_Gate_0/INV_0/out" "AND_Gate_1/NAND2_Gate_0/A" 39.4585
+cap "AND_Gate_0/INV_0/in" "AND_Gate_0/INV_0/vdd" 0.00576098
+cap "AND_Gate_0/INV_0/in" "AND_Gate_1/NAND2_Gate_0/A" 0.358209
+cap "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" "AND_Gate_0/INV_0/out" 2.26403
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_0/INV_0/vdd" 105.976
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_1/NAND2_Gate_0/A" 215.553
+cap "AND_Gate_0/INV_0/out" "AND_Gate_1/INV_0/in" 0.556273
+cap "AND_Gate_1/INV_0/in" "AND_Gate_1/NAND2_Gate_0/B" 58.9456
+cap "AND_Gate_0/INV_0/out" "AND_Gate_0/INV_0/vss" 3.41612
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_0/INV_0/vss" -0.00525963
+cap "XOR2_0/INV_0/out" "AND_Gate_1/NAND2_Gate_0/B" 2.0241
+cap "XOR2_1/XM7/a_15_n100#" "AND_Gate_1/NAND2_Gate_0/A" 0.132074
+cap "XOR2_0/XM8/a_15_n100#" "AND_Gate_1/NAND2_Gate_0/B" 0.12452
+cap "AND_Gate_0/INV_0/vss" "AND_Gate_0/INV_0/out" 100.794
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_0/INV_0/out" 0.69158
+cap "AND_Gate_0/INV_0/vdd" "AND_Gate_1/INV_0/in" -0.182041
+cap "XOR2_1/w_n2608_n4488#" "AND_Gate_0/INV_0/vss" 0.529953
+cap "AND_Gate_1/NAND2_Gate_0/A" "AND_Gate_0/INV_0/vdd" 127.1
+cap "AND_Gate_1/NAND2_Gate_0/A" "AND_Gate_1/INV_0/in" 7.12979
+cap "AND_Gate_1/NAND2_Gate_0/A" "XOR2_1/XM8/a_n33_n188#" 0.151145
+cap "AND_Gate_1/NAND2_Gate_0/A" "XOR2_1/XM7/a_15_n100#" 0.448455
+cap "AND_Gate_0/INV_0/vdd" "AND_Gate_0/INV_0/out" 412.222
+cap "OR2_0/NOR2_0/XM8/a_15_n100#" "AND_Gate_1/INV_0/in" 0.0531255
+cap "AND_Gate_1/INV_0/in" "AND_Gate_0/INV_0/out" 0.872151
+cap "AND_Gate_1/NAND2_Gate_0/A" "XOR2_1/INV_1/vdd" 0.367871
+cap "AND_Gate_1/NAND2_Gate_0/A" "AND_Gate_0/INV_0/out" 40.7705
+cap "AND_Gate_0/INV_0/vss" "AND_Gate_1/INV_0/out" 2.89056
+cap "OR2_0/NOR2_0/XM7/a_15_n100#" "AND_Gate_1/INV_0/in" 0.0224211
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_0/INV_0/vss" 29.9026
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_1/INV_0/out" 2.58539
+cap "XOR2_1/Y" "AND_Gate_0/INV_0/out" 1.82874
+cap "AND_Gate_0/INV_0/vss" "AND_Gate_0/INV_0/vdd" 151.463
+cap "AND_Gate_1/INV_0/out" "AND_Gate_0/INV_0/vdd" 0.175685
+cap "AND_Gate_0/INV_0/vss" "AND_Gate_1/INV_0/in" 11.4199
+cap "AND_Gate_0/INV_0/in" "AND_Gate_1/NAND2_Gate_0/A" 0.075067
+cap "AND_Gate_1/INV_0/out" "AND_Gate_1/INV_0/in" 0.32861
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_0/INV_0/vdd" 3.51038
+cap "AND_Gate_0/INV_0/vss" "AND_Gate_1/NAND2_Gate_0/A" 27.9427
+cap "XOR2_1/XM1/a_n33_n188#" "AND_Gate_0/INV_0/vss" 1.8063
+cap "AND_Gate_1/NAND2_Gate_0/B" "AND_Gate_1/NAND2_Gate_0/A" 0.992845
+cap "OR2_0/NOR2_0/B" "AND_Gate_1/INV_0/out" -63.7693
+cap "OR2_0/NOR2_0/B" "XOR2_1/Y" 0.1436
+cap "AND_Gate_1/NAND2_Gate_0/XM2/a_n33_n188#" "AND_Gate_1/INV_0/out" 2.58539
+cap "AND_Gate_1/INV_0/vdd" "XOR2_1/XM8/a_15_n100#" 29.1563
+cap "OR2_0/NOR2_0/B" "XOR2_1/XM8/a_15_n100#" 10.9393
+cap "AND_Gate_1/INV_0/vss" "AND_Gate_1/INV_0/vdd" 44.1517
+cap "AND_Gate_1/INV_0/vss" "OR2_0/NOR2_0/B" 45.2926
+cap "XOR2_1/INV_0/out" "OR2_0/NOR2_0/XM7/a_15_n100#" 0.00489824
+cap "XOR2_1/INV_0/out" "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" 0.12398
+cap "XOR2_1/INV_0/out" "AND_Gate_1/INV_0/vdd" 132.847
+cap "AND_Gate_1/INV_0/vss" "AND_Gate_1/INV_0/out" 0.71972
+cap "XOR2_1/INV_0/out" "OR2_0/NOR2_0/B" 16.5619
+cap "XOR2_1/XM7/a_15_n100#" "AND_Gate_1/INV_0/vdd" 1.38986
+cap "XOR2_1/INV_0/out" "AND_Gate_1/INV_0/out" 0.646023
+cap "AND_Gate_1/INV_0/vss" "XOR2_1/XM8/a_15_n100#" -5.68434e-14
+cap "AND_Gate_1/INV_0/vdd" "OR2_0/NOR2_0/XM7/a_15_n100#" 0.862204
+cap "XOR2_1/INV_0/out" "XOR2_1/Y" -4.44089e-16
+cap "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" "AND_Gate_1/INV_0/vdd" 3.23663
+cap "OR2_0/NOR2_0/B" "OR2_0/NOR2_0/XM7/a_15_n100#" -2.77556e-17
+cap "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" "OR2_0/NOR2_0/B" 0.76465
+cap "AND_Gate_1/INV_0/vdd" "OR2_0/NOR2_0/B" 69.8976
+cap "AND_Gate_1/INV_0/vdd" "AND_Gate_1/INV_0/out" 332.81
+cap "AND_Gate_1/INV_0/in" "AND_Gate_1/INV_0/out" 0.33552
+cap "AND_Gate_1/INV_0/vdd" "XOR2_1/Y" 0.288722
+cap "OR2_0/NOR2_0/B" "AND_Gate_1/INV_0/vss" 0.0388439
+cap "OR2_0/NOR2_0/XM7/a_15_n100#" "AND_Gate_1/INV_0/vss" 0.461547
+cap "AND_Gate_1/INV_0/vdd" "AND_Gate_1/INV_0/vss" 3.34348
+cap "AND_Gate_1/INV_0/vdd" "XOR2_1/INV_0/out" 0.681671
+cap "OR2_0/NOR2_0/B" "OR2_0/NOR2_0/XM7/a_15_n100#" 1.19446
+cap "OR2_0/NOR2_0/B" "XOR2_1/Y" 0.0273035
+cap "OR2_0/NOR2_0/XM7/a_15_n100#" "XOR2_1/Y" 1.36481
+cap "AND_Gate_1/INV_0/vdd" "OR2_0/NOR2_0/B" 1.30741
+cap "AND_Gate_1/INV_0/vdd" "XOR2_1/Y" 4.61682
+cap "AND_Gate_1/INV_0/vdd" "OR2_0/NOR2_0/XM7/a_15_n100#" 5.50508
+cap "OR2_0/NOR2_0/XM7/a_15_n100#" "AND_Gate_1/INV_0/in" 0.0491254
+cap "OR2_0/INV_0/out" "OR2_0/INV_0/in" 0.109839
+cap "OR2_0/NOR2_0/B" "OR2_0/INV_0/out" 0.129222
+cap "AND_Gate_1/INV_0/vdd" "OR2_0/INV_0/in" 0.224109
+cap "OR2_0/INV_0/out" "OR2_0/NOR2_0/XM7/a_n33_n197#" 0.129222
+cap "OR2_0/INV_0/out" "OR2_0/INV_0/in" 0.112991
+cap "OR2_0/INV_0/vdd" "OR2_0/INV_0/out" 0.469595
+cap "XOR2_0/INV_1/out" "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" 1.83009
+cap "XOR2_0/Y" "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" 21.7501
+cap "XOR2_0/INV_1/vss" "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" 172.916
+cap "XOR2_0/XM5/a_15_n100#" "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" 0.00572122
+cap "AND_Gate_0/NAND2_Gate_0/VDD" "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" 0.0350787
+cap "XOR2_0/INV_1/vss" "XOR2_0/INV_1/vdd" 0.0922249
+cap "XOR2_0/INV_1/vss" "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" 0.806531
+cap "XOR2_0/XM7/a_15_n100#" "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" 3.93846
+cap "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" "XOR2_0/INV_1/vdd" 0.715159
+cap "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" 66.31
+cap "XOR2_0/XM7/a_15_n100#" "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" 0.432678
+cap "XOR2_0/INV_1/out" "XOR2_0/INV_1/vss" 0.0614148
+cap "XOR2_0/XM8/a_15_n100#" "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" 0.513419
+cap "XOR2_0/Y" "XOR2_0/INV_1/vss" 1.08601
+cap "XOR2_0/INV_0/vss" "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" 4.6792
+cap "XOR2_0/INV_0/vdd" "XOR2_0/INV_1/out" 5.68434e-14
+cap "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" "XOR2_0/INV_0/vss" 0.00193518
+cap "XOR2_0/XM8/a_15_n100#" "XOR2_0/Y" 0.209279
+cap "XOR2_0/INV_0/vdd" "XOR2_0/INV_0/out" 5.68434e-14
+cap "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" "XOR2_0/XM7/a_15_n100#" 19.7009
+cap "AND_Gate_0/INV_0/vdd" "XOR2_0/INV_1/out" 0.00321042
+cap "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" "XOR2_0/Y" 5.82246
+cap "XOR2_0/INV_0/vss" "XOR2_0/Y" 15.6064
+cap "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" "XOR2_0/INV_1/out" 0.0314056
+cap "XOR2_0/INV_0/vdd" "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" -1.77636e-15
+cap "AND_Gate_0/INV_0/vdd" "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" 0.46984
+cap "XOR2_0/INV_0/vss" "XOR2_0/INV_1/out" 0.0477882
+cap "XOR2_0/INV_0/out" "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" 1.90872
+cap "XOR2_0/INV_0/vdd" "XOR2_0/INV_0/vss" 1.42109e-14
+cap "XOR2_0/INV_0/vss" "XOR2_0/INV_0/out" -1.43208
+cap "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" "AND_Gate_0/NAND2_Gate_0/XM3/a_n73_n100#" 0.000601039
+cap "AND_Gate_0/INV_0/vdd" "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" 4.29205
+cap "XOR2_0/INV_0/out" "XOR2_0/XM7/a_15_n100#" -0.117117
+cap "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" "XOR2_0/XM5/a_15_n100#" 0.00568892
+cap "XOR2_0/INV_1/out" "XOR2_0/Y" 0.0753143
+cap "AND_Gate_0/INV_0/vdd" "XOR2_0/INV_0/vss" 8.1793
+cap "XOR2_0/INV_0/vdd" "XOR2_0/Y" 2.35864
+cap "XOR2_0/INV_0/out" "XOR2_0/Y" 55.7356
+cap "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" 23.1124
+cap "XOR2_0/INV_0/vss" "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" -2.69945
+cap "AND_Gate_0/INV_0/vdd" "XOR2_0/Y" 0.0964089
+cap "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" "XOR2_0/XM7/a_15_n100#" 1.59479
+cap "AND_Gate_0/NAND2_Gate_0/XM3/a_n73_n100#" "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" 1.29748
+cap "XOR2_0/XM8/a_15_n100#" "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" 0.604612
+cap "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" "XOR2_0/Y" 21.2499
+cap "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" 0.048956
+cap "XOR2_0/INV_0/vss" "XOR2_1/XM5/a_n73_n100#" -2.77556e-17
+cap "XOR2_0/Y" "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" 10.2834
+cap "XOR2_1/INV_1/out" "XOR2_0/Y" 2.92238
+cap "XOR2_0/INV_0/out" "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" 0.105859
+cap "XOR2_0/INV_0/out" "XOR2_0/Y" 64.45
+cap "m1_n968_3986#" "XOR2_0/INV_0/vss" 3.42218
+cap "AND_Gate_0/INV_0/vdd" "XOR2_0/Y" -0.143878
+cap "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" "XOR2_0/Y" 3.6212
+cap "XOR2_0/INV_0/vss" "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" -0.15251
+cap "XOR2_0/INV_0/out" "XOR2_0/INV_0/vss" 22.6562
+cap "XOR2_0/INV_0/out" "XOR2_0/INV_0/vdd" 0.325678
+cap "XOR2_0/INV_0/vss" "AND_Gate_0/INV_0/vdd" 1.22239
+cap "XOR2_0/INV_0/vss" "XOR2_0/Y" 305.777
+cap "XOR2_0/INV_0/vss" "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" 6.56616
+cap "XOR2_0/Y" "XOR2_1/XM7/a_15_n100#" 0.157149
+cap "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" "XOR2_1/XM7/a_15_n100#" 1.50148
+cap "XOR2_0/Y" "XOR2_0/INV_0/vdd" 17.3917
+cap "XOR2_0/Y" "XOR2_1/XM5/a_n73_n100#" 0.22549
+cap "XOR2_1/INV_1/out" "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" 0.00676198
+cap "XOR2_0/INV_0/vss" "XOR2_0/INV_1/out" -0.0398752
+cap "XOR2_0/INV_0/out" "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" 2.84217e-14
+cap "XOR2_0/INV_0/out" "XOR2_1/INV_1/out" 0.746003
+cap "XOR2_0/INV_0/vss" "XOR2_0/INV_0/vdd" -5.11295
+cap "XOR2_0/INV_0/vss" "XOR2_0/INV_0/in" 0.0147928
+cap "XOR2_0/INV_0/out" "XOR2_0/INV_0/vss" 1.91656
+cap "XOR2_0/INV_0/out" "XOR2_1/INV_1/out" 0.605999
+cap "AND_Gate_0/INV_0/vdd" "XOR2_1/Y" -2.84217e-14
+cap "XOR2_0/Y" "AND_Gate_0/INV_0/vdd" 0.281066
+cap "XOR2_0/Y" "XOR2_1/XM7/a_15_n100#" 0.00556297
+cap "XOR2_0/Y" "XOR2_1/Y" 0.192731
+cap "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" "AND_Gate_1/INV_0/out" 0.00742578
+cap "OR2_0/NOR2_0/B" "XOR2_0/INV_0/vss" 0.0856968
+cap "XOR2_1/XM5/a_15_n100#" "AND_Gate_0/INV_0/vdd" -2.84217e-14
+cap "XOR2_1/INV_1/out" "XOR2_0/INV_0/vss" 0.0227781
+cap "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" "OR2_0/NOR2_0/B" 0.441389
+cap "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" "XOR2_0/INV_0/vss" 0.152019
+cap "XOR2_0/Y" "XOR2_0/INV_0/in" 0.45616
+cap "XOR2_0/Y" "XOR2_0/INV_0/out" 2.03758
+cap "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" "AND_Gate_1/INV_0/in" 0.169298
+cap "AND_Gate_0/INV_0/vdd" "XOR2_0/INV_0/vss" 0.368367
+cap "XOR2_0/Y" "OR2_0/NOR2_0/B" 0.155472
+cap "AND_Gate_0/INV_0/vdd" "XOR2_1/INV_1/out" 0.0327737
+cap "OR2_0/NOR2_0/B" "XOR2_1/Y" 1.82874
+cap "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" "AND_Gate_0/INV_0/vdd" 2.3737
+cap "XOR2_0/Y" "XOR2_0/INV_0/vss" 4.31342
+cap "XOR2_1/INV_1/out" "XOR2_1/Y" 2.84217e-14
+cap "XOR2_0/Y" "XOR2_1/INV_1/out" 0.182143
+cap "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" "XOR2_1/XM7/a_15_n100#" 1.50148
+cap "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" "XOR2_0/Y" 3.11897
+cap "AND_Gate_1/INV_0/out" "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" 0.286609
+cap "OR2_0/NOR2_0/A" "XOR2_1/INV_0/vss" 0.00113741
+cap "XOR2_1/INV_1/out" "XOR2_1/Y" 0.0570971
+cap "OR2_0/NOR2_0/B" "XOR2_1/Y" 0.423114
+cap "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" "XOR2_1/Y" 4.33066
+cap "XOR2_1/INV_0/out" "XOR2_1/INV_0/vss" -1.32337
+cap "XOR2_1/INV_0/vss" "XOR2_1/Y" 208.206
+cap "OR2_0/NOR2_0/B" "XOR2_1/INV_1/out" 0.00228661
+cap "AND_Gate_1/INV_0/vdd" "XOR2_1/XM7/a_15_n100#" 1.16224
+cap "OR2_0/NOR2_0/B" "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" 0.453318
+cap "XOR2_1/XM8/a_15_n100#" "AND_Gate_1/INV_0/vdd" 10.1175
+cap "XOR2_1/INV_1/out" "XOR2_1/INV_0/vss" -0.03496
+cap "OR2_0/NOR2_0/B" "XOR2_1/INV_0/vss" 5.2691
+cap "XOR2_1/INV_0/vss" "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" -0.121867
+cap "XOR2_1/XM5/a_15_n100#" "AND_Gate_1/INV_0/vdd" 8.95765
+cap "XOR2_1/INV_0/out" "AND_Gate_1/INV_0/vdd" 389.903
+cap "AND_Gate_1/INV_0/vdd" "XOR2_1/Y" 44.3711
+cap "XOR2_1/INV_1/in" "AND_Gate_1/INV_0/vdd" 2.59153
+cap "XOR2_1/INV_1/out" "AND_Gate_1/INV_0/vdd" 9.24008
+cap "AND_Gate_1/INV_0/vdd" "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" 212.294
+cap "XOR2_1/INV_0/out" "XOR2_1/Y" 37.95
+cap "AND_Gate_1/INV_0/vdd" "XOR2_1/INV_0/vss" 142.885
+cap "AND_Gate_1/INV_0/vdd" "XOR2_1/INV_0/vss" 3.31757
+cap "XOR2_1/INV_0/out" "AND_Gate_1/INV_0/vdd" 0.670287
+cap "XOR2_1/Y" "OR2_0/NOR2_0/XM7/a_15_n100#" 1.43538
+cap "XOR2_1/Y" "XOR2_1/INV_0/vss" 32.23
+cap "XOR2_1/INV_0/out" "XOR2_1/Y" 15.9626
+cap "OR2_0/NOR2_0/B" "XOR2_1/Y" 0.398752
+cap "AND_Gate_1/INV_0/vdd" "XOR2_1/Y" 10.3645
+cap "XOR2_0/INV_1/out" "XOR2_0/INV_1/in" 0.142922
+cap "XOR2_0/INV_1/vdd" "XOR2_0/INV_1/in" -2.75316
+cap "XOR2_0/INV_1/vdd" "XOR2_0/INV_1/vss" -0.088
+cap "XOR2_0/INV_0/in" "XOR2_0/INV_0/out" 8.88178e-16
+cap "XOR2_0/INV_0/in" "XOR2_0/Y" 0.481926
+cap "XOR2_0/INV_0/vdd" "XOR2_0/INV_1/in" 0.52688
+cap "XOR2_0/INV_0/vdd" "XOR2_0/INV_0/in" 0.722504
+cap "XOR2_0/INV_0/vdd" "XOR2_0/Y" -3.66032
+cap "XOR2_0/Y" "XOR2_0/INV_0/in" 1.18694
+cap "XOR2_0/INV_0/out" "XOR2_0/Y" 1.95533
+cap "XOR2_0/INV_0/in" "XOR2_1/INV_1/out" 0.00834351
+cap "XOR2_0/INV_0/out" "XOR2_1/INV_1/out" 0.459587
+cap "XOR2_0/INV_0/vdd" "XOR2_0/INV_0/in" 1.29224
+cap "XOR2_0/INV_0/vdd" "XOR2_0/INV_0/out" 24.06
+cap "XOR2_0/INV_0/vdd" "XOR2_0/INV_0/vss" -5.11295
+cap "XOR2_0/Y" "XOR2_0/INV_0/vdd" 3.56237
+cap "XOR2_0/INV_0/in" "XOR2_0/INV_0/vdd" 0.0274416
+cap "XOR2_1/INV_1/out" "XOR2_0/Y" 0.00350339
+cap "XOR2_0/INV_0/vdd" "XOR2_0/INV_0/out" 4.64416
+cap "XOR2_0/Y" "XOR2_0/INV_0/in" 0.732337
+cap "XOR2_1/INV_1/out" "XOR2_0/INV_0/out" 0.499377
+cap "XOR2_0/Y" "XOR2_0/INV_0/out" 0.44698
+cap "XOR2_1/INV_1/out" "XOR2_0/INV_0/vdd" 0.206375
+cap "XOR2_1/Y" "XOR2_1/INV_0/in" -8.67362e-19
+cap "XOR2_1/INV_0/vdd" "XOR2_1/INV_0/out" 12.6475
+cap "XOR2_1/INV_0/vss" "XOR2_1/INV_0/vdd" 0.156167
+cap "XOR2_1/INV_0/vdd" "XOR2_1/XM5/a_15_n100#" 10.2581
+cap "XOR2_1/Y" "XOR2_1/INV_0/vdd" 0.0533947
+cap "XOR2_1/INV_0/vdd" "XOR2_1/INV_1/in" 2.70332
+cap "XOR2_1/INV_0/vdd" "XOR2_1/INV_0/in" 42.7384
+merge "XOR2_1/Y" "S" -207.453 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3248 -228 0 0 0 0 0 0 0 0 0 0
+merge "XOR2_1/INV_0/vss" "XOR2_1/INV_1/vss" -1483.44 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68252 -3076 0 0 0 0 0 0 0 0 0 0
+merge "XOR2_1/INV_1/vss" "XOR2_0/INV_0/vss"
+merge "XOR2_0/INV_0/vss" "XOR2_1/GND"
+merge "XOR2_1/GND" "m1_n724_6812#"
+merge "m1_n724_6812#" "XOR2_0/INV_1/vss"
+merge "XOR2_0/INV_1/vss" "GND"
+merge "GND" "OR2_0/INV_0/vss"
+merge "OR2_0/INV_0/vss" "AND_Gate_1/INV_0/vss"
+merge "AND_Gate_1/INV_0/vss" "OR2_0/NOR2_0/GND"
+merge "OR2_0/NOR2_0/GND" "m1_1804_3586#"
+merge "m1_1804_3586#" "AND_Gate_0/INV_0/vss"
+merge "AND_Gate_0/INV_0/vss" "XOR2_1/li_n2438_n5892#"
+merge "XOR2_1/li_n2438_n5892#" "m1_884_5324#"
+merge "m1_884_5324#" "AND_Gate_1/NAND2_Gate_0/GND"
+merge "AND_Gate_1/NAND2_Gate_0/GND" "m1_n1072_3334#"
+merge "OR2_0/VSUBS" "AND_Gate_1/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "AND_Gate_1/VSUBS" "XOR2_1/VSUBS"
+merge "XOR2_1/VSUBS" "AND_Gate_0/VSUBS"
+merge "AND_Gate_0/VSUBS" "XOR2_0/VSUBS"
+merge "XOR2_0/VSUBS" "VSUBS"
+merge "XOR2_1/INV_0/in" "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" -700.333 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -31964 -1136 0 0 0 0 0 0 0 0 0 0
+merge "AND_Gate_1/NAND2_Gate_0/XM3/a_n33_n197#" "AND_Gate_1/NAND2_Gate_0/A"
+merge "AND_Gate_1/NAND2_Gate_0/A" "XOR2_1/B"
+merge "XOR2_1/B" "m1_128_4912#"
+merge "m1_128_4912#" "Ci"
+merge "XOR2_1/INV_0/vdd" "XOR2_1/INV_1/vdd" -3270.26 0 0 0 0 -203664 -2956 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1200 -140 -60052 -2372 0 0 0 0 0 0 0 0 0 0
+merge "XOR2_1/INV_1/vdd" "XOR2_0/INV_0/vdd"
+merge "XOR2_0/INV_0/vdd" "XOR2_1/VDD"
+merge "XOR2_1/VDD" "m1_n786_7902#"
+merge "m1_n786_7902#" "XOR2_0/INV_1/vdd"
+merge "XOR2_0/INV_1/vdd" "m1_n4074_7836#"
+merge "m1_n4074_7836#" "OR2_0/INV_0/vdd"
+merge "OR2_0/INV_0/vdd" "AND_Gate_1/INV_0/vdd"
+merge "AND_Gate_1/INV_0/vdd" "OR2_0/NOR2_0/VDD"
+merge "OR2_0/NOR2_0/VDD" "m1_2280_5620#"
+merge "m1_2280_5620#" "AND_Gate_0/INV_0/vdd"
+merge "AND_Gate_0/INV_0/vdd" "li_2784_4918#"
+merge "li_2784_4918#" "AND_Gate_1/NAND2_Gate_0/VDD"
+merge "AND_Gate_1/NAND2_Gate_0/VDD" "AND_Gate_0/NAND2_Gate_0/VDD"
+merge "AND_Gate_0/NAND2_Gate_0/VDD" "w_n1682_4560#"
+merge "XOR2_0/INV_0/in" "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" -569.091 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -34904 -956 -5032 -284 0 0 0 0 0 0 0 0
+merge "AND_Gate_0/NAND2_Gate_0/XM4/a_n33_n197#" "AND_Gate_0/NAND2_Gate_0/B"
+merge "AND_Gate_0/NAND2_Gate_0/B" "XOR2_0/B"
+merge "XOR2_0/B" "m1_n2340_4916#"
+merge "m1_n2340_4916#" "B"
+merge "XOR2_1/INV_1/in" "XOR2_0/Y" -931.352 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -38068 -1248 0 0 0 0 0 0 0 0 0 0
+merge "XOR2_0/Y" "AND_Gate_1/NAND2_Gate_0/B"
+merge "AND_Gate_1/NAND2_Gate_0/B" "P"
+merge "OR2_0/INV_0/out" "Co" -121.261 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16512 -536 0 0 0 0 0 0 0 0 0 0
+merge "AND_Gate_1/INV_0/out" "OR2_0/NOR2_0/A" -522.242 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20768 -824 0 0 0 0 0 0 0 0 0 0
+merge "OR2_0/NOR2_0/A" "G"
+merge "OR2_0/NOR2_0/B" "AND_Gate_0/INV_0/out" -921.558 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -33712 -1048 0 0 0 0 0 0 0 0 0 0
+merge "AND_Gate_0/INV_0/out" "m1_n968_3986#"
+merge "XOR2_0/INV_1/in" "A" -445.086 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23472 -828 -3040 -236 0 0 0 0 0 0 0 0
+merge "A" "XOR2_0/m1_n3352_n4032#"
+merge "XOR2_0/m1_n3352_n4032#" "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#"
+merge "AND_Gate_0/NAND2_Gate_0/XM3/a_n33_n197#" "AND_Gate_0/NAND2_Gate_0/A"
+merge "AND_Gate_0/NAND2_Gate_0/A" "m1_n2764_4912#"

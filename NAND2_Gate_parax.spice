@@ -1,0 +1,24 @@
+* NGSPICE file created from NAND2_Gate_parax.ext - technology: sky130A
+
+.subckt NAND2_Gate_parax A Y B
+X0 Y B VDD VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X1 Y A a_n1010_n2772# GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X2 a_n1010_n2772# B GND GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X3 VDD A Y VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+C0 a_n1010_n2772# VDD 2.1e-19
+C1 A Y 0.260419f
+C2 a_n1010_n2772# B 0.231309f
+C3 A a_n1010_n2772# 0.304421f
+C4 VDD B 0.484925f
+C5 a_n1010_n2772# Y 0.23386f
+C6 A VDD 0.715892f
+C7 A B 0.067257f
+C8 Y VDD 0.81249f
+C9 Y B 0.456264f
+C10 a_n1010_n2772# GND 0.691555f
+C11 B GND 1.53327f
+C12 Y GND 0.817303f
+C13 A GND 1.12078f
+C14 VDD GND 2.6046f
+.ends
+

@@ -1,0 +1,32 @@
+| units: 500000 tech: sky130A format: MIT
+x B GND INV_0.out GND s=18000,580 d=18000,580 l=30 w=200 x=-875 y=-4305 sky130_fd_pr__nfet_01v8
+x A VDD a_n2362_n4269# VDD s=11600,516 d=11600,516 l=30 w=200 x=-2379 y=-3648 sky130_fd_pr__pfet_01v8
+x A GND INV_1.out GND s=18000,580 d=18000,580 l=30 w=200 x=-3235 y=-4287 sky130_fd_pr__nfet_01v8
+x B GND a_n2364_n5714# GND s=11600,516 d=11600,516 l=30 w=200 x=-2393 y=-5713 sky130_fd_pr__nfet_01v8
+x INV_0.out GND a_n1782_n5714# GND s=11600,516 d=11600,516 l=30 w=200 x=-1811 y=-5713 sky130_fd_pr__nfet_01v8
+x INV_1.out Y a_n2362_n4269# VDD s=11600,516 d=11600,516 l=30 w=200 x=-2391 y=-4268 sky130_fd_pr__pfet_01v8
+x A Y a_n2364_n5714# GND s=11600,516 d=11600,516 l=30 w=200 x=-2367 y=-5077 sky130_fd_pr__nfet_01v8
+x INV_0.out Y a_n2362_n4269# VDD s=11600,516 d=11600,516 l=30 w=200 x=-1803 y=-4268 sky130_fd_pr__pfet_01v8
+x INV_1.out Y a_n1782_n5714# GND s=11600,516 d=11600,516 l=30 w=200 x=-1809 y=-5081 sky130_fd_pr__nfet_01v8
+x B VDD INV_0.out VDD s=46200,1060 d=46200,1060 l=30 w=420 x=-875 y=-3915 sky130_fd_pr__pfet_01v8
+x A VDD INV_1.out VDD s=46200,1060 d=46200,1060 l=30 w=420 x=-3235 y=-3897 sky130_fd_pr__pfet_01v8
+x B VDD a_n2362_n4269# VDD s=11600,516 d=11600,516 l=30 w=200 x=-1797 y=-3648 sky130_fd_pr__pfet_01v8
+R a_n1782_n5714# 1313
+R a_n2364_n5714# 1313
+C INV_0.out0 2.0
+R INV_0.out 2784
+R Y 3380
+C B0 2.3
+R B 3075
+= B INV_0.in
+R a_n2362_n4269# 4526
+R INV_1.out 2783
+R A 3073
+= A INV_1.in
+C VDD0 9.2
+R VDD 38715
+= VDD INV_0.vdd
+= VDD INV_1.vdd
+R GND 43257
+= GND INV_0.vss
+= GND INV_1.vss

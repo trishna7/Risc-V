@@ -1,0 +1,35 @@
+* NGSPICE file created from AND_Gate_parax.ext - technology: sky130A
+
+.subckt AND_Gate_parax
+X0 INV_0.out NAND2_Gate_0.Y NAND2_Gate_0.VDD NAND2_Gate_0.VDD sky130_fd_pr__pfet_01v8 ad=1.155 pd=5.3 as=0.888659 ps=5.357561 w=2.1 l=0.15
+**devattr s=46200,1060 d=46200,1060
+X1 a_714_816# NAND2_Gate_0.B NAND2_Gate_0.GND NAND2_Gate_0.GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.37 ps=2.74 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+X2 NAND2_Gate_0.VDD NAND2_Gate_0.A NAND2_Gate_0.Y NAND2_Gate_0.VDD sky130_fd_pr__pfet_01v8 ad=0.423171 pd=2.551219 as=0.29 ps=2.58 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+X3 NAND2_Gate_0.Y NAND2_Gate_0.B NAND2_Gate_0.VDD NAND2_Gate_0.VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.423171 ps=2.551219 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+X4 NAND2_Gate_0.Y NAND2_Gate_0.A a_714_816# NAND2_Gate_0.GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+X5 INV_0.out NAND2_Gate_0.Y NAND2_Gate_0.GND NAND2_Gate_0.GND sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.37 ps=2.74 w=1 l=0.15
+**devattr s=18000,580 d=18000,580
+C0 NAND2_Gate_0.Y NAND2_Gate_0.VDD 1.17728f
+C1 NAND2_Gate_0.Y NAND2_Gate_0.B 0.482864f
+C2 NAND2_Gate_0.A NAND2_Gate_0.VDD 0.715914f
+C3 a_714_816# NAND2_Gate_0.VDD 2.1e-19
+C4 NAND2_Gate_0.A NAND2_Gate_0.B 0.067257f
+C5 a_714_816# NAND2_Gate_0.B 0.231309f
+C6 NAND2_Gate_0.Y NAND2_Gate_0.A 0.260855f
+C7 NAND2_Gate_0.Y a_714_816# 0.233959f
+C8 a_714_816# NAND2_Gate_0.A 0.304421f
+C9 NAND2_Gate_0.VDD INV_0.out 0.33706f
+C10 NAND2_Gate_0.VDD NAND2_Gate_0.B 0.673355f
+C11 NAND2_Gate_0.Y INV_0.out 0.117856f
+C12 INV_0.out NAND2_Gate_0.GND 0.485961f
+C13 a_714_816# NAND2_Gate_0.GND 0.68858f
+C14 NAND2_Gate_0.B NAND2_Gate_0.GND 1.48467f
+C15 NAND2_Gate_0.Y NAND2_Gate_0.GND 1.74475f
+C16 NAND2_Gate_0.A NAND2_Gate_0.GND 1.12078f
+C17 NAND2_Gate_0.VDD NAND2_Gate_0.GND 5.1366f
+.ends
+

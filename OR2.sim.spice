@@ -1,0 +1,38 @@
+* NGSPICE file created from OR2.parax.ext - technology: sky130A
+
+.subckt OR2.parax
+X0 a_912_1643# A NOR2_0.Y VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+X1 GND B NOR2_0.Y GND sky130_fd_pr__nfet_01v8 ad=0.343333 pd=2.686667 as=0.29 ps=2.58 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+X2 Y NOR2_0.Y GND GND sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.343333 ps=2.686667 w=1 l=0.15
+**devattr s=18000,580 d=18000,580
+X3 a_912_1643# B VDD VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.466129 ps=2.541935 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+X4 NOR2_0.Y A GND GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.343333 ps=2.686667 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+X5 Y NOR2_0.Y VDD VDD sky130_fd_pr__pfet_01v8 ad=1.155 pd=5.3 as=0.978871 ps=5.338065 w=2.1 l=0.15
+**devattr s=46200,1060 d=46200,1060
+C0 B Y 0.002471f
+C1 VDD a_912_1643# 0.465558f
+C2 VDD NOR2_0.Y 0.526268f
+C3 VDD A 0.316737f
+C4 a_912_1643# B 0.147134f
+C5 NOR2_0.Y B 0.335912f
+C6 A B 0.103818f
+C7 a_912_1643# Y 8.72e-19
+C8 NOR2_0.Y Y 0.125678f
+C9 A Y 3.91e-20
+C10 a_912_1643# NOR2_0.Y 0.200006f
+C11 A a_912_1643# 0.059155f
+C12 A NOR2_0.Y 0.215511f
+C13 VDD B 0.681093f
+C14 VDD Y 0.327325f
+C15 Y GND 0.545676f
+C16 A GND 1.17424f
+C17 NOR2_0.Y GND 1.8672f
+C18 a_912_1643# GND 0.28395f
+C19 B GND 1.12918f
+C20 VDD GND 5.01174f
+.ends
+

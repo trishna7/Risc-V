@@ -1,0 +1,35 @@
+magic
+tech sky130A
+timestamp 1733393709
+<< metal1 >>
+rect -98 929 17 1001
+rect 531 957 989 984
+rect 531 953 990 957
+rect 531 941 557 953
+rect 652 941 990 953
+rect 894 905 990 941
+rect 894 776 991 905
+rect -107 447 8 519
+rect 1160 493 1275 504
+rect 1020 442 1275 493
+rect 1160 432 1275 442
+rect 23 195 138 267
+rect 31 116 199 168
+rect 866 31 931 279
+rect 403 -5 931 31
+rect 866 -6 931 -5
+use INV  INV_0 ~/mag_gates
+timestamp 1733393709
+transform 1 0 975 0 1 614
+box -285 -390 280 235
+use NAND2_Gate  NAND2_Gate_0
+timestamp 1733390931
+transform 1 0 862 0 1 1794
+box -873 -1801 -145 -810
+<< labels >>
+rlabel metal1 -98 964 -98 964 1 VDD
+rlabel metal1 -106 476 -106 476 3 A
+rlabel metal1 46 139 46 139 1 GND
+rlabel metal1 109 231 109 231 1 B
+rlabel metal1 1260 466 1261 466 1 Y
+<< end >>

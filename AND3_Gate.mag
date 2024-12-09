@@ -1,0 +1,54 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1730201507
+<< error_s >>
+rect 1720 1768 1724 1782
+rect 1692 1740 1696 1762
+rect 1722 1488 1780 1494
+rect 1722 1454 1734 1488
+rect 1722 1448 1780 1454
+rect 770 -216 828 -210
+rect 770 -250 782 -216
+rect 770 -256 828 -250
+rect 770 -526 828 -520
+rect 770 -560 782 -526
+rect 770 -566 828 -560
+<< nwell >>
+rect 1622 1958 1880 1960
+rect 1090 1956 1880 1958
+rect 386 1316 1962 1956
+<< nsubdiffcont >>
+rect 1672 1884 1830 1918
+<< viali >>
+rect 1672 1884 1830 1918
+<< metal1 >>
+rect 1622 1958 1880 1960
+rect 1090 1918 1880 1958
+rect 1090 1884 1672 1918
+rect 1830 1884 1880 1918
+rect 1090 1880 1880 1884
+rect 1622 1862 1880 1880
+rect 1646 1762 1682 1862
+rect 1720 1768 2050 1834
+rect 1646 1708 1696 1762
+rect 1646 1566 1720 1708
+rect 358 -622 404 56
+rect 358 -676 886 -622
+use INV  INV_0 ~/mag_gates
+timestamp 1715084558
+transform 1 0 3106 0 1 902
+box -570 -780 600 470
+use NAND2_Gate  NAND2_Gate_0 ~/mag_gates
+timestamp 1730184765
+transform 1 0 1736 0 1 3576
+box -1746 -3602 -130 -1620
+use sky130_fd_pr__nfet_01v8_648S5X  XM2 ~/mag_gates
+timestamp 1727783516
+transform 1 0 799 0 1 -388
+box -211 -310 211 310
+use sky130_fd_pr__pfet_01v8_XGS3BL  XM4 ~/mag_gates
+timestamp 1727783516
+transform 1 0 1751 0 1 1635
+box -211 -319 211 319
+<< end >>

@@ -1,0 +1,77 @@
+timestamp 1733393709
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use NAND2_Gate NAND2_Gate_0 1 0 1724 0 1 3588
+use INV INV_0 1 0 1950 0 1 1228
+node "m1_806_n10#" 2 736.135 806 -10 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 140772 3252 0 0 0 0 0 0 0 0 0 0
+node "GND" 0 157.641 62 232 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34944 880 0 0 0 0 0 0 0 0 0 0
+node "B" 0 128.648 46 390 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33120 748 0 0 0 0 0 0 0 0 0 0
+node "Y" 1 305.081 2040 884 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61680 1308 0 0 0 0 0 0 0 0 0 0
+node "A" 0 160.98 -214 894 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33120 748 0 0 0 0 0 0 0 0 0 0
+node "m1_1062_1882#" 1 624.255 1062 1882 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 138156 2720 0 0 0 0 0 0 0 0 0 0
+node "VDD" 0 156.972 -196 1858 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33120 748 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_806_n10#" "GND" 3.30636
+cap "m1_806_n10#" "B" 4.20717
+cap "VDD" "A" 10.7218
+cap "B" "GND" 90.5385
+cap "m1_806_n10#" "m1_1062_1882#" 4.91208
+cap "VDD" "m1_1062_1882#" 3.5102
+cap "INV_0/vss" "INV_0/out" 1.34082
+cap "INV_0/vss" "NAND2_Gate_0/B" 137.675
+cap "INV_0/in" "INV_0/out" 2.1124
+cap "NAND2_Gate_0/XM1/a_n73_n100#" "INV_0/vss" 3.85519
+cap "NAND2_Gate_0/XM1/a_n73_n100#" "INV_0/in" 0.28357
+cap "INV_0/in" "INV_0/vdd" 12.8724
+cap "INV_0/vss" "INV_0/vdd" 3.37259
+cap "INV_0/vss" "INV_0/in" 1.49847
+cap "NAND2_Gate_0/B" "NAND2_Gate_0/A" 9.29607
+cap "INV_0/out" "NAND2_Gate_0/A" 0.0917568
+cap "NAND2_Gate_0/XM1/a_n73_n100#" "NAND2_Gate_0/A" 0.056879
+cap "INV_0/vdd" "NAND2_Gate_0/A" 0.491915
+cap "INV_0/in" "NAND2_Gate_0/A" 0.201291
+cap "INV_0/vss" "NAND2_Gate_0/A" 0.052358
+cap "NAND2_Gate_0/XM1/a_n73_n100#" "INV_0/out" 0.460352
+cap "NAND2_Gate_0/XM1/a_n73_n100#" "NAND2_Gate_0/B" 0.606569
+cap "INV_0/in" "NAND2_Gate_0/A" 0.121614
+cap "INV_0/vss" "NAND2_Gate_0/XM1/a_n73_n100#" 0.158266
+cap "INV_0/in" "NAND2_Gate_0/XM1/a_n73_n100#" 0.250888
+cap "NAND2_Gate_0/B" "INV_0/vdd" 16.1537
+cap "INV_0/vss" "INV_0/vdd" -0.194462
+cap "INV_0/in" "INV_0/vdd" 6.03201
+cap "INV_0/vss" "NAND2_Gate_0/B" 44.1096
+cap "INV_0/in" "NAND2_Gate_0/B" 1.96611
+cap "INV_0/out" "INV_0/vdd" 7.48637
+cap "INV_0/in" "INV_0/vss" 9.29587
+cap "INV_0/out" "NAND2_Gate_0/B" 3.91128
+cap "INV_0/out" "INV_0/vss" 1.39028
+cap "INV_0/out" "INV_0/in" 4.39555
+cap "INV_0/in" "NAND2_Gate_0/B" 0.590604
+cap "INV_0/vdd" "NAND2_Gate_0/B" 36.1596
+cap "INV_0/vss" "NAND2_Gate_0/B" 0.0271331
+cap "NAND2_Gate_0/A" "INV_0/vdd" -0.251555
+cap "INV_0/in" "INV_0/vdd" 6.51065
+cap "NAND2_Gate_0/A" "INV_0/vss" -5.55112e-17
+cap "INV_0/in" "INV_0/out" 0.248874
+cap "INV_0/vdd" "INV_0/vss" -2.61881
+cap "INV_0/in" "NAND2_Gate_0/B" 0.557463
+cap "INV_0/in" "NAND2_Gate_0/A" 0.0883603
+cap "INV_0/vdd" "INV_0/in" 5.36766
+cap "INV_0/out" "NAND2_Gate_0/B" 0.17958
+cap "INV_0/vdd" "NAND2_Gate_0/B" 82.0688
+cap "INV_0/vdd" "INV_0/out" 0.355353
+merge "INV_0/vss" "NAND2_Gate_0/VSUBS" -451.366 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27352 -1128 0 0 0 0 0 0 0 0 0 0
+merge "NAND2_Gate_0/VSUBS" "VSUBS"
+merge "VSUBS" "NAND2_Gate_0/GND"
+merge "NAND2_Gate_0/GND" "GND"
+merge "GND" "m1_806_n10#"
+merge "INV_0/vdd" "NAND2_Gate_0/VDD" -477.845 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28504 -1124 0 0 0 0 0 0 0 0 0 0
+merge "NAND2_Gate_0/VDD" "VDD"
+merge "VDD" "m1_1062_1882#"
+merge "INV_0/in" "NAND2_Gate_0/Y" -88.556 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -320 -168 0 0 0 0 0 0 0 0 0 0
+merge "INV_0/out" "Y" -263.124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -35920 -1100 0 0 0 0 0 0 0 0 0 0
+merge "NAND2_Gate_0/A" "A" -78.2733 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3952 -284 0 0 0 0 0 0 0 0 0 0
+merge "NAND2_Gate_0/B" "B" -332.662 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14672 -524 0 0 0 0 0 0 0 0 0 0

@@ -1,0 +1,7 @@
+* SPICE3 file created from NOR2.ext - technology: sky130A
+
+X0 m1_n360_716# B VDD VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X1 Y A GND GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X2 m1_n360_716# A Y VDD sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0.29 ps=2.58 w=1 l=0.15
+X3 GND B Y GND sky130_fd_pr__nfet_01v8 ad=0.58 pd=5.16 as=0.58 ps=5.16 w=1 l=0.15
+*C0 VDD 0 2.702835f **FLOATING

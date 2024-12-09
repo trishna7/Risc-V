@@ -1,0 +1,22 @@
+| units: 500000 tech: sky130A format: MIT
+x NAND2_Gate_0.Y VDD Y VDD s=46200,1060 d=46200,1060 l=30 w=420 x=3192 y=1046 sky130_fd_pr__pfet_01v8
+x B NAND2_Gate_0.GND a_714_816# NAND2_Gate_0.GND s=11600,516 d=11600,516 l=30 w=200 x=772 y=196 sky130_fd_pr__nfet_01v8
+x A NAND2_Gate_0.Y VDD VDD s=11600,516 d=11600,516 l=30 w=200 x=570 y=1549 sky130_fd_pr__pfet_01v8
+x B VDD NAND2_Gate_0.Y VDD s=11600,516 d=11600,516 l=30 w=200 x=988 y=1547 sky130_fd_pr__pfet_01v8
+x A a_714_816# NAND2_Gate_0.Y NAND2_Gate_0.GND s=11600,516 d=11600,516 l=30 w=200 x=772 y=816 sky130_fd_pr__nfet_01v8
+x NAND2_Gate_0.Y NAND2_Gate_0.GND Y NAND2_Gate_0.GND s=18000,580 d=18000,580 l=30 w=200 x=3192 y=656 sky130_fd_pr__nfet_01v8
+R Y 1216
+= Y INV_0.out
+R a_714_816# 1314
+R B 1512
+= B NAND2_Gate_0.B
+R NAND2_Gate_0.Y 4036
+= NAND2_Gate_0.Y INV_0.in
+R A 1512
+= A NAND2_Gate_0.A
+C VDD0 5.2
+R VDD 21441
+= VDD INV_0.vdd
+= VDD NAND2_Gate_0.VDD
+R NAND2_Gate_0.GND 21287
+= NAND2_Gate_0.GND INV_0.vss

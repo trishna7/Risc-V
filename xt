@@ -1,0 +1,57 @@
+* NGSPICE file created from NOR2.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_XGS3BL a_n73_n100# a_15_n100# w_n211_n319# a_n33_n197#
++ VSUBS
+X0 a_15_n100# a_n33_n197# a_n73_n100# w_n211_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+C0 w_n211_n319# a_15_n100# 0.081686f
+C1 a_n73_n100# a_n33_n197# 0.023643f
+C2 a_n33_n197# a_15_n100# 0.023643f
+C3 a_n73_n100# a_15_n100# 0.162113f
+C4 a_n33_n197# w_n211_n319# 0.238832f
+C5 a_n73_n100# w_n211_n319# 0.081686f
+C6 a_15_n100# VSUBS 0.049757f
+C7 a_n73_n100# VSUBS 0.049757f
+C8 a_n33_n197# VSUBS 0.116888f
+C9 w_n211_n319# VSUBS 1.2304f
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_648S5X a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
+X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+**devattr s=11600,516 d=11600,516
+C0 a_15_n100# a_n33_n188# 0.025448f
+C1 a_n73_n100# a_n33_n188# 0.025448f
+C2 a_n73_n100# a_15_n100# 0.162113f
+C3 a_15_n100# a_n175_n274# 0.131704f
+C4 a_n73_n100# a_n175_n274# 0.131704f
+C5 a_n33_n188# a_n175_n274# 0.34289f
+.ends
+
+.subckt NOR2
+XXM7 VDD m1_n360_716# VDD B GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM8 GND A Y GND sky130_fd_pr__nfet_01v8_648S5X
+XXM9 Y m1_n360_716# VDD A GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM10 Y B GND GND sky130_fd_pr__nfet_01v8_648S5X
+C0 B GND 0.161419f
+C1 GND VDD 0.005583f
+C2 B Y 0.058177f
+C3 m1_n360_716# GND 1.15e-19
+C4 Y VDD 0.123685f
+C5 A B 0.087535f
+C6 A VDD 0.074039f
+C7 Y m1_n360_716# 0.027589f
+C8 A m1_n360_716# 0.035513f
+C9 Y GND 0.219328f
+C10 A GND 0.16535f
+C11 A Y 0.162586f
+C12 B VDD 0.320873f
+C13 B m1_n360_716# 0.122547f
+C14 m1_n360_716# VDD 0.120811f
+C15 B 0 1.008328f
+C16 A 0 0.953484f
+C17 GND 0 0.676475f
+C18 Y 0 0.514487f
+C19 m1_n360_716# 0 0.319948f
+C20 VDD 0 2.702835f
+.ends
+

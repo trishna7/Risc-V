@@ -1,0 +1,29 @@
+* NGSPICE file created from AND_Gate_parax.ext - technology: sky130A
+
+.subckt AND_Gate_parax A Y B
+X0 Y NAND2_Gate_0.Y VDD VDD sky130_fd_pr__pfet_01v8 ad=1.155 pd=5.3 as=1.155 ps=5.3 w=2.1 l=0.15
+X1 a_714_816# B NAND2_Gate_0.GND NAND2_Gate_0.GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X2 VDD A NAND2_Gate_0.Y VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X3 NAND2_Gate_0.Y B VDD VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X4 NAND2_Gate_0.Y A a_714_816# NAND2_Gate_0.GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X5 Y NAND2_Gate_0.Y NAND2_Gate_0.GND NAND2_Gate_0.GND sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
+C0 VDD NAND2_Gate_0.Y 1.17728f
+C1 A NAND2_Gate_0.Y 0.261042f
+C2 NAND2_Gate_0.Y B 0.502997f
+C3 Y VDD 0.339432f
+C4 Y NAND2_Gate_0.Y 0.119392f
+C5 a_714_816# VDD 2.1e-19
+C6 a_714_816# A 0.304478f
+C7 a_714_816# B 0.232086f
+C8 A VDD 0.726052f
+C9 VDD B 0.673355f
+C10 A B 0.067257f
+C11 a_714_816# NAND2_Gate_0.Y 0.233959f
+C12 Y NAND2_Gate_0.GND 0.614676f
+C13 a_714_816# NAND2_Gate_0.GND 0.685381f
+C14 B NAND2_Gate_0.GND 1.56337f
+C15 NAND2_Gate_0.Y NAND2_Gate_0.GND 1.72424f
+C16 A NAND2_Gate_0.GND 1.2121f
+C17 VDD NAND2_Gate_0.GND 5.24146f
+.ends
+
