@@ -1,0 +1,40 @@
+magic
+tech sky130A
+timestamp 1733994956
+<< nwell >>
+rect 720 394 1216 713
+<< viali >>
+rect 813 90 833 112
+<< metal1 >>
+rect -16 533 0 579
+rect 96 327 109 348
+rect 307 334 322 357
+rect 523 323 538 346
+rect 731 332 746 355
+rect 1262 284 1290 323
+rect -12 140 2 179
+<< via1 >>
+rect 815 295 844 321
+<< metal2 >>
+rect 806 323 846 325
+rect 760 321 846 323
+rect 760 295 815 321
+rect 844 295 846 321
+rect 760 285 846 295
+use INV  INV_0
+timestamp 1733992880
+transform 1 0 1065 0 1 461
+box -285 -390 280 235
+use NOR4  NOR4_0 /home/apn/mag_gates
+timestamp 1733991795
+transform 1 0 88 0 1 -12
+box -102 9 756 726
+<< labels >>
+rlabel metal1 -7 166 -7 166 1 GND
+rlabel metal1 -10 564 -10 564 1 VDD
+rlabel metal1 104 336 104 336 1 A
+rlabel metal1 314 344 314 344 1 B
+rlabel metal1 529 332 529 332 1 C
+rlabel metal1 736 342 736 342 1 D
+rlabel metal1 1277 306 1277 306 1 Y
+<< end >>

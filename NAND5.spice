@@ -1,0 +1,14 @@
+* SPICE3 file created from NAND5.ext - technology: sky130A
+
+X0 XM8/D A Y GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X1 XM6/D C XM8/S GND sky130_fd_pr__nfet_01v8 ad=0.58 pd=5.16 as=0.58 ps=5.16 w=1 l=0.15
+X2 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X3 Y B VDD VDD sky130_fd_pr__pfet_01v8 ad=1.45 pd=12.9 as=1.45 ps=12.9 w=1 l=0.15
+X4 Y C VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+X5 XM6/S D XM6/D GND sky130_fd_pr__nfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.15
+X6 XM8/S B XM8/D GND sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0.58 ps=5.16 w=1 l=0.15
+X7 Y D VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+X8 Y E VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+X9 GND E XM6/S GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0 ps=0 w=1 l=0.15
+*C0 VDD Y 2.019464f
+*C1 VDD GND 5.552845f

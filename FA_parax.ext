@@ -1,0 +1,264 @@
+timestamp 0
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+node "a_n602_4018#" 1312 444.306 -602 4018 ndif 0 0 0 0 0 0 0 0 23200 1032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14144 968 31160 1476 0 0 0 0 0 0 0 0 0 0
+node "a_n2724_3990#" 1312 497.022 -2724 3990 ndif 0 0 0 0 0 0 0 0 23200 1032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14144 968 31160 1476 0 0 0 0 0 0 0 0 0 0
+node "Co" 1216 617.684 2560 4094 ndif 0 0 0 0 0 0 0 0 18000 580 46200 1060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7200 340 0 0 74200 1980 58972 1544 0 0 0 0 0 0 0 0 0 0
+equiv "Co" "OR2_0.INV_0.out"
+equiv "Co" "OR2_0.Y"
+node "OR2_0.NOR2_0.Y" 3578 1447.14 1420 4030 ndif 0 0 0 0 0 0 0 0 23200 1032 11600 516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38100 2200 0 0 28416 1792 91492 3864 38212 1480 0 0 0 0 0 0 0 0
+equiv "OR2_0.NOR2_0.Y" "OR2_0.INV_0.in"
+node "a_1504_4743#" 2033 84.5503 1504 4743 pdif 0 0 0 0 0 0 0 0 0 0 23200 1032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14144 968 33736 1444 0 0 0 0 0 0 0 0 0 0
+node "OR2_0.B" 2781 960.833 474 4060 ndif 0 0 0 0 0 0 0 0 18000 580 46200 1060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39804 2288 0 0 83176 2780 165292 4868 0 0 0 0 0 0 0 0 0 0
+equiv "OR2_0.B" "AND_Gate_1.INV_0.out"
+equiv "OR2_0.B" "AND_Gate_1.Y"
+equiv "OR2_0.B" "OR2_0.NOR2_0.B"
+node "AND_Gate_1.GND" 4037 995.423 -690 4018 ndif 0 0 0 0 0 0 0 0 11600 516 23200 1032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38100 2200 0 0 28416 1792 88260 3396 55124 3040 0 0 0 0 0 0 0 0
+equiv "AND_Gate_1.GND" "AND_Gate_1.INV_0.in"
+equiv "AND_Gate_1.GND" "AND_Gate_1.NAND2_Gate_0.Y"
+node "G" 2786 2658.4 -1648 4032 ndif 0 0 0 0 0 0 0 0 18000 580 46200 1060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39804 2288 0 0 83176 2780 405188 10876 0 0 0 0 0 0 0 0 0 0
+equiv "G" "AND_Gate_0.INV_0.out"
+equiv "G" "AND_Gate_0.Y"
+equiv "G" "OR2_0.NOR2_0.A"
+equiv "G" "OR2_0.A"
+node "AND_Gate_0.GND" 4037 1088.04 -2812 3990 ndif 0 0 0 0 0 0 0 0 11600 516 23200 1032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38100 2200 0 0 28416 1792 88260 3396 55124 3040 0 0 0 0 0 0 0 0
+equiv "AND_Gate_0.GND" "AND_Gate_0.INV_0.in"
+equiv "AND_Gate_0.GND" "AND_Gate_0.NAND2_Gate_0.Y"
+node "a_1822_5540#" 1313 613.745 1822 5540 ndif 0 0 0 0 0 0 0 0 23200 1032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14144 968 37136 2096 0 0 0 0 0 0 0 0 0 0
+node "a_1240_5540#" 1313 587.727 1240 5540 ndif 0 0 0 0 0 0 0 0 23200 1032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14144 968 38472 2168 0 0 0 0 0 0 0 0 0 0
+node "a_n1938_5564#" 1313 609.326 -1938 5564 ndif 0 0 0 0 0 0 0 0 23200 1032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14144 968 37136 2096 0 0 0 0 0 0 0 0 0 0
+node "a_n2520_5564#" 1313 563.331 -2520 5564 ndif 0 0 0 0 0 0 0 0 23200 1032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14144 968 38472 2168 0 0 0 0 0 0 0 0 0 0
+node "XOR2_1.INV_0.out" 2784 2044.81 1774 5452 p 0 0 0 0 0 0 0 0 18000 580 46200 1060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39804 2288 0 0 83176 2780 164032 4848 122020 3792 0 0 0 0 0 0 0 0
+node "S" 3380 1227.97 1154 6985 pdif 0 0 0 0 0 0 0 0 23200 1032 23200 1032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28288 1936 163296 7996 0 0 0 0 0 0 0 0 0 0
+equiv "S" "XOR2_1.Y"
+node "Ci" 4701 2860.72 -230 4602 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103308 6096 0 0 25152 1940 453560 10440 203276 4948 0 0 0 0 0 0 0 0
+equiv "Ci" "AND_Gate_1.NAND2_Gate_0.B"
+equiv "Ci" "AND_Gate_1.B"
+equiv "Ci" "XOR2_1.INV_0.in"
+equiv "Ci" "XOR2_1.B"
+node "a_1242_6985#" 4526 50.9586 1242 6985 pdif 0 0 0 0 0 0 0 0 0 0 46400 2064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28288 1936 97376 5440 0 0 0 0 0 0 0 0 0 0
+node "XOR2_1.INV_1.out" 2783 878.994 398 6966 ndif 0 0 0 0 0 0 0 0 18000 580 46200 1060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39804 2288 0 0 83176 2780 78396 2808 48080 2452 0 0 0 0 0 0 0 0
+node "XOR2_0.INV_0.out" 2784 1813.95 -1986 5476 p 0 0 0 0 0 0 0 0 18000 580 46200 1060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39804 2288 0 0 83176 2780 164032 4848 122020 3792 0 0 0 0 0 0 0 0
+node "P" 8109 4292.73 -2606 7009 pdif 0 0 0 0 0 0 0 0 23200 1032 23200 1032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103308 6096 0 0 53440 3876 367148 14872 394344 10628 0 0 0 0 0 0 0 0
+equiv "P" "AND_Gate_1.NAND2_Gate_0.A"
+equiv "P" "AND_Gate_1.A"
+equiv "P" "XOR2_0.Y"
+equiv "P" "XOR2_1.INV_1.in"
+equiv "P" "XOR2_1.A"
+node "B" 4702 2346.29 -2568 5476 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103308 6096 0 0 25152 1940 274616 8716 203276 4948 0 0 0 0 0 0 0 0
+equiv "B" "AND_Gate_0.NAND2_Gate_0.B"
+equiv "B" "AND_Gate_0.B"
+equiv "B" "XOR2_0.INV_0.in"
+equiv "B" "XOR2_0.B"
+node "a_n2518_7009#" 4526 50.844 -2518 7009 pdif 0 0 0 0 0 0 0 0 0 0 46400 2064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28288 1936 97376 5440 0 0 0 0 0 0 0 0 0 0
+node "XOR2_0.INV_1.out" 2783 876.182 -3362 6990 ndif 0 0 0 0 0 0 0 0 18000 580 46200 1060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39804 2288 0 0 83176 2780 78396 2808 48080 2452 0 0 0 0 0 0 0 0
+node "A" 4705 2722.72 -3512 7240 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103308 6096 0 0 25152 1940 348200 11288 93064 3144 0 0 0 0 0 0 0 0
+equiv "A" "AND_Gate_0.NAND2_Gate_0.A"
+equiv "A" "AND_Gate_0.A"
+equiv "A" "XOR2_0.INV_1.in"
+equiv "A" "XOR2_0.A"
+node "VDD" 128628 38212.7 -3672 7290 nw 0 0 0 0 10380264 30728 0 0 1003296 52808 427800 12064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1433160 65124 1248184 28272 93424 1728 494332 7948 0 0 0 0 0 0
+equiv "VDD" "AND_Gate_0.INV_0.vdd"
+equiv "VDD" "AND_Gate_0.NAND2_Gate_0.VDD"
+equiv "VDD" "AND_Gate_0.VDD"
+equiv "VDD" "AND_Gate_1.INV_0.vdd"
+equiv "VDD" "AND_Gate_1.NAND2_Gate_0.VDD"
+equiv "VDD" "AND_Gate_1.VDD"
+equiv "VDD" "OR2_0.INV_0.vdd"
+equiv "VDD" "OR2_0.NOR2_0.VDD"
+equiv "VDD" "OR2_0.VDD"
+equiv "VDD" "XOR2_0.INV_0.vdd"
+equiv "VDD" "XOR2_0.INV_1.vdd"
+equiv "VDD" "XOR2_0.VDD"
+equiv "VDD" "XOR2_1.INV_0.vdd"
+equiv "VDD" "XOR2_1.INV_1.vdd"
+equiv "VDD" "XOR2_1.VDD"
+substrate "GND" 0 0 -3482 6820 ppd 0 0 0 0 0 0 0 0 218800 8188 937160 50820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1154268 58752 2148824 48084 0 0 0 0 0 0 0 0 0 0
+equiv "GND" "AND_Gate_0.INV_0.vss"
+equiv "GND" "AND_Gate_0.NAND2_Gate_0.GND"
+equiv "GND" "AND_Gate_1.INV_0.vss"
+equiv "GND" "AND_Gate_1.NAND2_Gate_0.GND"
+equiv "GND" "OR2_0.INV_0.vss"
+equiv "GND" "OR2_0.NOR2_0.GND"
+equiv "GND" "OR2_0.GND"
+equiv "GND" "XOR2_0.INV_0.vss"
+equiv "GND" "XOR2_0.INV_1.vss"
+equiv "GND" "XOR2_0.GND"
+equiv "GND" "XOR2_1.INV_0.vss"
+equiv "GND" "XOR2_1.INV_1.vss"
+equiv "GND" "XOR2_1.GND"
+cap "OR2_0.NOR2_0.Y" "OR2_0.B" 48.0241
+cap "a_1242_6985#" "XOR2_1.INV_1.out" 84.239
+cap "Ci" "AND_Gate_0.GND" 0.0500149
+cap "OR2_0.NOR2_0.Y" "G" 250.841
+cap "a_n2518_7009#" "XOR2_0.INV_0.out" 134.253
+cap "a_n2518_7009#" "B" 304.968
+cap "a_n2518_7009#" "VDD" 1237.08
+cap "a_1240_5540#" "a_1822_5540#" 20.7728
+cap "a_n602_4018#" "AND_Gate_0.GND" 0.00797905
+cap "A" "G" 0.0957831
+cap "a_n2724_3990#" "G" 0.00204441
+cap "a_n2518_7009#" "P" 390.227
+cap "OR2_0.NOR2_0.Y" "XOR2_1.INV_0.out" 6.91156
+cap "VDD" "Co" 326.2
+cap "a_n602_4018#" "Ci" 29.4651
+cap "G" "AND_Gate_0.GND" 122.6
+cap "a_n2520_5564#" "XOR2_0.INV_0.out" 11.0449
+cap "B" "a_n2520_5564#" 252.257
+cap "a_n2520_5564#" "VDD" 0.379545
+cap "OR2_0.B" "Ci" 26.0405
+cap "a_1240_5540#" "P" 57.991
+cap "XOR2_1.INV_1.out" "S" 412.784
+cap "XOR2_0.INV_1.out" "A" 537.409
+cap "a_n2520_5564#" "P" 192.336
+cap "a_n1938_5564#" "A" 0.00873155
+cap "G" "Ci" 10.8792
+cap "a_n602_4018#" "G" 33.9387
+cap "XOR2_1.INV_0.out" "Ci" 810.459
+cap "G" "OR2_0.B" 84.169
+cap "OR2_0.NOR2_0.Y" "a_1822_5540#" 0.168521
+cap "a_n1938_5564#" "Ci" 8.19344
+cap "OR2_0.NOR2_0.Y" "a_1504_4743#" 164.435
+cap "OR2_0.NOR2_0.Y" "VDD" 569.45
+cap "XOR2_0.INV_0.out" "A" 0.692184
+cap "B" "A" 429.929
+cap "a_1240_5540#" "S" 192.336
+cap "G" "XOR2_1.INV_0.out" 0.820009
+cap "B" "a_n2724_3990#" 29.4818
+cap "A" "VDD" 1680.57
+cap "a_n2724_3990#" "VDD" 12.8639
+cap "P" "A" 214.518
+cap "XOR2_0.INV_0.out" "AND_Gate_0.GND" 1.00027
+cap "OR2_0.NOR2_0.Y" "AND_Gate_1.GND" 0.414344
+cap "B" "AND_Gate_0.GND" 115.554
+cap "Ci" "a_1822_5540#" 74.1855
+cap "VDD" "AND_Gate_0.GND" 1044.9
+cap "a_1240_5540#" "XOR2_1.INV_1.out" 7.82888
+cap "a_1504_4743#" "Ci" 0.372756
+cap "P" "AND_Gate_0.GND" 2.05833
+cap "XOR2_0.INV_0.out" "Ci" 0.231592
+cap "VDD" "Ci" 1646.66
+cap "a_n1938_5564#" "XOR2_0.INV_1.out" 65.8629
+cap "P" "Ci" 203.885
+cap "a_1504_4743#" "OR2_0.B" 29.6777
+cap "AND_Gate_1.GND" "AND_Gate_0.GND" 1.07663
+cap "a_n602_4018#" "VDD" 14.2933
+cap "G" "a_1822_5540#" 4.01977
+cap "VDD" "OR2_0.B" 1142.32
+cap "a_1504_4743#" "G" 24.7631
+cap "a_n602_4018#" "P" 27.6718
+cap "AND_Gate_1.GND" "Ci" 114.939
+cap "XOR2_0.INV_0.out" "G" 1.50628
+cap "P" "OR2_0.B" 0.238292
+cap "a_1242_6985#" "Ci" 304.968
+cap "B" "G" 3.85296
+cap "XOR2_1.INV_0.out" "a_1822_5540#" 148.48
+cap "VDD" "G" 748.144
+cap "a_1504_4743#" "XOR2_1.INV_0.out" 5.29426
+cap "a_n602_4018#" "AND_Gate_1.GND" 245.413
+cap "P" "G" 28.3658
+cap "AND_Gate_1.GND" "OR2_0.B" 125.414
+cap "VDD" "XOR2_1.INV_0.out" 703.299
+cap "XOR2_0.INV_0.out" "XOR2_0.INV_1.out" 30.188
+cap "B" "XOR2_0.INV_1.out" 143.41
+cap "XOR2_0.INV_1.out" "VDD" 833.437
+cap "P" "XOR2_1.INV_0.out" 0.666389
+cap "G" "AND_Gate_1.GND" 46.578
+cap "a_n1938_5564#" "XOR2_0.INV_0.out" 148.48
+cap "a_n1938_5564#" "B" 74.1855
+cap "a_n1938_5564#" "VDD" 11.0727
+cap "XOR2_0.INV_1.out" "P" 412.934
+cap "S" "Ci" 113.281
+cap "a_n1938_5564#" "P" 171.186
+cap "a_1242_6985#" "XOR2_1.INV_0.out" 134.253
+cap "a_1504_4743#" "a_1822_5540#" 2.73461
+cap "XOR2_1.INV_1.out" "Ci" 143.525
+cap "VDD" "a_1822_5540#" 1.6553
+cap "a_n2518_7009#" "A" 92.1924
+cap "a_1504_4743#" "VDD" 421.222
+cap "OR2_0.NOR2_0.Y" "Co" 127.234
+cap "P" "a_1822_5540#" 0.00747875
+cap "B" "XOR2_0.INV_0.out" 814.909
+cap "XOR2_0.INV_0.out" "VDD" 936.008
+cap "B" "VDD" 1614.97
+cap "S" "XOR2_1.INV_0.out" 229.218
+cap "XOR2_0.INV_0.out" "P" 389.946
+cap "B" "P" 126.655
+cap "P" "VDD" 2762.39
+cap "a_n2520_5564#" "A" 63.1744
+cap "a_1504_4743#" "AND_Gate_1.GND" 0.0738461
+cap "B" "AND_Gate_1.GND" 0.0249719
+cap "XOR2_1.INV_1.out" "XOR2_1.INV_0.out" 30.188
+cap "VDD" "AND_Gate_1.GND" 1079.88
+cap "a_1242_6985#" "VDD" 1233.99
+cap "a_n2520_5564#" "AND_Gate_0.GND" 0.237061
+cap "P" "AND_Gate_1.GND" 113.387
+cap "a_1240_5540#" "Ci" 225.049
+cap "a_1242_6985#" "P" 92.1667
+cap "S" "a_1822_5540#" 170.363
+cap "Co" "OR2_0.B" 0.0326302
+cap "VDD" "S" 422.09
+cap "G" "Co" 0.321272
+cap "a_n2518_7009#" "XOR2_0.INV_1.out" 84.239
+cap "XOR2_1.INV_1.out" "a_1822_5540#" 65.8629
+cap "a_n2724_3990#" "A" 27.6637
+cap "P" "S" 189.773
+cap "XOR2_1.INV_1.out" "a_1504_4743#" 0.00301025
+cap "a_1240_5540#" "XOR2_1.INV_0.out" 11.0449
+cap "XOR2_1.INV_1.out" "XOR2_0.INV_0.out" 2.30869
+cap "B" "XOR2_1.INV_1.out" 0.0151055
+cap "XOR2_1.INV_1.out" "VDD" 829.917
+cap "A" "AND_Gate_0.GND" 92.627
+cap "a_n2724_3990#" "AND_Gate_0.GND" 245.413
+cap "OR2_0.NOR2_0.Y" "Ci" 0.056998
+cap "a_1242_6985#" "S" 390.227
+cap "a_n2520_5564#" "XOR2_0.INV_1.out" 7.82888
+cap "XOR2_1.INV_1.out" "P" 539.788
+cap "a_n1938_5564#" "a_n2520_5564#" 20.7728
+device msubckt sky130_fd_pr__nfet_01v8 2530 4094 2531 4095 l=30 w=200 "GND" "OR2_0.NOR2_0.Y" 60 0 "GND" 200 18000,580 "Co" 200 18000,580
+device msubckt sky130_fd_pr__nfet_01v8 1902 4030 1903 4031 l=30 w=200 "GND" "G" 60 0 "GND" 200 11600,516 "OR2_0.NOR2_0.Y" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 1478 4030 1479 4031 l=30 w=200 "GND" "OR2_0.B" 60 0 "OR2_0.NOR2_0.Y" 200 11600,516 "GND" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 444 4060 445 4061 l=30 w=200 "GND" "AND_Gate_1.GND" 60 0 "GND" 200 18000,580 "OR2_0.B" 200 18000,580
+device msubckt sky130_fd_pr__nfet_01v8 -208 4020 -207 4021 l=30 w=200 "GND" "Ci" 60 0 "a_n602_4018#" 200 11600,516 "GND" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 -632 4018 -631 4019 l=30 w=200 "GND" "P" 60 0 "AND_Gate_1.GND" 200 11600,516 "a_n602_4018#" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 -1678 4032 -1677 4033 l=30 w=200 "GND" "AND_Gate_0.GND" 60 0 "GND" 200 18000,580 "G" 200 18000,580
+device msubckt sky130_fd_pr__nfet_01v8 -2330 3992 -2329 3993 l=30 w=200 "GND" "B" 60 0 "a_n2724_3990#" 200 11600,516 "GND" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 -2754 3990 -2753 3991 l=30 w=200 "GND" "A" 60 0 "AND_Gate_0.GND" 200 11600,516 "a_n2724_3990#" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 2530 4484 2531 4485 l=30 w=420 "VDD" "OR2_0.NOR2_0.Y" 60 0 "VDD" 420 46200,1060 "Co" 420 46200,1060
+device msubckt sky130_fd_pr__pfet_01v8 1892 4745 1893 4746 l=30 w=200 "VDD" "G" 60 0 "a_1504_4743#" 200 11600,516 "OR2_0.NOR2_0.Y" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 1474 4743 1475 4744 l=30 w=200 "VDD" "OR2_0.B" 60 0 "VDD" 200 11600,516 "a_1504_4743#" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 444 4450 445 4451 l=30 w=420 "VDD" "AND_Gate_1.GND" 60 0 "VDD" 420 46200,1060 "OR2_0.B" 420 46200,1060
+device msubckt sky130_fd_pr__pfet_01v8 -212 4699 -211 4700 l=30 w=200 "VDD" "Ci" 60 0 "AND_Gate_1.GND" 200 11600,516 "VDD" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 -630 4701 -629 4702 l=30 w=200 "VDD" "P" 60 0 "VDD" 200 11600,516 "AND_Gate_1.GND" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 -1678 4422 -1677 4423 l=30 w=420 "VDD" "AND_Gate_0.GND" 60 0 "VDD" 420 46200,1060 "G" 420 46200,1060
+device msubckt sky130_fd_pr__pfet_01v8 -2334 4671 -2333 4672 l=30 w=200 "VDD" "B" 60 0 "AND_Gate_0.GND" 200 11600,516 "VDD" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 -2752 4673 -2751 4674 l=30 w=200 "VDD" "A" 60 0 "VDD" 200 11600,516 "AND_Gate_0.GND" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 1792 5540 1793 5541 l=30 w=200 "GND" "XOR2_1.INV_0.out" 60 0 "GND" 200 11600,516 "a_1822_5540#" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 1210 5540 1211 5541 l=30 w=200 "GND" "Ci" 60 0 "GND" 200 11600,516 "a_1240_5540#" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 -1968 5564 -1967 5565 l=30 w=200 "GND" "XOR2_0.INV_0.out" 60 0 "GND" 200 11600,516 "a_n1938_5564#" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 -2550 5564 -2549 5565 l=30 w=200 "GND" "B" 60 0 "GND" 200 11600,516 "a_n2520_5564#" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 1794 6172 1795 6173 l=30 w=200 "GND" "XOR2_1.INV_1.out" 60 0 "S" 200 11600,516 "a_1822_5540#" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 1236 6176 1237 6177 l=30 w=200 "GND" "P" 60 0 "S" 200 11600,516 "a_1240_5540#" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 -1966 6196 -1965 6197 l=30 w=200 "GND" "XOR2_0.INV_1.out" 60 0 "P" 200 11600,516 "a_n1938_5564#" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 -2524 6200 -2523 6201 l=30 w=200 "GND" "A" 60 0 "P" 200 11600,516 "a_n2520_5564#" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 2694 6964 2695 6965 l=30 w=200 "GND" "Ci" 60 0 "GND" 200 18000,580 "XOR2_1.INV_0.out" 200 18000,580
+device msubckt sky130_fd_pr__pfet_01v8 1800 6985 1801 6986 l=30 w=200 "VDD" "XOR2_1.INV_0.out" 60 0 "S" 200 11600,516 "a_1242_6985#" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 2694 7354 2695 7355 l=30 w=420 "VDD" "Ci" 60 0 "VDD" 420 46200,1060 "XOR2_1.INV_0.out" 420 46200,1060
+device msubckt sky130_fd_pr__pfet_01v8 1212 6985 1213 6986 l=30 w=200 "VDD" "XOR2_1.INV_1.out" 60 0 "S" 200 11600,516 "a_1242_6985#" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 368 6966 369 6967 l=30 w=200 "GND" "P" 60 0 "GND" 200 18000,580 "XOR2_1.INV_1.out" 200 18000,580
+device msubckt sky130_fd_pr__nfet_01v8 -1066 6988 -1065 6989 l=30 w=200 "GND" "B" 60 0 "GND" 200 18000,580 "XOR2_0.INV_0.out" 200 18000,580
+device msubckt sky130_fd_pr__pfet_01v8 -1960 7009 -1959 7010 l=30 w=200 "VDD" "XOR2_0.INV_0.out" 60 0 "P" 200 11600,516 "a_n2518_7009#" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 1806 7605 1807 7606 l=30 w=200 "VDD" "Ci" 60 0 "VDD" 200 11600,516 "a_1242_6985#" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 1224 7605 1225 7606 l=30 w=200 "VDD" "P" 60 0 "VDD" 200 11600,516 "a_1242_6985#" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 368 7356 369 7357 l=30 w=420 "VDD" "P" 60 0 "VDD" 420 46200,1060 "XOR2_1.INV_1.out" 420 46200,1060
+device msubckt sky130_fd_pr__pfet_01v8 -1066 7378 -1065 7379 l=30 w=420 "VDD" "B" 60 0 "VDD" 420 46200,1060 "XOR2_0.INV_0.out" 420 46200,1060
+device msubckt sky130_fd_pr__pfet_01v8 -2548 7009 -2547 7010 l=30 w=200 "VDD" "XOR2_0.INV_1.out" 60 0 "P" 200 11600,516 "a_n2518_7009#" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 -3392 6990 -3391 6991 l=30 w=200 "GND" "A" 60 0 "GND" 200 18000,580 "XOR2_0.INV_1.out" 200 18000,580
+device msubckt sky130_fd_pr__pfet_01v8 -1954 7629 -1953 7630 l=30 w=200 "VDD" "B" 60 0 "VDD" 200 11600,516 "a_n2518_7009#" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 -2536 7629 -2535 7630 l=30 w=200 "VDD" "A" 60 0 "VDD" 200 11600,516 "a_n2518_7009#" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 -3392 7380 -3391 7381 l=30 w=420 "VDD" "A" 60 0 "VDD" 420 46200,1060 "XOR2_0.INV_1.out" 420 46200,1060

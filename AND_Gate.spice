@@ -10,11 +10,11 @@ X0 a_15_n100# a_n33_n197# a_n73_n100# w_n211_n319# sky130_fd_pr__pfet_01v8 ad=0.
 .ends
 
 .subckt NAND2_Gate B A Y VDD GND
-XXM1 m1_n1116_n2700# A Y GND sky130_fd_pr__nfet_01v8_648S5X
-XXM2 GND B m1_n1116_n2700# GND sky130_fd_pr__nfet_01v8_648S5X
-XXM3 Y VDD VDD A GND sky130_fd_pr__pfet_01v8_XGS3BL
-XXM4 VDD Y VDD B GND sky130_fd_pr__pfet_01v8_XGS3BL
-* C0 VDD GND 2.604594f
+XXM1 Y A m1_n1106_n2632# GND sky130_fd_pr__nfet_01v8_648S5X
+XXM2 m1_n1106_n2632# B GND GND sky130_fd_pr__nfet_01v8_648S5X
+XXM3 VDD Y VDD A GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM4 Y VDD VDD B GND sky130_fd_pr__pfet_01v8_XGS3BL
+*C0 VDD GND 2.395105f
 .ends
 
 .subckt INV vdd vss out in
@@ -22,9 +22,9 @@ X0 out in vdd vdd sky130_fd_pr__pfet_01v8 ad=1.155 pd=5.3 as=1.155 ps=5.3 w=2.1 
 X1 out in vss vss sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
 .ends
 
-* .subckt AND_Gate
-XNAND2_Gate_0 B A INV_0/in VDD VSUBS NAND2_Gate
-XINV_0 VDD VSUBS Y INV_0/in INV
-* C0 VDD VSUBS 5.201175f
-* .ends
+**.subckt AND_Gate
+XNAND2_Gate_0 B A GND VDD VSUBS NAND2_Gate
+XINV_0 VDD VSUBS Y GND INV
+*C0 VDD VSUBS 4.060318f
+**.ends
 

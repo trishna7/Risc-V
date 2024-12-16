@@ -1,4 +1,4 @@
-* SPICE3 file created from OR2.ext - technology: sky130A
+* SPICE3 file created from MUX2.ext - technology: sky130A
 
 .subckt sky130_fd_pr__pfet_01v8_XGS3BL a_n73_n100# a_15_n100# w_n211_n319# a_n33_n197#
 + VSUBS
@@ -22,9 +22,31 @@ X0 out in vdd vdd sky130_fd_pr__pfet_01v8 ad=1.155 pd=5.3 as=1.155 ps=5.3 w=2.1 
 X1 out in vss vss sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
 .ends
 
-**.subckt OR2
+.subckt OR2 Y VDD B A GND
 XNOR2_0 B A NOR2_0/Y VDD GND NOR2
 XINV_0 VDD GND Y NOR2_0/Y INV
 *C0 VDD 0 4.087003f
+.ends
+
+.subckt NAND2_Gate B A Y VDD GND
+XXM1 Y A m1_n1106_n2632# GND sky130_fd_pr__nfet_01v8_648S5X
+XXM2 m1_n1106_n2632# B GND GND sky130_fd_pr__nfet_01v8_648S5X
+XXM3 VDD Y VDD A GND sky130_fd_pr__pfet_01v8_XGS3BL
+XXM4 Y VDD VDD B GND sky130_fd_pr__pfet_01v8_XGS3BL
+*C0 VDD GND 2.395105f
+.ends
+
+.subckt AND_Gate Y A GND VDD B VSUBS
+XNAND2_Gate_0 B A GND VDD VSUBS NAND2_Gate
+XINV_0 VDD VSUBS Y GND INV
+*C0 VDD VSUBS 4.060318f
+.ends
+
+**.subckt MUX2
+XOR2_0 Y VDD OR2_0/B OR2_0/A GND OR2
+XAND_Gate_1 OR2_0/A A AND_Gate_1/GND VDD INV_0/out GND AND_Gate
+XAND_Gate_2 OR2_0/B B AND_Gate_2/GND VDD S0 GND AND_Gate
+XINV_0 VDD GND INV_0/out S0 INV
+*C0 VDD 0 14.947336f
 **.ends
 

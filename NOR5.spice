@@ -1,0 +1,14 @@
+* SPICE3 file created from NOR5.ext - technology: sky130A
+
+X0 XM7/D A VDD VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X1 Y A GND GND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X2 XM7/S B XM7/D VDD sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0.58 ps=5.16 w=1 l=0.15
+X3 Y E XM9/D VDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.58 ps=5.16 w=1 l=0.15
+X4 Y B GND GND sky130_fd_pr__nfet_01v8 ad=1.45 pd=12.9 as=1.45 ps=12.9 w=1 l=0.15
+X5 sky130_fd_pr__pfet_01v8_KBS6X7_1/D C XM7/S VDD sky130_fd_pr__pfet_01v8 ad=0.58 pd=5.16 as=0 ps=0 w=1 l=0.15
+X6 XM9/D D sky130_fd_pr__pfet_01v8_KBS6X7_1/D VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+X7 Y E GND GND sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+X8 Y D GND GND sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+X9 Y C GND GND sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=1 l=0.15
+*C0 Y GND 2.660174f
+*C1 VDD GND 5.432726f

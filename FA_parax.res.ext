@@ -1,0 +1,47 @@
+scale 1000 1 500000
+killnode "P"
+rnode "XOR2_1.A" 0 343.461 -202 7242 0
+rnode "P.n0" 0 284.058 -2044 6707 0
+rnode "AND_Gate_1.A" 0 87.4858 -614 4452 0
+rnode "XOR2_0.Y" 0 149.465 -1304 6704 0
+rnode "P.t3" 0 33.1621 -2524 6300 0
+rnode "P.t2" 0 33.403 -2548 7109 0
+rnode "P.n1" 0 174.658 -2625 6730 0
+rnode "P.t0" 0 33.6527 -1960 7109 0
+rnode "P.t1" 0 33.1535 -1966 6296 0
+rnode "P.t8" 0 55.7331 1239 7705 0
+rnode "P.t9" 0 35.923 1251 6276 0
+rnode "P.n2" 0 491.268 943 7557 0
+rnode "P.t5" 0 23.7696 383 7566 0
+rnode "P.t7" 0 11.6518 383 7066 0
+rnode "P.n3" 0 52.1974 383 7296 0
+rnode "P.t6" 0 34.3074 -617 4118 0
+rnode "P.t4" 0 31.6583 -615 4801 0
+rnode "P.n4" 0 890.993 -650 6710 0
+resist "XOR2_0.Y" "P.n0" 1.62635
+resist "P.n0" "P.n1" 2.12768
+resist "XOR2_1.A" "P.n2" 2.1855
+resist "XOR2_0.Y" "P.n4" 5.86768
+resist "P.n4" "XOR2_1.A" 5.91595
+resist "P.n0" "P.t1" 85.4665
+resist "P.n1" "P.t3" 85.502
+resist "XOR2_1.A" "P.n3" 215.525
+resist "P.n1" "P.t2" 229.864
+resist "P.n0" "P.t0" 229.89
+resist "P.n3" "P.t7" 241
+resist "AND_Gate_1.A" "P.t6" 382.001
+resist "P.n2" "P.t9" 393.229
+resist "P.t4" "AND_Gate_1.A" 396.482
+resist "P.n2" "P.t8" 396.635
+resist "P.n4" "P.t4" 402.651
+resist "P.n3" "P.t5" 433.8
+device msubckt sky130_fd_pr__pfet_01v8 -1960 7009 -1959 7010  "VDD" "XOR2_0.INV_0.out" 60 0 "P.t0" 200 11600,516 "a_n2518_7009#" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 -1966 6196 -1965 6197  "GND" "XOR2_0.INV_1.out" 60 0 "P.t1" 200 11600,516 "a_n1938_5564#" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 -2524 6200 -2523 6201  "GND" "A" 60 0 "P.t3" 200 11600,516 "a_n2520_5564#" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 1236 6176 1237 6177  "GND" "P.t9" 60 0 "S" 200 11600,516 "a_1240_5540#" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 -2548 7009 -2547 7010  "VDD" "XOR2_0.INV_1.out" 60 0 "P.t2" 200 11600,516 "a_n2518_7009#" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 1224 7605 1225 7606  "VDD" "P.t8" 60 0 "VDD" 200 11600,516 "a_1242_6985#" 200 11600,516
+device msubckt sky130_fd_pr__nfet_01v8 368 6966 369 6967  "GND" "P.t7" 60 0 "GND" 200 18000,580 "XOR2_1.INV_1.out" 200 18000,580
+device msubckt sky130_fd_pr__nfet_01v8 -632 4018 -631 4019  "GND" "P.t6" 60 0 "AND_Gate_1.GND" 200 11600,516 "a_n602_4018#" 200 11600,516
+device msubckt sky130_fd_pr__pfet_01v8 368 7356 369 7357  "VDD" "P.t5" 60 0 "VDD" 420 46200,1060 "XOR2_1.INV_1.out" 420 46200,1060
+device msubckt sky130_fd_pr__pfet_01v8 -630 4701 -629 4702  "VDD" "P.t4" 60 0 "VDD" 200 11600,516 "AND_Gate_1.GND" 200 11600,516

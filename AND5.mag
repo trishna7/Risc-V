@@ -1,0 +1,41 @@
+magic
+tech sky130A
+timestamp 1733993171
+<< nwell >>
+rect 45 368 1453 730
+<< metal1 >>
+rect -34 639 -6 693
+rect 141 334 153 350
+rect 354 319 370 355
+rect 570 320 586 356
+rect 777 319 793 355
+rect 990 320 1006 356
+rect 1542 308 1577 375
+rect -2 -5 26 45
+<< via1 >>
+rect 1047 351 1075 352
+rect 1047 325 1076 351
+<< metal2 >>
+rect 183 352 1088 354
+rect 183 325 1047 352
+rect 1075 351 1088 352
+rect 1076 325 1088 351
+rect 183 322 1088 325
+use INV  INV_0
+timestamp 1733992880
+transform 1 0 1295 0 1 494
+box -285 -390 280 235
+use NAND5  NAND5_0
+timestamp 1733989957
+transform 1 0 289 0 1 590
+box -321 -589 817 101
+<< labels >>
+rlabel metal1 1562 352 1562 352 1 Y
+rlabel metal1 13 28 13 28 1 GND
+rlabel metal1 -20 670 -20 670 1 VCC
+rlabel metal1 147 342 147 342 1 A
+rlabel metal1 364 321 364 321 1 B
+rlabel metal1 580 355 580 355 1 C
+rlabel metal1 784 320 784 320 1 D
+rlabel metal1 998 321 998 321 1 E
+<< end >>

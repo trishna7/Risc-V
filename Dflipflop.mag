@@ -1,0 +1,42 @@
+magic
+tech sky130A
+timestamp 1734095378
+<< error_s >>
+rect -2024 625 -1921 628
+rect -1897 309 -1794 625
+rect -1845 -380 -1786 -61
+<< metal1 >>
+rect -1702 312 -1665 316
+rect -1702 286 -1698 312
+rect -1669 286 -1665 312
+rect -1702 283 -1665 286
+<< via1 >>
+rect -1698 286 -1669 312
+<< metal2 >>
+rect -1702 312 -1665 316
+rect -1702 308 -1698 312
+rect -2158 287 -1698 308
+rect -1702 286 -1698 287
+rect -1669 286 -1665 312
+rect -1702 283 -1665 286
+use INV  INV_0
+timestamp 1733992880
+transform 1 0 -2676 0 1 385
+box -285 -390 280 235
+use NAND2_Gate  NAND2_Gate_0
+timestamp 1733999844
+transform 1 0 -1170 0 1 749
+box -682 -1467 -253 -810
+use NAND2_Gate  NAND2_Gate_1
+timestamp 1733999844
+transform 1 0 -1222 0 1 1435
+box -682 -1467 -253 -810
+use NAND2_Gate  NAND2_Gate_2
+timestamp 1733999844
+transform 1 0 -1658 0 1 748
+box -682 -1467 -253 -810
+use NAND2_Gate  NAND2_Gate_3
+timestamp 1733999844
+transform 1 0 -1666 0 1 1439
+box -682 -1467 -253 -810
+<< end >>

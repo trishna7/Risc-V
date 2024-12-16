@@ -1,0 +1,35 @@
+* SPICE3 file created from AND5.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_SFU2NW B D S G
+X0 S G D B sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_KBS6X7 B D S G VSUBS
+X0 S G D B sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt NAND5 VDD E C D B A Y GND
+XXM1 GND Y XM8/D A sky130_fd_pr__nfet_01v8_SFU2NW
+XXM2 GND XM8/S XM6/D C sky130_fd_pr__nfet_01v8_SFU2NW
+XXM3 VDD VDD Y A GND sky130_fd_pr__pfet_01v8_KBS6X7
+XXM4 VDD VDD Y B GND sky130_fd_pr__pfet_01v8_KBS6X7
+XXM5 VDD VDD Y C GND sky130_fd_pr__pfet_01v8_KBS6X7
+XXM6 GND XM6/D XM6/S D sky130_fd_pr__nfet_01v8_SFU2NW
+XXM8 GND XM8/D XM8/S B sky130_fd_pr__nfet_01v8_SFU2NW
+Xsky130_fd_pr__pfet_01v8_KBS6X7_0 VDD VDD Y D GND sky130_fd_pr__pfet_01v8_KBS6X7
+Xsky130_fd_pr__pfet_01v8_KBS6X7_1 VDD VDD Y E GND sky130_fd_pr__pfet_01v8_KBS6X7
+Xsky130_fd_pr__nfet_01v8_SFU2NW_0 GND XM6/S GND E sky130_fd_pr__nfet_01v8_SFU2NW
+*C0 VDD GND 5.552845f
+.ends
+
+.subckt INV vdd vss out in
+X0 out in vdd vdd sky130_fd_pr__pfet_01v8 ad=1.155 pd=5.3 as=1.155 ps=5.3 w=2.1 l=0.15
+X1 out in vss vss sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.45 ps=2.9 w=1 l=0.15
+.ends
+
+**.subckt AND5
+XNAND5_0 VCC E C D B A INV_0/in GND NAND5
+XINV_0 VCC GND Y INV_0/in INV
+*C0 VCC GND 7.627772f
+**.ends
+

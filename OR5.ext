@@ -1,0 +1,100 @@
+timestamp 1733995465
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use INV INV_0 1 0 2588 0 1 982
+use NOR5 NOR5_0 1 0 194 0 1 -22
+node "GND" 0 40.2783 2 292 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1924 200 0 0 0 0 0 0 0 0 0 0
+node "Y" 0 47.8812 2938 636 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3500 240 0 0 0 0 0 0 0 0 0 0
+node "m1_2090_654#" 0 128.582 2090 654 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2912 216 14744 540 0 0 0 0 0 0 0 0
+node "E" 0 21.0773 1902 702 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 864 120 0 0 0 0 0 0 0 0 0 0
+node "D" 0 18.2431 1480 694 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 864 120 0 0 0 0 0 0 0 0 0 0
+node "C" 0 19.0453 1064 700 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 864 120 0 0 0 0 0 0 0 0 0 0
+node "A" 0 23.9784 220 676 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 864 120 0 0 0 0 0 0 0 0 0 0
+node "B" 0 23.0185 644 718 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 864 120 0 0 0 0 0 0 0 0 0 0
+node "VDD" 0 40.2783 0 1086 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1924 200 0 0 0 0 0 0 0 0 0 0
+node "li_2072_232#" 17 85.7337 2072 232 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2760 212 2760 212 0 0 0 0 0 0 0 0 0 0
+node "w_2006_784#" 1235 1771.27 2006 784 nw 0 0 0 0 590424 3100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VDD" "GND" 1.37143
+cap "B" "E" 0.0685358
+cap "C" "D" 2.98643
+cap "E" "m1_2090_654#" 3.3802
+cap "B" "C" 1.77578
+cap "m1_2090_654#" "li_2072_232#" 3.28537
+cap "m1_2090_654#" "D" 0.63449
+cap "C" "m1_2090_654#" 0.00863608
+cap "E" "D" 2.75
+cap "E" "C" 0.305556
+cap "Y" "m1_2090_654#" 2.84429
+cap "A" "D" 0.205288
+cap "C" "A" 0.606897
+cap "w_2006_784#" "m1_2090_654#" 14.775
+cap "NOR5_0/XM5/B" "NOR5_0/XM6/B" -1.37143
+cap "NOR5_0/XM6/G" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_1/G" -0.606897
+cap "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_2/G" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_1/G" -1.49321
+cap "NOR5_0/XM6/S" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_1/G" 0.00445765
+cap "NOR5_0/XM5/B" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_1/G" 0.116679
+cap "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_0/G" "NOR5_0/XM8/G" -0.0342679
+cap "NOR5_0/XM8/G" "NOR5_0/XM6/B" 0.0564801
+cap "NOR5_0/XM6/G" "NOR5_0/XM8/G" -2.84217e-14
+cap "NOR5_0/XM8/G" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_2/G" 5.55112e-17
+cap "NOR5_0/XM8/G" "NOR5_0/XM6/S" 0.014027
+cap "NOR5_0/XM6/S" "NOR5_0/XM6/B" 0.0818998
+cap "NOR5_0/XM5/B" "NOR5_0/XM7/S" 0.00809516
+cap "NOR5_0/XM6/G" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_2/G" -0.102644
+cap "INV_0/out" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_1/G" 0.00201261
+cap "NOR5_0/XM8/G" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_1/G" -1.74335
+cap "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_0/G" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_1/G" -0.152778
+cap "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_1/G" "NOR5_0/XM6/B" 0.0023485
+cap "NOR5_0/XM5/B" "NOR5_0/XM8/G" 0.234746
+cap "INV_0/out" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_0/G" 1.79723
+cap "NOR5_0/XM5/B" "NOR5_0/XM6/S" 77.7549
+cap "NOR5_0/sky130_fd_pr__pfet_01v8_KBS6X7_1/S" "NOR5_0/XM6/S" 0.0208504
+cap "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_2/G" "NOR5_0/XM6/S" -0.541192
+cap "NOR5_0/XM6/B" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_1/G" 0.00390502
+cap "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_0/G" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_1/G" -0.152778
+cap "NOR5_0/XM6/G" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_2/G" -0.102644
+cap "NOR5_0/XM8/G" "NOR5_0/XM6/S" 0.00136658
+cap "INV_0/out" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_1/G" 0.0133292
+cap "NOR5_0/sky130_fd_pr__pfet_01v8_KBS6X7_0/S" "NOR5_0/XM6/S" 0.00909437
+cap "NOR5_0/XM5/B" "NOR5_0/XM6/B" 0.506503
+cap "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_0/G" "NOR5_0/XM5/B" 36.3956
+cap "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_2/G" "NOR5_0/XM6/B" 0.0162952
+cap "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_0/G" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_2/G" -2.75
+cap "INV_0/out" "NOR5_0/XM5/B" 0.0260426
+cap "NOR5_0/XM8/G" "NOR5_0/XM6/B" 0.00196252
+cap "NOR5_0/XM8/G" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_0/G" -0.0342679
+cap "INV_0/out" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_2/G" 0.0267898
+cap "NOR5_0/XM5/B" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_1/G" 0.0172914
+cap "NOR5_0/XM7/S" "NOR5_0/XM6/S" 0.00303356
+cap "NOR5_0/XM6/B" "NOR5_0/XM6/S" 60.3724
+cap "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_0/G" "NOR5_0/XM6/S" 23.1284
+cap "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_2/G" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_1/G" -1.49321
+cap "INV_0/out" "NOR5_0/XM6/S" 5.92866
+cap "NOR5_0/XM6/S" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_1/G" 0.0353827
+cap "NOR5_0/XM5/B" "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_2/G" 0.0443195
+cap "NOR5_0/XM8/G" "NOR5_0/XM5/B" 0.03627
+cap "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_0/G" "NOR5_0/XM6/B" 1.16311
+cap "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_2/S" "INV_0/out" -1.4071
+merge "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_2/B" "NOR5_0/VSUBS" -208.943 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1200 -160 -4684 -412 0 0 0 0 0 0 0 0 0 0
+merge "NOR5_0/VSUBS" "NOR5_0/XM6/B"
+merge "NOR5_0/XM6/B" "GND"
+merge "GND" "INV_0/vss"
+merge "INV_0/vss" "VSUBS"
+merge "VSUBS" "li_2072_232#"
+merge "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_2/S" "NOR5_0/XM6/S" -228.263 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2912 -216 -1672 -196 0 0 0 0 0 0 0 0
+merge "NOR5_0/XM6/S" "INV_0/in"
+merge "INV_0/in" "m1_2090_654#"
+merge "NOR5_0/sky130_fd_pr__pfet_01v8_KBS6X7_1/B" "NOR5_0/XM5/B" -1698.53 0 0 0 0 -469524 -4028 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1820 -192 0 0 0 0 0 0 0 0 0 0
+merge "NOR5_0/XM5/B" "VDD"
+merge "VDD" "INV_0/vdd"
+merge "INV_0/vdd" "w_2006_784#"
+merge "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_1/G" "C" -19.2098 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -864 -120 0 0 0 0 0 0 0 0 0 0
+merge "INV_0/out" "Y" -47.9073 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3500 -240 0 0 0 0 0 0 0 0 0 0
+merge "NOR5_0/XM8/G" "B" -23.0242 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -720 -112 0 0 0 0 0 0 0 0 0 0
+merge "NOR5_0/XM6/G" "A" -23.9784 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -864 -120 0 0 0 0 0 0 0 0 0 0
+merge "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_2/G" "D" -18.2431 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -864 -120 0 0 0 0 0 0 0 0 0 0
+merge "NOR5_0/sky130_fd_pr__nfet_01v8_SFU2NW_0/G" "E" -77.6117 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -864 -120 0 0 0 0 0 0 0 0 0 0

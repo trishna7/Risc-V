@@ -1,0 +1,43 @@
+magic
+tech sky130A
+timestamp 1733995465
+<< error_s >>
+rect 13 578 14 580
+<< nwell >>
+rect 1003 392 1441 729
+<< viali >>
+rect 1036 116 1059 146
+<< metal1 >>
+rect 0 543 13 580
+rect 322 359 334 377
+rect 110 338 122 356
+rect 532 350 544 368
+rect 740 347 752 365
+rect 951 351 963 369
+rect 1469 318 1494 353
+rect 1 146 14 183
+<< via1 >>
+rect 1045 327 1073 353
+<< metal2 >>
+rect 983 353 1080 359
+rect 983 327 1045 353
+rect 1073 327 1080 353
+rect 983 321 1080 327
+use INV  INV_0
+timestamp 1733992880
+transform 1 0 1294 0 1 491
+box -285 -390 280 235
+use NOR5  NOR5_0
+timestamp 1733994191
+transform 1 0 97 0 1 -11
+box -102 9 967 726
+<< labels >>
+rlabel metal1 5 565 5 565 1 VDD
+rlabel metal1 5 164 5 164 1 GND
+rlabel metal1 115 346 115 346 1 A
+rlabel metal1 327 368 327 368 1 B
+rlabel metal1 535 357 535 357 1 C
+rlabel metal1 744 356 744 356 1 D
+rlabel metal1 957 357 957 357 1 E
+rlabel metal1 1479 330 1479 330 1 Y
+<< end >>
