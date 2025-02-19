@@ -6,41 +6,27 @@ module Registers (
     input [4:0] rs2,
     input [4:0] rd,
     input write_enable,
-    input [31:0] write_data, //write data to address pointed by rd
-    output [31:0] read_data1, //outputs data from address pointed by rs1
-    output [31:0] read_data2 //outputs data from address pointed by rs2
-
+    input [31:0] write_data,
+    output [31:0] read_data1,
+    output [31:0] read_data2
 );
-    // Declare registers 1-31 only, x0 is handled separately
-    reg [31:0] registers [1:31]; 
+    // Core storage
+    reg [31:0] reg_file [1:31];
     
-    // Read port 1 with x0 handling
-    assign read_data1 = (rs1 == 5'b0) ? 32'b0 : registers[rs1];
-    
-    // Read port 2 with x0 handling
-    assign read_data2 = (rs2 == 5'b0) ? 32'b0 : registers[rs2];
+    // Reduce read muxing by using direct indexing
+    assign read_data1 = (rs1 == 5'b0) ? 32'b0 : reg_file[rs1];
+    assign read_data2 = (rs2 == 5'b0) ? 32'b0 : reg_file[rs2];
 
-    
+    // Single write block to minimize control logic
+    integer i;
     always @(posedge clk) begin
-        if (reset) begin : reset_block
-        reg [4:0] i;
-            // Reset all registers except x0
-            for (i = 1; i <= 31; i = i + 1) begin
-                registers[i] <= 32'b0;
-            end
+        if (reset) begin
+            // Use a for loop instead of individual assignments
+            for (i = 1; i < 32; i = i + 1)
+                reg_file[i] <= 32'b0;
         end
-        else if (write_enable && rd != 5'b0) begin : write_block
-            registers[rd] <= write_data;
-        end
+        else if (write_enable && rd != 5'b0)
+            reg_file[rd] <= write_data;
     end
-
-    // Synthesis directives to help optimization
-    // synthesis translate_off
-    initial begin
-        reg [4:0] i;
-        for (i = 1; i <= 31; i = i + 1)
-            registers[i] = 32'b0;
-    end
-    // synthesis translate_on
 
 endmodule
