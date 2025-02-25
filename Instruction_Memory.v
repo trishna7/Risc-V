@@ -12,4 +12,5 @@ module Instruction_Memory (
 
     always @(*) begin
      instruction_out = memory[read_address[31:2]]; 
+    end
 endmodule
