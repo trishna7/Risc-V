@@ -2,19 +2,21 @@
 module Processor (
     input clk,
     input reset,
-    output reg [31:0] write_data
+    input uart_rx,
+    output wire uart_tx
+    //output reg [31:0] write_data
 );
 
     wire [6:0] opcode = instruction_out[6:0];
     wire [1:0] alu_op;
     wire [1:0] result_src;
-    wire branch, mem_read, mem_to_reg, mem_write, alu_src, reg_write;
+    wire branch, mem_write, alu_src, reg_write;
     wire [31:0] pc, pc_next, pc_target, pcplus4;
     wire [31:0] instruction_out;
     wire [4:0] rs1 = instruction_out[19:15];
     wire [4:0] rs2 = instruction_out[24:20];
     wire [4:0] rd = instruction_out[11:7];
-    //reg [31:0] write_data;
+    reg [31:0] write_data;
     wire [31:0] read_data1, read_data2;
     wire [2:0] imm_src;
     wire [31:0] imm_ext;
@@ -22,6 +24,93 @@ module Processor (
     wire [31:0] ALUResult;
     wire zero, pc_src, jump, jal_src, u_src;
     wire [31:0] ReadData;
+
+    // UART and programming signals
+    reg prog_mode;        // 1 = programming, 0 = running
+    reg [2:0] prog_state; // 0=addr, 1-4=data bytes
+    reg [7:0] prog_addr;  // 0-255 address
+    reg [31:0] prog_data; // Buffer for incoming instruction
+    reg prog_write;       // Write strobe
+    wire [7:0] rx_data;   // Received byte
+    wire rx_ready;        // Byte ready pulse
+    reg [7:0] tx_data;    // Byte to transmit
+    reg tx_start;         // Start transmission
+    wire tx_busy;         // TX in progress
+
+    // UART modules
+    uart_rx uart_rx_inst (
+        .clk(clk),
+        .reset(reset),
+        .uart_rx(uart_rx),
+        .data_out(rx_data),
+        .data_ready(rx_ready)
+    );
+
+    uart_tx uart_tx_inst (
+        .clk(clk),
+        .reset(reset),
+        .data_in(tx_data),
+        .tx_start(tx_start),
+        .uart_tx(uart_tx),
+        .tx_busy(tx_busy)
+    );
+
+    // Programming logic with TX feedback
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
+            prog_mode <= 1;
+            prog_state <= 0;
+            prog_addr <= 0;
+            prog_data <= 0;
+            prog_write <= 0;
+            tx_data <= 8'h4F;  // ‘O’ (part of “OK”)
+            tx_start <= 0;
+        end
+        else if (prog_mode && rx_ready) begin
+            case (prog_state)
+                0: begin  // Address byte
+                    prog_addr <= rx_data;
+                    prog_state <= 1;
+                end
+                1: begin  // Data byte 0
+                    prog_data[7:0] <= rx_data;
+                    prog_state <= 2;
+                end
+                2: begin  // Data byte 1
+                    prog_data[15:8] <= rx_data;
+                    prog_state <= 3;
+                end
+                3: begin  // Data byte 2
+                    prog_data[23:16] <= rx_data;
+                    prog_state <= 4;
+                end
+                4: begin  // Data byte 3
+                    prog_data[31:24] <= rx_data;
+                    prog_write <= 1;
+                    prog_state <= 0;
+                    if (prog_addr == 255 && !tx_busy) begin
+                        prog_mode <= 0;
+                        tx_data <= 8'h4B;  // ‘K’ (send “OK”)
+                        tx_start <= 1;
+                    end
+                end
+            endcase
+        end
+        else begin
+            prog_write <= 0;
+            if (prog_mode && !tx_busy && tx_start && tx_data == 8'h4F) begin
+                tx_data <= 8'h4B;  // Send ‘K’ after ‘O’
+                tx_start <= 1;
+            end
+            else if (tx_start && !tx_busy) begin
+                tx_start <= 0;     // Stop TX after “OK”
+            end
+            else if (!prog_mode && !tx_busy) begin
+                tx_data <= ALUResult[7:0];  // Send ALU result during execution
+                tx_start <= 1;
+            end
+        end
+    end
 
     //Control unit
     
@@ -56,8 +145,19 @@ module Processor (
 
     // Instruction Memory
     
-    Instruction_Memory im_module(   //checked
+   // Instruction_Memory im_module(   //checked
         //.reset(reset),
+     //   .read_address(pc),
+     //   .instruction_out(instruction_out)
+   // );
+
+   Instruction_Memory im_module (
+        .clk(clk),
+        .reset(reset),
+        .prog_mode(prog_mode),
+        .prog_addr(prog_addr),
+        .prog_data(prog_data),
+        .prog_write(prog_write),
         .read_address(pc),
         .instruction_out(instruction_out)
     );
