@@ -1,11 +1,25 @@
 `default_nettype none
 
 module Control_unit (
+    //input
     input [6:0] opcode,
     input zero,
-    output reg pc_src,
+    input PCWrite,
+    input ADrSrc,
+    input MemWrite,
+    input IRWrite,
+
+    //input
+    //output reg pc_src,
     output reg reg_write,
-    output reg [2:0] imm_src,
+    output reg [1:0] imm_src,
+    output reg [1:0] ALUSrcA,
+    output reg [1:0] ALUSrcB,
+    output reg [1:0] PCUpdate,
+
+
+
+
     output reg alu_src,
     output reg mem_write,
     output reg [1:0] result_src,
