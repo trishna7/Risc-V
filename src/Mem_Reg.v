@@ -1,21 +1,58 @@
 `default_nettype none
 
-module Control_unit (
+module Execute_Reg (
     //input
-    input [6:0] opcode,
-    input [3:0] funct3,
-    input funct7,
+    input CLK,              //clock
 
-    //input
-    //output reg pc_src,
-    output reg RegWriteD,
-    output reg [2:0] ImmSrcD,
-    output reg [1:0] ALUSrcD,
-    output reg [1:0] ResultSrcD,
-    output reg MemWriteD,
-    output reg JumpD,
-    output reg BranchD,
-    output reg [1:0] ALUOp
+    //control part
+    input RegWriteE,
+    input [1:0] ALUSrcD,
+    input [1:0] ResultSrcD,
+    input MemWriteD,
+    input JumpD,
+    input BranchD,
+    input [2:0] ALUControlD,
+
+    //register input
+    input [31:0] RD1D,       //read data 1
+    input [31:0] RD2D,       //read data 2
+
+    //instruction or Pc inputs
+    input [31:0] PCD,
+    input [31:0] PCPlus4D,
+
+    input [4:0] Rs1D,
+    input [4:0] Rs2D,
+    input [4:0] RdD,
+
+    //imm extened inputs
+    input [31:0] ImmExtD,
+
+
+    //Control part output
+    output reg RegWriteE,
+    output reg [1:0] ALUSrcE,
+    output reg [1:0] ResultSrcE,
+    output reg MemWriteE,
+    output reg JumpE,
+    output reg BranchE,
+    output reg [2:0] ALUControlE,
+    output reg PCSrcE,
+
+    //register output
+    input [31:0] RD1E,       //read data 1
+    input [31:0] RD2E,       //read data 2
+
+    //instruction or Pc inputs
+    input [31:0] PCE,
+    input [31:0] PCPlus4E,
+
+    input [4:0] Rs1E,
+    input [4:0] Rs2E,
+    input [4:0] RdE,
+
+    //imm extened inputs
+    input [31:0] ImmExtE,
     
 
 );
@@ -171,7 +208,7 @@ always @(*) begin
         end
     endcase
 
-   // pc_src = ((zero && BranchD) || JumpD);
+    PCSrcE = ((ZeroE && BranchE) || JumpE);
 
 end
 

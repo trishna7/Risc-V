@@ -1,12 +1,7 @@
 `default_nettype none
 module Instruction_Memory (
-    input clk,                    // Clock for synchronous writes
-    input reset,                  // Reset signal
-    input prog_mode,              // Programming mode enable
-    input [7:0] prog_addr,        // Address (0-255) from Processor
-    input [31:0] prog_data,       // Data to write from Processor
-    input prog_write,             // Write enable from Processor
-    input [31:0] read_address,    // PC from core
+    
+    input [31:0] PCF,    // PC from core
     output reg [31:0] instruction_out
 );
     // Memory array (256 words, 32-bit)
