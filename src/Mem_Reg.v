@@ -1,58 +1,35 @@
 `default_nettype none
 
-module Execute_Reg (
+module Mem_Reg (
     //input
     input CLK,              //clock
 
     //control part
     input RegWriteE,
-    input [1:0] ALUSrcD,
-    input [1:0] ResultSrcD,
-    input MemWriteD,
-    input JumpD,
-    input BranchD,
-    input [2:0] ALUControlD,
-
-    //register input
-    input [31:0] RD1D,       //read data 1
-    input [31:0] RD2D,       //read data 2
+    input [1:0] ResultSrcE,
+    input MemWriteE,
 
     //instruction or Pc inputs
-    input [31:0] PCD,
-    input [31:0] PCPlus4D,
+    input [31:0] PCPlus4E,
+    input [4:0] RdE,
 
-    input [4:0] Rs1D,
-    input [4:0] Rs2D,
-    input [4:0] RdD,
-
-    //imm extened inputs
-    input [31:0] ImmExtD,
+    //ALU and register data
+    input [31:0] WriteDataE,
+    input [31:0] ALUResultE,
 
 
     //Control part output
-    output reg RegWriteE,
-    output reg [1:0] ALUSrcE,
-    output reg [1:0] ResultSrcE,
-    output reg MemWriteE,
-    output reg JumpE,
-    output reg BranchE,
-    output reg [2:0] ALUControlE,
-    output reg PCSrcE,
+    output reg RegWriteM,
+    output reg [1:0] ResultSrcM,
+    output reg MemWriteM,
 
-    //register output
-    input [31:0] RD1E,       //read data 1
-    input [31:0] RD2E,       //read data 2
+    //ALU and register data output
+    output reg [31:0] WriteDataM,       
+    output reg [31:0] ALUResultM,       
 
     //instruction or Pc inputs
-    input [31:0] PCE,
-    input [31:0] PCPlus4E,
-
-    input [4:0] Rs1E,
-    input [4:0] Rs2E,
-    input [4:0] RdE,
-
-    //imm extened inputs
-    input [31:0] ImmExtE,
+    output reg [31:0] PCPlus4M,
+    output reg [4:0] RdM,
     
 
 );

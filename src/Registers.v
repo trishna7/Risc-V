@@ -1,32 +1,36 @@
 `default_nettype none
 module Registers (
-    input clk,
+    input CLK,
     input reset,
-    input [4:0] rs1,
-    input [4:0] rs2,
-    input [4:0] rd,
-    input write_enable,
-    input [31:0] write_data,
-    output [31:0] read_data1,
-    output [31:0] read_data2
+    // SOURCE AND DESTIDATION REGISTER ADDRESS
+    input [4:0] A1,           //rs1
+    input [4:0] A2,             //rs2
+    input [4:0] A3,             //rd
+    // read write enable
+    input WE3,                  //write enable
+    input [31:0] WD3,           //write_data
+
+    // outputs from register
+    output [31:0] RD1,          //read_data1
+    output [31:0] RD2           //read_data2
 );
     // Core storage
     reg [31:0] reg_file [1:31];
     
     // Reduce read muxing by using direct indexing
-    assign read_data1 = (rs1 == 5'b0) ? 32'b0 : reg_file[rs1];
-    assign read_data2 = (rs2 == 5'b0) ? 32'b0 : reg_file[rs2];
+    assign RD1 = (A1 == 5'b0) ? 32'b0 : reg_file[A1];
+    assign RD2 = (A2 == 5'b0) ? 32'b0 : reg_file[A2];
 
     // Single write block to minimize control logic
     integer i;
-    always @(posedge clk) begin
+    always @(posedge CLK) begin
         if (reset) begin
             // Use a for loop instead of individual assignments
             for (i = 1; i < 32; i = i + 1)
                 reg_file[i] <= 32'b0;
         end
-        else if (write_enable && rd != 5'b0)
-            reg_file[rd] <= write_data;
+        else if (WE3 && A3 != 5'b0)
+            reg_file[A3] <= WD3;
     end
 
 endmodule
