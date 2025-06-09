@@ -41,19 +41,19 @@ module Execute_Reg (
     output reg PCSrcE,
 
     //register output
-    output [31:0] RD1E,       //read data 1
-    output [31:0] RD2E,       //read data 2
+    output reg [31:0] RD1E,       //read data 1
+    output reg [31:0] RD2E,       //read data 2
 
     //instruction or Pc outputs
-    output [31:0] PCE,
-    output [31:0] PCPlus4E,
+    output reg [31:0] PCE,
+    output reg [31:0] PCPlus4E,
 
-    output [4:0] Rs1E,
-    output [4:0] Rs2E,
-    output [4:0] RdE,
+    output reg [4:0] Rs1E,
+    output reg [4:0] Rs2E,
+    output reg [4:0] RdE,
 
     //imm extened outputs
-    output [31:0] ImmExtE,
+    output reg [31:0] ImmExtE,
     
 
 );
