@@ -6,11 +6,12 @@ module Writeback_Reg (
 
     //control part
     input RegWriteM,
-    input [1:0] ResultSrcM,
+    input [2:0] ResultSrcM,
 
     //instruction or Pc inputs
     input [31:0] PCPlus4M,
     input [4:0] RdM,
+    input [31:0] UOutM,
 
     //ALU and memory data
     input [31:0] ReadDataM,
@@ -19,7 +20,7 @@ module Writeback_Reg (
 
     //Control part output
     output reg RegWriteW,
-    output reg [1:0] ResultSrcW,
+    output reg [2:0] ResultSrcW,
 
     //ALU and register data output
     output reg [31:0] ReadDataW,       //read data 1
@@ -28,6 +29,23 @@ module Writeback_Reg (
     //instruction or Pc inputs
     output reg [31:0] PCPlus4W,
     output reg [4:0] RdW,
+    output reg [31:0] UOutW
 
 );
+
+always @(posedge CLK) begin
+
+    RegWriteW <= RegWriteM;
+    ResultSrcW <= RegWriteM;
+    ALUResultW <= ALUResultM;
+    ReadDataW <= ReadDataM;
+    UOutW <= UOutM;
+
+    RdW <= RdM;
+    PCPlus4W <= PCPlus4M;
+
+end
+
+endmodule
+
 

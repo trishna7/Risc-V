@@ -1,26 +1,28 @@
 `default_nettype none
 module PC (
-    input wire clk,                      // clock signal
-    input wire reset,                    // reset signal 
-    input pc_src_pc,
-    output reg [31:0] pc_next,             // next pc value (input oc value)
-    input wire [31:0] pc_target,                // pc enable signal 
-    input wire [31:0] pcplus4,
-    output reg [31:0] pc        // Current PC value 
+    input wire CLK,                      // clock signal
+    input wire EN,                    // EN signal 
+    input PCSrcE,
+    output reg [31:0] PCFI,             // next pc value (input oc value)
+    input wire [31:0] PCTargetE,                // pc enable signal 
+    input wire [31:0] PCPlus4F,
+    output reg [31:0] PCF        // Current PC value 
 
 );
 always @(*) begin
-    if (pc_src_pc)
-        pc_next = pc_target;
+    if (PCSrcE)
+        PCFI = PCTargetE;
     else
-        pc_next = pcplus4;
+        PCFI = PCPlus4F;
 end
 
-always @(posedge clk) begin
-    if (reset)
-        pc <= 32'b0;            // reset pc to 0
+always @(posedge CLK) begin
+    if (EN)
+        PCF <= 32'b0;            // EN pc to 0
     else
-        pc <= pc_next;            // update PC if enabled
+        PCF <= PCFI;            // update PC if enabled
+
+    //PCPlus4F <= PCF + 4;
 end
 
 endmodule 

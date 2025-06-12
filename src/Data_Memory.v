@@ -1,20 +1,19 @@
 `default_nettype none
 
 module Data_Memory (
-    input clk,
-    input reset,
-    input mem_write, //write enable to memory
+    input CLK,
+    input WE, //write enable to memory
     //input mem_read, // read enable from memory
-    input [31:0] address, //specify memory location
-    input [31:0] write_data,
-    output [31:0] read_data
+    input [31:0] A, //specify memory location
+    input [31:0] WD,
+    output [31:0] RD
 );
     reg [31:0] mem [0:255];
 
-    always @(posedge clk) begin
-        if (mem_write) 
-            mem [address[31:2]] <= write_data; //write to memory
+    always @(posedge CLK) begin
+        if (WE) 
+            mem [A[31:2]] <= WD; //write to memory
     end
 
-    assign read_data = mem[address[31:2]];
+    assign RD = mem[A[31:2]];
 endmodule

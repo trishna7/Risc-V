@@ -14,7 +14,7 @@ module Hazard_Unit(
     input  [4:0] Rs2D,
 
     input PCSrcE,
-    input [1:0] ResultSrcE,
+    input ResultSrcE0,
     input RegWriteM,
     input RegWriteW,
 
@@ -31,25 +31,25 @@ output reg [1:0] ForwardBE
 reg lwStall;
 
 always @(*) begin
-    Rs1E= 4'b0000;
-    Rs2E= 4'b0000;
-    RdE= 4'b0000;
-    RdM= 4'b0000;
-    RdW= 4'b0000;
-    Rs1D = 4'b0000;
-    Rs2D= 4'b0000;
-    PCSrcE= 0;
-    ResultSrcE= 0;
-    RegWriteM = 0;
-    RegWriteW = 0;
-    StallF = 0;
-    StallD = 0;
-    FlushD = 0;
-    FlushE = 0;
-    ForwardAE = 2'b00;
-    ForwardBE = 2'b00;
+    // Rs1E= 4'b0000;
+    // Rs2E= 4'b0000;
+    // RdE= 4'b0000;
+    // RdM= 4'b0000;
+    // RdW= 4'b0000;
+    // Rs1D = 4'b0000;
+    // Rs2D= 4'b0000;
+    // PCSrcE= 0;
+    // ResultSrcE= 0;
+    // RegWriteM = 0;
+    // RegWriteW = 0;
+    // StallF = 0;
+    // StallD = 0;
+    // FlushD = 0;
+    // FlushE = 0;
+    // ForwardAE = 2'b00;
+    // ForwardBE = 2'b00;
 
-    lwStall =  (ResultSrcE[0] && ((Rs1D == RdE) || (Rs2D == RdE)));
+    lwStall =  (ResultSrcE0 && ((Rs1D == RdE) || (Rs2D == RdE)));
     StallF = lwStall;
     StallD = lwStall;
     FlushD = PCSrcE;

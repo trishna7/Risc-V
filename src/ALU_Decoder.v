@@ -1,6 +1,6 @@
 `default_nettype none
 
-module alu_decoder(
+module ALU_Decoder(
     input opcode_bit5,
     input [2:0] funct3,
     input funct7_bit5,

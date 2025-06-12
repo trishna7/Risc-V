@@ -3,16 +3,15 @@
 
 module test_processor;
     // Inputs
-    reg clk;
+    reg CLK;
     reg reset;
-    reg uart_rx;
 
     // Outputs
     wire uart_tx;
 
     // Instantiate Processor
     Processor uut (
-        .clk(clk),
+        .CLK(CLK),
         .reset(reset),
         .uart_rx(uart_rx),
         .uart_tx(uart_tx)
@@ -20,8 +19,8 @@ module test_processor;
 
     // Clock generation (10 MHz = 100 ns period)
     initial begin
-        clk = 0;
-        forever #50 clk = ~clk;  // 100 ns period
+        CLK = 0;
+        forever #50 CLK = ~CLK;  // 100 ns period
     end
 
     // UART parameters

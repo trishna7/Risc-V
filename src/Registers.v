@@ -1,7 +1,7 @@
 `default_nettype none
 module Registers (
     input CLK,
-    input reset,
+   // input reset,
     // SOURCE AND DESTIDATION REGISTER ADDRESS
     input [4:0] A1,           //rs1
     input [4:0] A2,             //rs2
@@ -24,12 +24,7 @@ module Registers (
     // Single write block to minimize control logic
     integer i;
     always @(posedge CLK) begin
-        if (reset) begin
-            // Use a for loop instead of individual assignments
-            for (i = 1; i < 32; i = i + 1)
-                reg_file[i] <= 32'b0;
-        end
-        else if (WE3 && A3 != 5'b0)
+        if (WE3 && A3 != 5'b0)
             reg_file[A3] <= WD3;
     end
 
