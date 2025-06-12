@@ -1,7 +1,9 @@
 `default_nettype none
 module Processor (
     input CLK,
-    input reset
+    input reset,
+    
+    output wire [31:0] WriteDataM
     
 );
     //Hazard Unit
@@ -9,7 +11,7 @@ module Processor (
     wire [1:0] ForwardAE, ForwardBE;
     //Control unit and ALU decode
     wire RegWriteD, RegWriteE, RegWriteM, RegWriteW;
-    wire MemWriteD, MemWriteE, MemWriteM;
+    wire MemWriteD, MemWriteE;
     wire JumpD, JumpE;
     wire BranchD, BranchE;
     wire ALUSrcD, ALUSrcE;
@@ -28,9 +30,13 @@ module Processor (
     wire [31:0] RD1D, RD1E, RD2D, RD2E;
     wire [4:0] Rs1E, Rs2E, RdE, RdM, RdW;
     wire [31:0] ImmExtD, ImmExtE;
-    wire [31:0] ALUResultE, ALUResultM, ALUResultW;
-    wire [31:0] WriteDataM, ReadDataM, ReadDataW;
+    wire [31:0] ALUResultE, ALUResultW;
+    wire [31:0] ReadDataM, ReadDataW;
     wire [31:0] UOutM, UOutW;
+
+    wire [31:0] ALUResultM; 
+    wire MemWriteM;
+    // wire [31:0] WriteDataM;
 
     reg [31:0] SrcAE, SrcBE;
     reg [31:0] PCTargetE, UOutE, ResultW, WriteDataE;
@@ -39,6 +45,7 @@ module Processor (
 //Program Counter
     PC pc_module (  
         .CLK(CLK),
+        .reset(reset),
         .EN(StallF),
         .PCFI(PCFI),
         .PCF(PCF),
