@@ -6,7 +6,7 @@ module Mem_Reg (
 
     //control part
     input RegWriteE,
-    input [2:0] ResultSrcE,
+    input [1:0] ResultSrcE,
     input MemWriteE,
 
     //instruction or Pc inputs
@@ -21,7 +21,7 @@ module Mem_Reg (
 
     //Control part output
     output reg RegWriteM,
-    output reg [2:0] ResultSrcM,
+    output reg [1:0] ResultSrcM,
     output reg MemWriteM,
 
     //ALU and register data output
@@ -36,10 +36,22 @@ module Mem_Reg (
 
 );
 
+initial begin
+        RegWriteM = 0;
+        ResultSrcM = 0;
+        MemWriteM = 0;
+        WriteDataM =0;
+        ALUResultM = 0;
+        UOutM = 0;
+
+        RdM = 0;
+        PCPlus4M = 0;
+end
+
 always @(posedge CLK) begin
     
     RegWriteM <= RegWriteE;
-    ResultSrcM <= RegWriteE;
+    ResultSrcM <= ResultSrcE;
     MemWriteM <= MemWriteE;
     ALUResultM <= ALUResultE;
     WriteDataM <= WriteDataE;

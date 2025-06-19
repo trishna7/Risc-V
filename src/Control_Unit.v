@@ -8,7 +8,7 @@ module Control_unit (
     output reg RegWriteD,
     output reg [2:0] ImmSrcD,
     output reg ALUSrcD,
-    output reg [2:0] ResultSrcD,
+    output reg [1:0] ResultSrcD,
     output reg MemWriteD,
     output reg JumpD,
     output reg BranchD,
@@ -17,10 +17,21 @@ module Control_unit (
     output reg USrcD,
     output reg UOControlD
 
-
 );
 
 always @(*) begin
+    // Default values to handle invalid opcodes
+            RegWriteD = 0;
+            ImmSrcD = 3'b000;
+            ALUSrcD = 0;
+            MemWriteD = 0;
+            ResultSrcD = 2'b00;
+            BranchD = 0;
+            ALUOp = 2'b00;
+            JumpD = 0;
+            JalSrcD = 0;
+            USrcD = 0;
+            UOControlD = 0;
     
     case (opcode)
         7'b0110011 : begin //R-type
@@ -46,7 +57,7 @@ always @(*) begin
             ALUOp = 2'b10;
             JumpD = 0;
             // JalSrcD = 0;
-            // USrcD = 0;
+            USrcD = 0;
             // UOControlD = 0;
         end
 
@@ -60,7 +71,7 @@ always @(*) begin
             ALUOp = 2'b00;
             JumpD = 0;
             // JalSrcD = 0;
-            // USrcD = 0;
+            USrcD = 0;
 
         end
 
@@ -73,7 +84,7 @@ always @(*) begin
             ALUOp = 2'b00;
             JumpD = 0;
             // JalSrcD = 0;
-            // USrcD = 0;
+            USrcD = 0;
 
         end
 

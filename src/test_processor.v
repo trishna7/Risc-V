@@ -7,25 +7,19 @@ module Processor_tb;
     reg reset;
 
     // Outputs
-    wire [31:0] WriteDataM;
+    wire [31:0] ResultW;
 
     // Instantiate the Processor
     Processor uut (
         .CLK(CLK),
         .reset(reset),
-        .WriteDataM(WriteDataM)
+        .ResultW(ResultW)
     );
 
     // Clock generation
     initial CLK = 0;
     always #5 CLK = ~CLK; // 10ns period => 100MHz
 
-    // Simulation time limit
-    initial begin
-        #1000; // stop after 1000ns (adjust if needed)
-        $display("Simulation ended.");
-        $finish;
-    end
 
     // Reset sequence
     initial begin
@@ -34,9 +28,6 @@ module Processor_tb;
         reset = 0;
     end
 
-    // Optional: preload instruction memory
-    // Assumes Instruction_Memory has a `reg [31:0] memory[0:255]`
-    // and supports `$readmemh("program.hex", memory);`
     initial begin
         $readmemh("instruction.mem", uut.im_module.memory); // Adjust path as needed
     end
@@ -49,7 +40,15 @@ module Processor_tb;
 
     // Monitor output
     initial begin
-        $monitor("Time=%0t | WriteDataM=0x%h", $time, WriteDataM);
+        $monitor("Time=%0t | ResultW=0x%h", $time, ResultW);
+    end
+
+    
+    // Simulation time limit
+    initial begin
+        #50000; // stop after 10000ns (adjust if needed)
+        $display("Simulation ended.");
+        $finish;
     end
 
 endmodule

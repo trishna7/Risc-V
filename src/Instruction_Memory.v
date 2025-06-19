@@ -5,14 +5,15 @@ module Instruction_Memory (
     output [31:0] RD
 );
     // Memory array (256 words, 32-bit)
-    reg [31:0] memory [0:20];
+    reg [31:0] memory [0:255];
 
     // Initial load for simulation and Tiny Tapeout submission
     initial begin
-        for (integer i = 0; i < 1024; i = i + 1)
-    memory[i] = 32'b0;
+        for (integer i = 0; i < 256; i = i + 1)
+            memory[i] = 32'b0;
         $readmemh("instruction.mem", memory); // Loads your program from instruction.mem
     end
-       assign RD = memory[A[31:2]];
+       //assign RD = memory[A[31:2]];
+       assign RD = (A[31:2] < 256) ? memory[A[31:2]] : 32'h00000013; // NOP if invalid
 
 endmodule

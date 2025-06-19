@@ -30,7 +30,10 @@ module ALU (
                 4'b1101 : ZeroE = ($signed(SrcAE) >= $signed(SrcBE)) ? 1 : 0; // BGE
                 4'b1110 : ZeroE = ($unsigned(SrcAE) < $unsigned(SrcBE)) ? 1 : 0; // BLTU
                 4'b1111 : ZeroE = ($unsigned(SrcAE) >= $unsigned(SrcBE)) ? 1 : 0; // BGEU
-                default : ALUResultE = 32'b0;
+                default : begin
+                    ALUResultE = 32'b0;
+                    ZeroE = 0;
+                end
             endcase
     end
 

@@ -3,7 +3,7 @@ module Processor (
     input CLK,
     input reset,
     
-    output wire [31:0] WriteDataM
+    output reg [31:0] ResultW
     
 );
     //Hazard Unit
@@ -18,8 +18,8 @@ module Processor (
     wire JalSrcD, JalSrcE;
     wire USrcD, USrcE;
     wire UOControlD, UOControlE;
-    wire [1:0] ALUOp;
-    wire [2:0] ResultSrcD, ImmSrcD, ResultSrcE, ResultSrcM, ResultSrcW;
+    wire [1:0] ResultSrcD, ResultSrcE, ResultSrcM, ResultSrcW, ALUOp;
+    wire [2:0] ImmSrcD;
     wire [3:0] ALUControlD, ALUControlE;
    
     wire PCSrcE;
@@ -36,17 +36,17 @@ module Processor (
 
     wire [31:0] ALUResultM; 
     wire MemWriteM;
-    // wire [31:0] WriteDataM;
+    wire [31:0] WriteDataM;
 
     reg [31:0] SrcAE, SrcBE;
-    reg [31:0] PCTargetE, UOutE, ResultW, WriteDataE;
+    reg [31:0] PCTargetE, UOutE, WriteDataE;
 
 
 //Program Counter
     PC pc_module (  
         .CLK(CLK),
         .reset(reset),
-        .EN(StallF),
+        .EN(~StallF),
         .PCFI(PCFI),
         .PCF(PCF),
         .PCTargetE(PCTargetE),
@@ -68,7 +68,7 @@ module Processor (
     Decode_Reg decode_module(
         .CLR(FlushD),
         .CLK(CLK),            
-        .EN(StallD),       
+        .EN(~StallD),       
         .Instr(Instr),
         .PCF(PCF),
         .PCPlus4F(PCPlus4F),
@@ -88,7 +88,7 @@ module Processor (
         .Rs1D(InstrD[19:15]),
         .Rs2D(InstrD[24:20]),
         .PCSrcE(PCSrcE),
-        .ResultSrcE0(ResultSrcE[0]),
+        .ResultSrcE(ResultSrcE),
         .RegWriteM(RegWriteM),
         .RegWriteW(RegWriteW),
         .StallF(StallF),
@@ -119,9 +119,9 @@ module Processor (
 
 //ALU Decoder
     ALU_Decoder ALUDecode_module(
-        .opcode_bit5(InstrD[5]),
+        .opcode_bit5(InstrD[4]),
         .funct3(InstrD[14:12]),
-        .funct7_bit5(InstrD[30]),
+        .funct7_bit5(InstrD[29]),
         .ALUOp(ALUOp),
         .ALUControlD(ALUControlD)
 
@@ -192,6 +192,8 @@ module Processor (
         .USrcE(USrcE),
         .UOControlE(UOControlE)
    );
+
+   assign PCSrcE = ((ZeroE && BranchE) || JumpE);
    
    reg [31:0] Imm, Add1, Add2;
 
@@ -202,13 +204,13 @@ module Processor (
         2'b10 : SrcAE = ALUResultM;
         endcase
 
-        case (ForwardAE)
+        case (ForwardBE)
         2'b00 : WriteDataE = RD2E;
         2'b01 : WriteDataE = ResultW;
         2'b10 : WriteDataE = ALUResultM;
         endcase
         
-        SrcBE = (ALUSrcE == 1) ? Imm : WriteDataE;
+        SrcBE = (ALUSrcE == 1) ? ImmExtE : WriteDataE;
         Add1 = (JalSrcE == 1) ? RD1E : PCE;
         Add2 = (USrcE == 1) ? (ImmExtE << 12) : ImmExtE;
 

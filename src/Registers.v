@@ -17,13 +17,11 @@ module Registers (
     // Core storage
     reg [31:0] reg_file [1:31];
     
-    // Reduce read muxing by using direct indexing
     assign RD1 = (A1 == 5'b0) ? 32'b0 : reg_file[A1];
     assign RD2 = (A2 == 5'b0) ? 32'b0 : reg_file[A2];
 
-    // Single write block to minimize control logic
-    integer i;
-    always @(posedge CLK) begin
+    
+    always @(negedge CLK) begin
         if (WE3 && A3 != 5'b0)
             reg_file[A3] <= WD3;
     end
