@@ -1,0 +1,11 @@
+{
+    "DESIGN_NAME": "Processor",
+    "VERILOG_FILES": "dir::src/*.v",
+    "CLOCK_PORT": "clk",
+    "EXTRA_FILES": "instruction.mem",
+    "CLOCK_PERIOD": 15.0,
+    "DESIGN_IS_CORE": true,
+
+    "FP_CORE_UTIL": 52,    
+    "PL_TARGET_DENSITY": 0.55
+}
